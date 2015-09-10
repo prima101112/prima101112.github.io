@@ -1,11 +1,11 @@
 # Site settings
-title: note.primaadi | Short Share
+title: ten.primaadi.net | Short Share
 description: "A minimal blog that share what I had to face as a developer."
-url: "http://note.primaadi.net"
+url: "http://ten.primaadi.net"
 author:
   name: "Prima Adi Pradana"
   email: "prima101112@gmail.com"
-  url: "http://note.primaadi.net"
+  url: "http://ten.primaadi.net"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
@@ -13,7 +13,7 @@ markdown: redcarpet
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 8
+paginate: 10
 paginate_path: /page:num/
 
 # Default values
