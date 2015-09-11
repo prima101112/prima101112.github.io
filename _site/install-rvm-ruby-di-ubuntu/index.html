@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="generator" content="Jekyll">
+
+	<title>Cara Install ruby nggunain RVM di Ubuntu</title>
+
+	<!-- CSS & fonts -->
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/css/highlight.css">
+	<link rel="stylesheet" href="/css/font.css">
+	<!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,400italic%7CSignika:700,300,400,600' rel='stylesheet' type='text/css'> -->
+
+	<!-- RSS -->
+	<link href="/atom.xml" type="application/atom+xml" rel="alternate" title="ATOM Feed" />
+
+</head>
+
+
+<body>
+<div class="fullwidth">
+
+  <style type="text/css">
+	#hea{
+		width: 100%;
+		z-index:-100;
+	}
+</style>
+
+<div id="hea">
+	<img src="/img/head.png" alt="header note.primaadi.net" style="width: 100%;">
+</div>
+
+
+</div>
+	<div id="wrap">
+
+	  	<!-- Navigation -->
+	  	<nav id="nav">
+	<div id="nav-list">
+		<a href="/">Home</a>
+
+		<!-- Nav pages -->
+	  
+	    
+	      <a href="/about.html" title="About This">About This</a>
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+	    
+	  
+    
+    <!-- Nav links -->
+	  <!-- <a href="https://github.com/KingFelix/emerald/archive/master.zip">Download</a> -->
+<a href="https://github.com/prima101112">Project on Github</a>
+
+	</div>
+  
+  <!-- Nav footer -->
+	
+	  <footer>
+
+	<span>@2015 note.primaadi.net</span>
+
+</footer>
+
+	
+
+</nav>
+
+
+    <!-- Icon menu -->
+	  <a href="#" id="nav-menu">
+	  	<div id="menu"></div>
+	  </a>
+
+      <!-- Header -->
+      <header id="header">
+<a href="/">
+	  <h1 style="coloe:#ddd">note.primaadi.net</h1>
+</a>
+</header>
+
+
+    <!-- Main content -->
+	  <div id="container">
+
+		<main>
+
+			<article id="post-page">
+	<h2>Cara Install ruby nggunain RVM di Ubuntu</h2>
+	<time datetime="2015-09-11T00:00:00+07:00" class="by-line">11 Sep 2015  | 
+		<span class="label">
+			<a href="/tag/ruby">ruby </a>
+		</span>
+	
+		<span class="label">
+			<a href="/tag/iseng">iseng </a>
+		</span>
+	</time>
+
+	<div class="content">
+
+		<p>Kemaren itu saya pengen buat catetan kecil gitu biar yang tak kerjain enggak lupa.
+nha! akhirnya saya putuskan buat <em>github-page</em> biar enak gitu, kalau ngeblog tinggal <em>push</em> .
+Sebelumnya saya mempertimbangkan menggunakan <a href="http://hubpress.io/">hubpress</a>,
+tetapi akhirnya hati ini beralih ke <a href="http://jekyllrb.com/">jekyll</a> yang menggunakan ruby, otomatis aja sih tinggal push udah publish gitu.</p>
+
+<p>Sebelum install <em>jekyll</em> harus install ruby kan?, nha akhirnya aku putuskan untuk make RVM biar bisa pindah pindah versi ruby gitu.
+nha disini aku sedikit mengulang saat kemaren itu,</p>
+
+<h3>install <em>RVM</em>.</h3>
+
+<p>Sebelum install <em>RVM</em>, install dulu <em>mpapis public key</em>, ini kayak <em>security</em> gitu (kadang butuh <em>gpg2</em> atau/dan <em>sudo</em>)</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">gpg</span> <span class="o">--</span><span class="n">keyserver</span> <span class="n">hkp</span><span class="p">:</span><span class="o">//</span><span class="n">keys</span><span class="o">.</span><span class="n">gnupg</span><span class="o">.</span><span class="n">net</span> <span class="o">--</span><span class="n">recv</span><span class="o">-</span><span class="n">keys</span> <span class="mi">409</span><span class="n">B6B1796C275462A1703113804BB82D39DC0E3</span>
+</code></pre></div>
+<p>Abis itu Download installer <em>RVM</em> (harus punya <em>curl</em>)</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">curl</span> <span class="o">-</span><span class="n">O</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">binscripts</span><span class="o">/</span><span class="n">rvm</span><span class="o">-</span><span class="n">installer</span>
+<span class="n">curl</span> <span class="o">-</span><span class="n">O</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">rvm</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">binscripts</span><span class="o">/</span><span class="n">rvm</span><span class="o">-</span><span class="n">installer</span><span class="o">.</span><span class="n">asc</span>
+</code></pre></div>
+<p>Nha terus verifikasi dulu <em>installer signature</em> nya.</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">gpg</span> <span class="o">--</span><span class="n">verify</span> <span class="n">rvm</span><span class="o">-</span><span class="n">installer</span><span class="o">.</span><span class="n">asc</span> <span class="o">&amp;&amp;</span>
+</code></pre></div>
+<p>dan jika berhasil kayak gini tekan <em>ctrl + c</em>
+<img src="/img/01.png" alt="Image of Yaktocat"></p>
+
+<p>lalu jalanin command ini untuk install <em>RVM</em> <em>stable release</em></p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">bash</span> <span class="n">rvm</span><span class="o">-</span><span class="n">installer</span> <span class="n">stable</span>
+</code></pre></div>
+<p>coba ketik <code>rvm</code> di <em>terminal</em> berhasil nggak?
+jika masih ada error kemungkinan kamu belum memasukin <em>path</em> <em>rvm/bin</em> kedalam PATH di ubuntu.
+letaknya di <code>.bash_profile</code> atau <code>.profile</code> di home dir kamu (<code>home/username</code>).</p>
+
+<p>kalau yang seperi ini udah ada seharusnya sudah berhasil</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">export</span> <span class="n">PATH</span><span class="o">=</span><span class="s">&quot;$PATH:$HOME/.rvm/bin&quot;</span>
+</code></pre></div>
+<p>Dan coba ketik <em>rvm</em> lagi</p>
+
+<h3>Install <em>Ruby</em>  melalui <em>RVM</em></h3>
+
+<p>Caranya gampang kok kalau kamu liat di <a href="https://rvm.io/rvm/security">rvm.io</a>
+kamu tinggal jalanin <em>command</em></p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">rvm</span> <span class="n">install</span> <span class="mf">2.2</span>
+</code></pre></div>
+<p>yang diatas itu maksudnya kamu install ruby versi 2.2 kalau pengen pindah versi ruby tinggal</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">rvm</span> <span class="n">use</span> <span class="mf">2.1</span>
+</code></pre></div>
+<p><strong>yap!</strong> cuma segitu aja lah. aku install rvm dan ruby hanya untuk jekyll. bayangin rekoso kan. . .</p>
+
+
+	</div>
+
+	<!-- //recent post ini -->
+	<h4 class="abu">masih anget</h4>
+	<ul class="posts">
+	
+	   <li>
+		   <span>11 Sep 2015</span> &raquo;
+		   <a href="/install-rvm-ruby-di-ubuntu">
+		   Cara Install ruby nggunain RVM di Ubuntu</a>
+	   </li>
+	
+	   <li>
+		   <span>10 Sep 2015</span> &raquo;
+		   <a href="/kenapa-note">
+		   Kenapa Note ?</a>
+	   </li>
+	
+	   <li>
+		   <span>10 Sep 2015</span> &raquo;
+		   <a href="/halo-dunia">
+		   Halo Dunia</a>
+	   </li>
+	
+	</ul>
+
+	<!-- share and comment -->
+	<div class="space50"></div>
+	<section id="sharing">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=/install-rvm-ruby-di-ubuntu - Cara Install ruby nggunain RVM di Ubuntu by @"><span class="icon-twitter"> Tweet</span></a>
+
+<a class="facebook" href="#" onclick="
+    window.open(
+      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+      'facebook-share-dialog',
+      'width=626,height=436');
+    return false;"><span class="icon-facebook-rect"> Share</span>
+</a>
+  </section>
+  <section id="comments">
+    	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'noteprimaadinet';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+  </section>
+
+</article>
+
+
+	  </main>
+
+		  <!-- Pagination links -->
+      
+
+	  </div>
+
+	    <!-- Footer -->
+	    <footer class="space"><span>@2015 - note.primaadi.net</span></footer>
+
+
+	    <!-- Script -->
+      <script src="/js/main.js"></script>	
+
+
+	</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- <script src="/js/main.js"></script> -->
+  <script src="/js/highlight.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

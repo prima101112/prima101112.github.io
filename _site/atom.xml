@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>note.primaadi.net | Short Share</title>
+ <link href="http://note.primaadi.net/atom.xml" rel="self"/>
+ <id>http://note.primaadi.net</id>
+ <updated>2015-09-11T21:36:08+07:00</updated>
+ <author>
+   <name>Prima Adi Pradana</name>
+   <uri>http://note.primaadi.net</uri>
+   <email>prima101112@gmail.com</email>
+ </author>
+
+ 
+
+ <entry>
+   <title>Cara Install ruby nggunain RVM di Ubuntu</title>
+   <link href="http://note.primaadi.net/install-rvm-ruby-di-ubuntu"/>
+   <id>http://note.primaadi.net/install-rvm-ruby-di-ubuntu</id>
+   <updated>2015-09-11T00:00:00+07:00</updated>
+   <content type="html">&lt;p&gt;Kemaren itu saya pengen buat catetan kecil gitu biar yang tak kerjain enggak lupa. nha! akhirnya saya putuskan buat &lt;em&gt;github-page&lt;/em&gt; biar enak gitu, kalau ngeblog tinggal &lt;em&gt;push&lt;/em&gt; . Sebelumnya saya mempertimbangkan menggunakan &lt;a href=&quot;http://hubpress.io/&quot;&gt;hubpress&lt;/a&gt;, tetapi akhirnya hati ini beralih ke &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt; yang menggunakan ruby, otomatis aja sih tinggal push...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Kenapa Note ?</title>
+   <link href="http://note.primaadi.net/kenapa-note"/>
+   <id>http://note.primaadi.net/kenapa-note</id>
+   <updated>2015-09-10T00:00:00+07:00</updated>
+   <content type="html">&lt;p&gt;Kejadian blog ini tidak disengaja. aku awalnya cuma main-main gitu, tiba-tiba pengen aja buat github-page. terus akhirnya aku buat deh. kisahnya saya mau pakai hubpress, tetapi pilihan jatuh ke &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;jekyll&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;Terus, mengapa aku menggunakan &lt;a href=&quot;http://note.primaadi.net&quot;&gt;note.primaadi.net&lt;/a&gt; ?. berikut beberapa alasan konyol mengapa menggunakan subdomain note.primaadi.net&lt;/p&gt; &lt;ul&gt; &lt;li&gt;karena sekalian aja...</content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Halo Dunia</title>
+   <link href="http://note.primaadi.net/halo-dunia"/>
+   <id>http://note.primaadi.net/halo-dunia</id>
+   <updated>2015-09-10T00:00:00+07:00</updated>
+   <content type="html">&lt;p&gt;&lt;strong&gt;Ya!&lt;/strong&gt; Halo dunia. Ini cuma catetan aja. niatnya sih biar gak ketinggalan jaman gitu. jadi aku buat blog kecil-kecilan lagi dengan gaya bahasa aku yang lain. blog yang ini enggak formal lhoo. ya cuma sharing aja gitu.&lt;/p&gt; &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-go&quot; data-lang=&quot;go&quot;&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;main&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;fmt&amp;quot;&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;func&lt;/span&gt;...</content>
+ </entry>
+
+ 
+
+</feed>
