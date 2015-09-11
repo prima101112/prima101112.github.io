@@ -8,7 +8,15 @@ layout: default
 
 	  <li class="post">
 	  	<h2><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h2>
-	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}</time>
+	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}  |
+			<!-- tag -->
+			{% for ttag in post.tags %}
+				<span class="label">
+					<a href="{% if site.baseurl == '/' %}/tag/{{ ttag }}{% else %}{{ site.baseurl }}/tag/{{ ttag }}{% endif %}">{{ttag}} </a>
+				</span>
+			{% endfor %}
+
+			</time>
 	  	<!-- <p>{{ post.content | strip_html | truncatewords:50 }}</p> -->
 	  	<p>{{ post.excerpt }}</p>
 	  </li>

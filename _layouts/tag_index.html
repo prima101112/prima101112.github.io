@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<h2 class="post_title">{{page.title}}</h2>
+<br>
+<ul id="posts">
+
+  {% for post in site.posts %}
+  {% for tag in post.tags %}
+  {% if tag == page.tag %}
+	  <li class="post">
+	  	<h4><a href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a></h4>
+	  	<time datetime="{{ post.date | date_to_xmlschema }}" class="by-line">{{ post.date | date_to_string }}  |
+
+      {% for ttag in post.tags %}
+    		<span class="label">
+    			<a href="{% if site.baseurl == '/' %}/tag/{{ ttag }}{% else %}{{ site.baseurl }}/tag/{{ ttag }}{% endif %}">{{ttag}} </a>
+    		</span>
+    	{% endfor %}
+
+      </time>
+
+	  	<p>{{ post.content | strip_html | truncatewords:10 }}</p>
+	  </li>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+
+</ul>

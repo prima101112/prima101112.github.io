@@ -2,19 +2,38 @@
 layout: default
 ---
 <article id="post-page">
-	<h2>{{ page.title }}</h2>		
-	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
+	<h2>{{ page.title }}</h2>
+	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}  | {% for ttag in page.tags %}
+		<span class="label">
+			<a href="{% if site.baseurl == '/' %}/tag/{{ ttag }}{% else %}{{ site.baseurl }}/tag/{{ ttag }}{% endif %}">{{ttag}} </a>
+		</span>
+	{% endfor %}</time>
+
 	<div class="content">
 
 		{{ content }}
-		
+
 	</div>
+
+	<!-- //recent post ini -->
+	<h4 class="abu">masih anget</h4>
+	<ul class="posts">
+	{% for post in site.posts limit:3 %}
+	   <li>
+		   <span>{{ post.date | date_to_string }}</span> &raquo;
+		   <a href="{{ BASE_PATH }}{{ post.url }}">
+		   {{ post.title }}</a>
+	   </li>
+	{% endfor %}
+	</ul>
+
+	<!-- share and comment -->
 	<div class="space50"></div>
 	<section id="sharing">
         {% include share.html %}
-    </section>
-    <section id="comments">
+  </section>
+  <section id="comments">
     	{% include comments.html %}
-    </section>
-</article>
+  </section>
 
+</article>
