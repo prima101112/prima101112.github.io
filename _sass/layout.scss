@@ -2,7 +2,7 @@
 
 /* Navigation */
 
-#nav, #nav-left { 
+#nav, #nav-left {
   a {
     display: block;
     color: $background-color;
@@ -114,6 +114,90 @@
 	margin:0 auto;
 	max-width: 730px;
 	padding: 0 1.5rem;
+}
+
+#sidebar {
+  padding-left: 50px;
+  width: 400px;
+  display: block;
+  float: left;
+  @media (max-width: 940px) {
+    margin: 0 auto;
+    width:100%;
+    float: none;
+    padding-bottom: 60px;
+  }
+  padding-right: 60px
+}
+
+.boxform {
+  display: block;
+  margin-top: 0.2em;
+}
+
+.formyes{
+    margin-right: 4px;
+    float: left;
+    clear: none;
+    display: block;
+    width: 70%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.bordertpbt {
+
+}
+
+.borderbt {
+  border-bottom: 0.02em solid #FCFCFC;
+  width : 30%;
+}
+
+.hrfull {
+  height:10px;
+}
+
+.resultsearch {
+  padding-bottom: 5px;
+}
+
+.btnyes {
+    color: #fff;
+    background-color: #00C6C0;
+    border-color: #46b8da;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 #header {
