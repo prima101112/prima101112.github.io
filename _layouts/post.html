@@ -5,7 +5,8 @@ layout: default
 	<h2>{{ page.title }}</h2>
 	<time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}  | {% for ttag in page.tags %}
 		<span class="label">
-			<a href="{% if site.baseurl == '/' %}/tag/{{ ttag }}{% else %}{{ site.baseurl }}/tag/{{ ttag }}{% endif %}">{{ttag}} </a>
+			<!-- <a href="{% if site.baseurl == '/' %}/tag/{{ ttag }}{% else %}{{ site.baseurl }}/tag/{{ ttag }}{% endif %}">{{ttag}} </a> -->
+			<a href="#">{{ttag}} </a>
 		</span>
 	{% endfor %}</time>
 
