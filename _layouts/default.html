@@ -84,6 +84,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
     $("#search").click(function(e){
+            $("#results").empty();
+            $("#results").append("<div class='hrfull'></div>");
+            $("#results").append("<div class='resultsearch'><a>tunggu sik ..</a></div>");
             $.ajax({
               url: 'https://primaadi.east-us.azr.facetflow.io/my_index/_search?q='+$('#searchterm').val(),
               //dataType: 'json',
