@@ -10,7 +10,7 @@ dan ternyata beliau pake [terminator](http://www.unixmen.com/terminator-shell-ch
 sudo apt-get install terminator
 ```
 
-enak banget kok bisa di klik kanan lalu bisa split dan masih banyak menu lainya yang bisa di gunakan. daripada buka terminal *pirang-pirang* mendingan buka satu tetapi bisa jalanin comand bedabeda di *working directory* yang berbeda beda.
+enak banget kok, bisa di klik kanan lalu bisa split, dan masih banyak menu lainya yang bisa di gunakan. daripada buka terminal *pirang-pirang* mendingan buka satu tetapi bisa jalanin *comand* bedabeda di *working directory* yang berbeda pula.
 
 ![Image of terminator](/img/terminator_01.png)
 

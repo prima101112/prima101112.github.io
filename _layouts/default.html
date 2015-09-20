@@ -26,8 +26,10 @@
     <div id="sidebar">
       <h4>Search!</h4>
       <div class="boxform">
+        <form id="searchForm">
           <input class="formyes" id="searchterm" />
           <button type="submit" class="btn btnyes" id="search">search</button>
+        </form>
       </div>
       <div class="boxform">
         <div id="results"></div>
@@ -83,28 +85,31 @@
 	</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script>
-    $("#search").click(function(e){
-            $("#results").empty();
-            $("#results").append("<div class='hrfull'></div>");
-            $("#results").append("<div class='resultsearch'><a>tunggu sik ..</a></div>");
-            $.ajax({
-              url: 'https://primaadi.east-us.azr.facetflow.io/my_index/_search?q='+$('#searchterm').val(),
-              //dataType: 'json',
-              type: 'GET',
-              //contentType: 'application/json'
-              crossDomain: true,
-              //data: JSON.stringify(data),
-             success: function(data) {
-                //alert(""+JSON.parse(data.hits.total));
-                $("#results").empty();
-                //$("#results").append("<div class='resultsearch'>"+$("#searchterm").val()+"</div><hr class='borderbt'>");
-                $("#results").append("<div class='hrfull'></div>");
-                $.each(data.hits.hits, function(i,item){
-                  $("#results").append("<div class='resultsearch'><a href='"+ item._source.link +"'>" + item._source.judul + "</a></div><hr class='borderbt'>");
-                });
-              }
-            });
+
+  $("#searchForm").submit(function(e){
+      e.preventDefault();
+      $("#results").empty();
+      $("#results").append("<div class='hrfull'></div>");
+      $("#results").append("<div class='resultsearch'><a>tunggu sik ..</a></div>");
+      $.ajax({
+        url: 'https://primaadi.east-us.azr.facetflow.io/my_index/_search?q='+$('#searchterm').val(),
+        //dataType: 'json',
+        type: 'GET',
+        //contentType: 'application/json'
+        crossDomain: true,
+        //data: JSON.stringify(data),
+       success: function(data) {
+          //alert(""+JSON.parse(data.hits.total));
+          $("#results").empty();
+          //$("#results").append("<div class='resultsearch'>"+$("#searchterm").val()+"</div><hr class='borderbt'>");
+          $("#results").append("<div class='hrfull'></div>");
+          $.each(data.hits.hits, function(i,item){
+            $("#results").append("<div class='resultsearch'><a href='"+ item._source.link +"'>" + item._source.judul + "</a></div><hr class='borderbt'>");
           });
+        }
+      });
+    });
+
   </script>
   <!-- <script src="{{ site.baseurl }}js/main.js"></script> -->
   <script src="{{ site.baseurl }}js/highlight.js"></script>
