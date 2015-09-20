@@ -34,7 +34,7 @@ Nha terus verifikasi dulu *installer signature* nya.
 gpg --verify rvm-installer.asc &&
 ```
 dan jika berhasil kayak gini tekan *ctrl + c*
-![Image of Yaktocat](/img/01.png)
+![Image of primaadi](/img/01.png)
 
 lalu jalanin command ini untuk install *RVM* *stable release*
 
