@@ -91,14 +91,16 @@
       $("#results").empty();
       $("#results").append("<div class='hrfull'></div>");
       $("#results").append("<div class='resultsearch'><a>tunggu sik ..</a></div>");
+
+      // ?q='+$('#searchterm').val()
       $.ajax({
         url: 'https://primaadi.east-us.azr.facetflow.io/my_index/_search?q='+$('#searchterm').val(),
-        //dataType: 'json',
+        // dataType: 'json',
         type: 'GET',
-        //contentType: 'application/json'
+        // contentType: 'application/json',
         crossDomain: true,
-        //data: JSON.stringify(data),
-       success: function(data) {
+        // data: q,
+        success: function(data) {
           //alert(""+JSON.parse(data.hits.total));
           $("#results").empty();
           //$("#results").append("<div class='resultsearch'>"+$("#searchterm").val()+"</div><hr class='borderbt'>");
