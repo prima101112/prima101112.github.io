@@ -1,0 +1,29 @@
+baseURL: 'https://prima101112.github.io/'
+languageCode: 'en-us'
+title: 'primaadi.net'
+theme: 'PaperMod'
+publishDir: 'docs'
+params:
+  comments: true
+  homeInfoParams:
+      Title: Kulonuwun (Hi)
+      Content: Not Much, Software Technology, Universe
+  socialIcons: # optional
+      - name: "github"
+        url: "https://github.com/prima101112"
+      - name: "strava"
+        url: "https://www.strava.com/athletes/87122737"
+taxonomies:
+  categories: 'categories'
+  tags: 'tags'
+menu:
+    main:
+        - identifier: categories
+          name: categories
+          url: /categories/
+          weight: 10
+        - identifier: tags
+          name: tags
+          url: /tags/
+          weight: 20
+
