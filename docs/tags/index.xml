@@ -5,6 +5,34 @@
     <link>https://prima101112.github.io/tags/</link>
     <description>Recent content in Tags on primaadi.net</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://prima101112.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Nov 2022 16:38:00 +0700</lastBuildDate><atom:link href="https://prima101112.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>initial</title>
+      <link>https://prima101112.github.io/tags/initial/</link>
+      <pubDate>Fri, 25 Nov 2022 16:38:00 +0700</pubDate>
+      
+      <guid>https://prima101112.github.io/tags/initial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>technology</title>
+      <link>https://prima101112.github.io/tags/technology/</link>
+      <pubDate>Fri, 25 Nov 2022 16:38:00 +0700</pubDate>
+      
+      <guid>https://prima101112.github.io/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://prima101112.github.io/tags/hugo/</link>
+      <pubDate>Thu, 24 Nov 2022 17:30:15 +0700</pubDate>
+      
+      <guid>https://prima101112.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

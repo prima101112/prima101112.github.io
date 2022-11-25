@@ -2,17 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://prima101112.github.io/posts/my-first-post/</loc>
-    <lastmod>2022-11-24T17:30:15+07:00</lastmod>
-  </url><url>
-    <loc>https://prima101112.github.io/posts/</loc>
-    <lastmod>2022-11-24T17:30:15+07:00</lastmod>
-  </url><url>
-    <loc>https://prima101112.github.io/</loc>
-    <lastmod>2022-11-24T17:30:15+07:00</lastmod>
+    <loc>https://prima101112.github.io/categories/blog/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
   </url><url>
     <loc>https://prima101112.github.io/categories/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/tags/initial/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/posts/layoff-phenomenon-2022/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/posts/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
   </url><url>
     <loc>https://prima101112.github.io/tags/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/tags/technology/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/categories/technology/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/tags/hugo/</loc>
+    <lastmod>2022-11-24T17:30:15+07:00</lastmod>
+  </url><url>
+    <loc>https://prima101112.github.io/posts/hugo-is-calm-blog-engine/</loc>
+    <lastmod>2022-11-24T17:30:15+07:00</lastmod>
   </url>
 </urlset>
