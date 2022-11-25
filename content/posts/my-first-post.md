@@ -1,0 +1,12 @@
+---
+title: "My First Post"
+date: 2022-11-24T17:30:15+07:00
+draft: true
+---
+
+## Introduction
+
+This is **bold** text, and this is *emphasized* text.
+
+Visit the [Hugo](https://gohugo.io) website!
+
