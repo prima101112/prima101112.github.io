@@ -3,3 +3,5 @@ languageCode = 'en-us'
 title = 'primaadi.net'
 theme = 'PaperMod'
 publishDir = 'docs'
+[params]
+  comments = true
