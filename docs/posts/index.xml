@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on primaadi.net</title>
+    <title>Posts on teraskula.com</title>
     <link>https://prima101112.github.io/posts/</link>
-    <description>Recent content in Posts on primaadi.net</description>
+    <description>Recent content in Posts on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Nov 2022 16:38:00 +0700</lastBuildDate><atom:link href="https://prima101112.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -26,6 +26,19 @@ income - expenses so why the company as big as GoTo or RuangGuru is layoff their
       <guid>https://prima101112.github.io/posts/hugo-is-calm-blog-engine/</guid>
       <description>Hugo x Github Pages This is my 4th time to redeploy my blog as a note for myself. deciding using hugo x ghpages because it will be just a note could be a tech note or just random thought. why hugo is calm?, because its quite simple, its static, it is fun adn quite fast (to generate).
 Hugo what is hugo? Hugo is blog engine that use markdown as their main source of content.</description>
+    </item>
+    
+    <item>
+      <title>About Teraskula</title>
+      <link>https://prima101112.github.io/posts/about-teraskula/</link>
+      <pubDate>Wed, 23 Nov 2022 21:15:30 +0700</pubDate>
+      
+      <guid>https://prima101112.github.io/posts/about-teraskula/</guid>
+      <description>About i am prima
+wong biasa, kawulane gusti Allah, anake bapak ibuk, bapake anak anak, bojone bojoku.
+Teraskula.com is a new site that hopefully become my tool to release what is in my head. All this time i just blogging so someone could read my writings. this time is different. create this blog to just write what is in my mind.
+so.
+teras | teras, beranda, serambi, petak, anglong, tingkat in English is terrace.</description>
     </item>
     
   </channel>

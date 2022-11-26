@@ -1,6 +1,6 @@
 baseURL: 'https://prima101112.github.io/'
 languageCode: 'en-us'
-title: 'primaadi.net'
+title: 'teraskula.com'
 theme: 'PaperMod'
 publishDir: 'docs'
 params:
@@ -18,6 +18,9 @@ taxonomies:
   tags: 'tags'
 menu:
     main:
+        - name: About
+          url: /posts/about-teraskula/
+          weight: 10
         - identifier: categories
           name: categories
           url: /categories/
