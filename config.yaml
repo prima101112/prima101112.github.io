@@ -12,7 +12,7 @@ params:
       - name: "github"
         url: "https://github.com/prima101112"
       - name: "strava"
-        url: "https://www.strava.com/athletes/87122737"
+        url: "https://strava.com/athletes/87122737"
 taxonomies:
   categories: 'categories'
   tags: 'tags'

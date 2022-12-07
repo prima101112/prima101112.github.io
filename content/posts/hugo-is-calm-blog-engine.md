@@ -4,6 +4,7 @@ date: 2022-11-24T17:30:15+07:00
 draft: false
 categories: ['technology', 'blog']
 tags: ['technology', 'hugo', 'initial']
+languageCode: 'en-us'
 ---
 
 ## Hugo x Github Pages

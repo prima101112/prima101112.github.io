@@ -4,6 +4,7 @@ date: 2022-11-25T16:38:00+07:00
 draft: false
 categories: ['technology', 'blog']
 tags: ['technology', 'initial']
+languageCode: 'en-us'
 ---
 
 ## Layoff 2022
