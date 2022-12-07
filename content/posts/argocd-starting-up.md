@@ -3,7 +3,7 @@ title: "Argocd Starting Up"
 date: 2022-11-30T08:48:47+07:00
 draft: false
 categories: ['technology', 'blog']
-tags: ['technology', 'hugo', 'initial']
+tags: ['technology', 'argocd','ci/cd']
 languageCode: 'en-us'
 ---
 
