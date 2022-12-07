@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://teraskula.com/tags/argocd/</loc>
+    <lastmod>2022-11-30T08:48:47+07:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/posts/argocd-starting-up/</loc>
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
@@ -9,12 +12,6 @@
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/</loc>
-    <lastmod>2022-11-30T08:48:47+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/hugo/</loc>
-    <lastmod>2022-11-30T08:48:47+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/initial/</loc>
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/</loc>
@@ -32,13 +29,21 @@
     <loc>https://teraskula.com/</loc>
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
+    <loc>https://teraskula.com/tags/initial/</loc>
+    <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/posts/layoff-phenomenon-2022/</loc>
     <lastmod>2022-11-25T16:38:00+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/hugo/</loc>
+    <lastmod>2022-11-24T17:30:15+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/hugo-is-calm-blog-engine/</loc>
     <lastmod>2022-11-24T17:30:15+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/about-teraskula/</loc>
     <lastmod>2022-11-23T21:15:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/ci/cd/</loc>
   </url>
 </urlset>

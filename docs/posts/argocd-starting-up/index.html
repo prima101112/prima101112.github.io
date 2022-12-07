@@ -7,7 +7,7 @@
 <meta name="robots" content="index, follow">
 <title>Argocd Starting Up | teraskula.com</title>
 
-<meta name="keywords" content="technology, hugo, initial" />
+<meta name="keywords" content="technology, argocd, ci/cd" />
 <meta name="description" content="Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.
 Installation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
 Lets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.">
@@ -70,7 +70,7 @@ Lets Go I will not explain how to install or how to configure argocd but i will 
   "name": "Argocd Starting Up",
   "description": "Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.\nInstallation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]\nLets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.",
   "keywords": [
-    "technology", "hugo", "initial"
+    "technology", "argocd", "ci/cd"
   ],
   "articleBody": "Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.\nInstallation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]\nLets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.\nmay be will be included what match and not match with our usecase and the workaround.\nArgo CD is a GitOps Continuous Delivery Tools so your kubernetes yaml manifest will be on a repository and argocd periodicaly read and sync. This git ops thing is awesome every push on our specific branch it will auto update manifest.\nFirst Problem is Semi Gitops we implement argocd in the midle of rapid development. we cannot do full GitOps mechanism, Developers want a deployment flow that match their flow before. the dont want to commit the version of the image after build to do deployment. so when pipeline running they want to see imidiate changes in their respected environment.\nthats when Overides Parameters come handy\nforce parameters makes you able to changes the image tag (or any parameters) without changing the repository and do sync.\nPros : its allow imidiate changes by tooling. without changes the repository\nargocd app set guestbook -p image.tag=abcd123 it will force argocd to change the image.tag to abcd123\nCons : the source of the truth is blury. because its save on the argocd not in the repository so we cannot say whats in the repo is whats in the servers but as long as devs know what they are doing i think its fine to overides the parameters.\nSecond Problem Standardization and Tooling Standardization. i think this is problem in every company. we need to standardized how we store our manifest. we use multi repo and helm chart in every service is stored in service repositories.\nThe workaround is we create a tools that makes devs easy to create the base helm chart and create argocd application manifest. this tools also allow devs to build deploy and test in 1 straight command line.\nthetool syncimage ... will sync the image in respected deployment.\nthis tools is help alot to standarize the command inside every pipeline\nThanks.\n",
   "wordCount" : "388",
@@ -250,8 +250,8 @@ this tools also allow devs to build deploy and test in 1 straight command line.<
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://teraskula.com/tags/technology/">technology</a></li>
-      <li><a href="https://teraskula.com/tags/hugo/">hugo</a></li>
-      <li><a href="https://teraskula.com/tags/initial/">initial</a></li>
+      <li><a href="https://teraskula.com/tags/argocd/">argocd</a></li>
+      <li><a href="https://teraskula.com/tags/ci/cd/">ci/cd</a></li>
     </ul>
   </footer>
 

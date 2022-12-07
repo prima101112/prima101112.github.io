@@ -8,20 +8,11 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 30 Nov 2022 08:48:47 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>hugo</title>
-      <link>https://teraskula.com/tags/hugo/</link>
+      <title>argocd</title>
+      <link>https://teraskula.com/tags/argocd/</link>
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>initial</title>
-      <link>https://teraskula.com/tags/initial/</link>
-      <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
-      
-      <guid>https://teraskula.com/tags/initial/</guid>
+      <guid>https://teraskula.com/tags/argocd/</guid>
       <description></description>
     </item>
     
@@ -31,6 +22,33 @@
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
       <guid>https://teraskula.com/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>initial</title>
+      <link>https://teraskula.com/tags/initial/</link>
+      <pubDate>Fri, 25 Nov 2022 16:38:00 +0700</pubDate>
+      
+      <guid>https://teraskula.com/tags/initial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://teraskula.com/tags/hugo/</link>
+      <pubDate>Thu, 24 Nov 2022 17:30:15 +0700</pubDate>
+      
+      <guid>https://teraskula.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ci/cd</title>
+      <link>https://teraskula.com/tags/ci/cd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/tags/ci/cd/</guid>
       <description></description>
     </item>
     
