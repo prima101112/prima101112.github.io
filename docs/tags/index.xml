@@ -6,22 +6,49 @@
     <description>Recent content in Tags on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Nov 2022 08:48:47 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Dec 2022 15:56:14 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>argocd</title>
-      <link>https://teraskula.com/tags/argocd/</link>
-      <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
+      <title>ai</title>
+      <link>https://teraskula.com/tags/ai/</link>
+      <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/argocd/</guid>
+      <guid>https://teraskula.com/tags/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chatbot</title>
+      <link>https://teraskula.com/tags/chatbot/</link>
+      <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
+      
+      <guid>https://teraskula.com/tags/chatbot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>chatgpt</title>
+      <link>https://teraskula.com/tags/chatgpt/</link>
+      <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
+      
+      <guid>https://teraskula.com/tags/chatgpt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>technology</title>
       <link>https://teraskula.com/tags/technology/</link>
-      <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
+      <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
       <guid>https://teraskula.com/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>argocd</title>
+      <link>https://teraskula.com/tags/argocd/</link>
+      <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
+      
+      <guid>https://teraskula.com/tags/argocd/</guid>
       <description></description>
     </item>
     

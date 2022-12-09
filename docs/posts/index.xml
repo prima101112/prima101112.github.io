@@ -6,7 +6,19 @@
     <description>Recent content in Posts on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Nov 2022 08:48:47 +0700</lastBuildDate><atom:link href="https://teraskula.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Dec 2022 15:56:14 +0700</lastBuildDate><atom:link href="https://teraskula.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT Open Ai, Is It Scary?</title>
+      <link>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</link>
+      <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</guid>
+      <description>ChatGPT is it scary? it could be the end of yaml (kubernetes) engineers.
+there is phenomenon. in this time i write this post, i just try the viral AI in a programming world. openAI just released a product, or reasearch, or a robot called chatGPT
+they said
+We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.</description>
+    </item>
+    
     <item>
       <title>Argocd Starting Up</title>
       <link>https://teraskula.com/posts/argocd-starting-up/</link>
