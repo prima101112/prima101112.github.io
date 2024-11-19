@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Commit2 on teraskula.com</title>
+    <link>https://teraskula.com/tags/commit2/</link>
+    <description>Recent content in Commit2 on teraskula.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Nov 2024 00:57:25 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/commit2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running Qwen in M2 Mac Air Machine using Ollama</title>
+      <link>https://teraskula.com/posts/running-qwen-in-m2-mac-air-machine/</link>
+      <pubDate>Wed, 20 Nov 2024 00:57:25 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/running-qwen-in-m2-mac-air-machine/</guid>
+      <description>Running qwen-2.5-coder:7B on macbook Air M2 using ollama This is part of stay hungry stay folish mindset, and my interest in AI. Search possible solution to get cheapest code assistant as possible. i was subscribe to copilot but now after found continou.dev + anthropic API, thats the current choice.
+Its small decrease in cost. copilot is $10 per month but now i am not that code heavy so subs to token based payment (anthropic claude 3.</description>
+    </item>
+    
+  </channel>
+</rss>
