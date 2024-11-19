@@ -62,6 +62,9 @@
     <loc>https://teraskula.com/posts/argocd-starting-up/</loc>
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
+    <loc>https://teraskula.com/tags/ci/cd/</loc>
+    <lastmod>2022-11-30T08:48:47+07:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/tags/initial/</loc>
     <lastmod>2022-11-25T16:38:00+07:00</lastmod>
   </url><url>
@@ -76,7 +79,5 @@
   </url><url>
     <loc>https://teraskula.com/posts/about-teraskula/</loc>
     <lastmod>2022-11-23T21:15:30+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/ci/cd/</loc>
   </url>
 </urlset>

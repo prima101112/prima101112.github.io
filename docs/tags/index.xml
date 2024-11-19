@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 13 Dec 2022 12:04:51 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>docker</title>
+      <title>Docker</title>
       <link>https://teraskula.com/tags/docker/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
@@ -17,7 +17,7 @@
     </item>
     
     <item>
-      <title>kubernetes</title>
+      <title>Kubernetes</title>
       <link>https://teraskula.com/tags/kubernetes/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>technology</title>
+      <title>Technology</title>
       <link>https://teraskula.com/tags/technology/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
@@ -35,7 +35,7 @@
     </item>
     
     <item>
-      <title>workaround</title>
+      <title>Workaround</title>
       <link>https://teraskula.com/tags/workaround/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
@@ -44,7 +44,7 @@
     </item>
     
     <item>
-      <title>ai</title>
+      <title>Ai</title>
       <link>https://teraskula.com/tags/ai/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
@@ -53,7 +53,7 @@
     </item>
     
     <item>
-      <title>chatbot</title>
+      <title>Chatbot</title>
       <link>https://teraskula.com/tags/chatbot/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
@@ -62,7 +62,7 @@
     </item>
     
     <item>
-      <title>chatgpt</title>
+      <title>Chatgpt</title>
       <link>https://teraskula.com/tags/chatgpt/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
@@ -71,7 +71,7 @@
     </item>
     
     <item>
-      <title>argocd</title>
+      <title>Argocd</title>
       <link>https://teraskula.com/tags/argocd/</link>
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
@@ -80,7 +80,16 @@
     </item>
     
     <item>
-      <title>initial</title>
+      <title>Ci/Cd</title>
+      <link>https://teraskula.com/tags/ci/cd/</link>
+      <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
+      
+      <guid>https://teraskula.com/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Initial</title>
       <link>https://teraskula.com/tags/initial/</link>
       <pubDate>Fri, 25 Nov 2022 16:38:00 +0700</pubDate>
       
@@ -89,20 +98,11 @@
     </item>
     
     <item>
-      <title>hugo</title>
+      <title>Hugo</title>
       <link>https://teraskula.com/tags/hugo/</link>
       <pubDate>Thu, 24 Nov 2022 17:30:15 +0700</pubDate>
       
       <guid>https://teraskula.com/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ci/cd</title>
-      <link>https://teraskula.com/tags/ci/cd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://teraskula.com/tags/ci/cd/</guid>
       <description></description>
     </item>
     
