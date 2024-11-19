@@ -2,88 +2,88 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>https://teraskula.com/tags/ai/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/ai/</loc>
+    <loc>https://teraskula.com/categories/ai/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/blog/</loc>
+    <loc>https://teraskula.com/categories/blog/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://teraskula.com/categories/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/commit2/</loc>
+    <loc>https://teraskula.com/tags/commit2/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://teraskula.com/posts/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/running-qwen-in-m2-mac-air-machine/</loc>
+    <loc>https://teraskula.com/posts/running-qwen-in-m2-mac-air-machine/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://teraskula.com/tags/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/technology/</loc>
+    <loc>https://teraskula.com/tags/technology/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/technology/</loc>
+    <loc>https://teraskula.com/categories/technology/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://teraskula.com/</loc>
     <lastmod>2024-11-20T00:57:25+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://teraskula.com/tags/docker/</loc>
     <lastmod>2022-12-13T12:04:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/docker/</loc>
+    <loc>https://teraskula.com/categories/docker/</loc>
     <lastmod>2022-12-13T12:04:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/getting-pull-rate-limit/</loc>
+    <loc>https://teraskula.com/posts/getting-pull-rate-limit/</loc>
     <lastmod>2022-12-13T12:04:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/kubernetes/</loc>
+    <loc>https://teraskula.com/tags/kubernetes/</loc>
     <lastmod>2022-12-13T12:04:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/kubernetes/</loc>
+    <loc>https://teraskula.com/categories/kubernetes/</loc>
     <lastmod>2022-12-13T12:04:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/workaround/</loc>
+    <loc>https://teraskula.com/tags/workaround/</loc>
     <lastmod>2022-12-13T12:04:51+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chatbot/</loc>
+    <loc>https://teraskula.com/tags/chatbot/</loc>
     <lastmod>2022-12-09T15:56:14+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/chatgpt/</loc>
+    <loc>https://teraskula.com/tags/chatgpt/</loc>
     <lastmod>2022-12-09T15:56:14+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/chatgpt-open-ai-is-it-scary/</loc>
+    <loc>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</loc>
     <lastmod>2022-12-09T15:56:14+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/argocd/</loc>
+    <loc>https://teraskula.com/tags/argocd/</loc>
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/argocd-starting-up/</loc>
+    <loc>https://teraskula.com/posts/argocd-starting-up/</loc>
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ci/cd/</loc>
+    <loc>https://teraskula.com/tags/ci/cd/</loc>
     <lastmod>2022-11-30T08:48:47+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/initial/</loc>
+    <loc>https://teraskula.com/tags/initial/</loc>
     <lastmod>2022-11-25T16:38:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/layoff-phenomenon-2022/</loc>
+    <loc>https://teraskula.com/posts/layoff-phenomenon-2022/</loc>
     <lastmod>2022-11-25T16:38:00+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/hugo/</loc>
+    <loc>https://teraskula.com/tags/hugo/</loc>
     <lastmod>2022-11-24T17:30:15+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/hugo-is-calm-blog-engine/</loc>
+    <loc>https://teraskula.com/posts/hugo-is-calm-blog-engine/</loc>
     <lastmod>2022-11-24T17:30:15+07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/about-teraskula/</loc>
+    <loc>https://teraskula.com/posts/about-teraskula/</loc>
     <lastmod>2022-11-23T21:15:30+07:00</lastmod>
   </url>
 </urlset>
