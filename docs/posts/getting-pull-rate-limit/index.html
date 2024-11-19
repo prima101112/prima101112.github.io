@@ -1,95 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name=" robots" content="noindex, nofollow">
 <title>Getting Pull Rate Limit and Workaround | teraskula.com</title>
 
 <meta name="keywords" content="technology, docker, kubernetes, workaround" />
 <meta name="description" content="When docker hub want you to authenticate there is a stable system using public images from docker hub. and suddently pull rate limit error is showing up.
 This is How we implement the Workaround Our system is running in AWS EKS and using all internal image registry (ECR) for application images. Most of application is using docker images and run&rsquo;s on kubernetes. but some POC and small services is using public images from docker hub.">
 <meta name="author" content="">
-<link rel="canonical" href="https://teraskula.com/posts/getting-pull-rate-limit/" />
+<link rel="canonical" href="http://localhost:1313/posts/getting-pull-rate-limit/" />
 <link href="/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css" integrity="sha256-dGqGtYuysFK15N&#43;CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet"
     as="style">
 
-<link rel="icon" href="https://teraskula.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://teraskula.com/apple-touch-icon.png">
-<link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <meta name="generator" content="Hugo 0.126.1">
-<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/getting-pull-rate-limit/" />
-
-
-<meta property="og:title" content="Getting Pull Rate Limit and Workaround" />
-<meta property="og:description" content="When docker hub want you to authenticate there is a stable system using public images from docker hub. and suddently pull rate limit error is showing up.
-This is How we implement the Workaround Our system is running in AWS EKS and using all internal image registry (ECR) for application images. Most of application is using docker images and run&rsquo;s on kubernetes. but some POC and small services is using public images from docker hub." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://teraskula.com/posts/getting-pull-rate-limit/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-12-13T12:04:51&#43;07:00" />
-<meta property="article:modified_time" content="2022-12-13T12:04:51&#43;07:00" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Getting Pull Rate Limit and Workaround"/>
-<meta name="twitter:description" content="When docker hub want you to authenticate there is a stable system using public images from docker hub. and suddently pull rate limit error is showing up.
-This is How we implement the Workaround Our system is running in AWS EKS and using all internal image registry (ECR) for application images. Most of application is using docker images and run&rsquo;s on kubernetes. but some POC and small services is using public images from docker hub."/>
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://teraskula.com/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "Getting Pull Rate Limit and Workaround",
-      "item": "https://teraskula.com/posts/getting-pull-rate-limit/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Getting Pull Rate Limit and Workaround",
-  "name": "Getting Pull Rate Limit and Workaround",
-  "description": "When docker hub want you to authenticate there is a stable system using public images from docker hub. and suddently pull rate limit error is showing up.\nThis is How we implement the Workaround Our system is running in AWS EKS and using all internal image registry (ECR) for application images. Most of application is using docker images and run\u0026rsquo;s on kubernetes. but some POC and small services is using public images from docker hub.",
-  "keywords": [
-    "technology", "docker", "kubernetes", "workaround"
-  ],
-  "articleBody": "When docker hub want you to authenticate there is a stable system using public images from docker hub. and suddently pull rate limit error is showing up.\nThis is How we implement the Workaround Our system is running in AWS EKS and using all internal image registry (ECR) for application images. Most of application is using docker images and run’s on kubernetes. but some POC and small services is using public images from docker hub. it needs you to authenticate or login to be able to increase the limit.\ni am not really aware how much is the limit\nBut with this problem there is conclusion that we need near no limit image registry so there is no problem such rate limit pull request.\nOprtion 1 : Internal common registry For most of companies this approach is pretty easy, you just need to create one more ecr that holds your common images.\nbut in our case is little different, we are multiple account aws architecture. if we want to make central image registry we need to create and copy it to multiple account. and besides our common images is actually all (could public) images.\nOption 2 : There is actually AWS public Images. So if you are ok with it. (no common image that use a secret or specific product usecase). you could actually push your common docker image to aws public repository\nCreating Public Repository Push Image to Public repository Search on Gallery Of public Repo AWS with this approach we could actually reach our goal to share common image accros orgs with more limit\nComparison AWS ECR Public Image and Docker Hub Image (anonymous) for AWS ECR Public Repository Docs Limit Here we have 10 pulls per second\nand for docker un-Authinticated pull, you only have 100 per 6 hours\nin our usecase we need the Option 2 approach by the way.\n",
-  "wordCount" : "314",
-  "inLanguage": "en",
-  "datePublished": "2022-12-13T12:04:51+07:00",
-  "dateModified": "2022-12-13T12:04:51+07:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://teraskula.com/posts/getting-pull-rate-limit/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "teraskula.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://teraskula.com/favicon.ico"
-    }
-  }
-}
-</script>
-
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/getting-pull-rate-limit/" />
 
 
 
@@ -146,7 +80,7 @@ This is How we implement the Workaround Our system is running in AWS EKS and usi
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
+            <a href="http://localhost:1313/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
             <span class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -177,17 +111,17 @@ This is How we implement the Workaround Our system is running in AWS EKS and usi
         </div>
         <ul id="menu" onscroll="menu_on_scroll()">
             <li>
-                <a href="https://teraskula.com/posts/about-teraskula/" title="About">
+                <a href="http://localhost:1313/posts/about-teraskula/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://teraskula.com/categories/" title="categories">
+                <a href="http://localhost:1313/categories/" title="categories">
                     <span>categories</span>
                 </a>
             </li>
             <li>
-                <a href="https://teraskula.com/tags/" title="tags">
+                <a href="http://localhost:1313/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li></ul>
@@ -243,10 +177,10 @@ but some POC and small services is using public images from docker hub. it needs
 </div>
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
-      <li><a href="https://teraskula.com/tags/docker/">Docker</a></li>
-      <li><a href="https://teraskula.com/tags/kubernetes/">Kubernetes</a></li>
-      <li><a href="https://teraskula.com/tags/workaround/">Workaround</a></li>
+      <li><a href="http://localhost:1313/tags/technology/">Technology</a></li>
+      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="http://localhost:1313/tags/kubernetes/">Kubernetes</a></li>
+      <li><a href="http://localhost:1313/tags/workaround/">Workaround</a></li>
     </ul>
   </footer>
 
@@ -256,7 +190,7 @@ but some POC and small services is using public images from docker hub. it needs
 
     
     var disqus_config = function () {
-    this.page.url = 'https:\/\/teraskula.com\/posts\/getting-pull-rate-limit\/';  
+    this.page.url = 'http:\/\/localhost:1313\/posts\/getting-pull-rate-limit\/';  
     this.page.identifier = 'R2V0dGluZyBQdWxsIFJhdGUgTGltaXQgYW5kIFdvcmthcm91bmQ='; 
     };
     
@@ -271,7 +205,7 @@ but some POC and small services is using public images from docker hub. it needs
 
 </article>
     </main><footer class="footer">
-    <span>&copy; 2024 <a href="https://teraskula.com/">teraskula.com</a></span>
+    <span>&copy; 2024 <a href="http://localhost:1313/">teraskula.com</a></span>
     <span>&middot;</span>
     <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
     <span>&middot;</span>

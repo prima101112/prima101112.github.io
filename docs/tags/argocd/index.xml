@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Argocd on teraskula.com</title>
-    <link>https://teraskula.com/tags/argocd/</link>
+    <link>http://localhost:1313/tags/argocd/</link>
     <description>Recent content in Argocd on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Nov 2022 08:48:47 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/argocd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Nov 2022 08:48:47 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/argocd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Argocd Starting Up</title>
-      <link>https://teraskula.com/posts/argocd-starting-up/</link>
+      <link>http://localhost:1313/posts/argocd-starting-up/</link>
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/argocd-starting-up/</guid>
+      <guid>http://localhost:1313/posts/argocd-starting-up/</guid>
       <description>Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.
 Installation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
 Lets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.</description>

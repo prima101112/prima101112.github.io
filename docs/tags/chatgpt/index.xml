@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chatgpt on teraskula.com</title>
-    <link>https://teraskula.com/tags/chatgpt/</link>
+    <link>http://localhost:1313/tags/chatgpt/</link>
     <description>Recent content in Chatgpt on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Dec 2022 15:56:14 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Dec 2022 15:56:14 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/chatgpt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ChatGPT Open Ai, Is It Scary?</title>
-      <link>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</link>
+      <link>http://localhost:1313/posts/chatgpt-open-ai-is-it-scary/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</guid>
+      <guid>http://localhost:1313/posts/chatgpt-open-ai-is-it-scary/</guid>
       <description>ChatGPT is it scary? it could be the end of yaml (kubernetes) engineers.
 there is phenomenon. in this time i write this post, i just try the viral AI in a programming world. openAI just released a product, or reasearch, or a robot called chatGPT
 they said
