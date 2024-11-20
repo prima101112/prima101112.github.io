@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nextjs on teraskula.com</title>
+    <link>https://teraskula.com/tags/nextjs/</link>
+    <description>Recent content in Nextjs on teraskula.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Nov 2024 00:31:49 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/nextjs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ollama Chat From Browser Using Nextjs</title>
+      <link>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</link>
+      <pubDate>Thu, 21 Nov 2024 00:31:49 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</guid>
+      <description>Ollama Chat From Browser Using Nextjs This writing will be so small. it should be a step by step on creating nextjs app that will communicate with local ollama. the model that i use is mistral its the fastest now running in my local.
+but instead starting from scrath, lets asking help to bolt.new to create interface that will communicate with our ollama server in local.
+there is a reason why i learn this.</description>
+    </item>
+    
+  </channel>
+</rss>

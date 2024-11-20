@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Ollama Chat From Browser Using Nextjs | teraskula.com</title>
+
+<meta name="keywords" content="technology, ai, nextjs" />
+<meta name="description" content="Ollama Chat From Browser Using Nextjs This writing will be so small. it should be a step by step on creating nextjs app that will communicate with local ollama. the model that i use is mistral its the fastest now running in my local.
+but instead starting from scrath, lets asking help to bolt.new to create interface that will communicate with our ollama server in local.
+there is a reason why i learn this.">
+<meta name="author" content="">
+<link rel="canonical" href="https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/" />
+<link href="/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css" integrity="sha256-dGqGtYuysFK15N&#43;CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet"
+    as="style">
+
+<link rel="icon" href="https://teraskula.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://teraskula.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.126.1">
+<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/" />
+
+
+<meta property="og:title" content="Ollama Chat From Browser Using Nextjs" />
+<meta property="og:description" content="Ollama Chat From Browser Using Nextjs This writing will be so small. it should be a step by step on creating nextjs app that will communicate with local ollama. the model that i use is mistral its the fastest now running in my local.
+but instead starting from scrath, lets asking help to bolt.new to create interface that will communicate with our ollama server in local.
+there is a reason why i learn this." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-11-21T00:31:49&#43;07:00" />
+<meta property="article:modified_time" content="2024-11-21T00:31:49&#43;07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Ollama Chat From Browser Using Nextjs"/>
+<meta name="twitter:description" content="Ollama Chat From Browser Using Nextjs This writing will be so small. it should be a step by step on creating nextjs app that will communicate with local ollama. the model that i use is mistral its the fastest now running in my local.
+but instead starting from scrath, lets asking help to bolt.new to create interface that will communicate with our ollama server in local.
+there is a reason why i learn this."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://teraskula.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Ollama Chat From Browser Using Nextjs",
+      "item": "https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ollama Chat From Browser Using Nextjs",
+  "name": "Ollama Chat From Browser Using Nextjs",
+  "description": "Ollama Chat From Browser Using Nextjs This writing will be so small. it should be a step by step on creating nextjs app that will communicate with local ollama. the model that i use is mistral its the fastest now running in my local.\nbut instead starting from scrath, lets asking help to bolt.new to create interface that will communicate with our ollama server in local.\nthere is a reason why i learn this.",
+  "keywords": [
+    "technology", "ai", "nextjs"
+  ],
+  "articleBody": "Ollama Chat From Browser Using Nextjs This writing will be so small. it should be a step by step on creating nextjs app that will communicate with local ollama. the model that i use is mistral its the fastest now running in my local.\nbut instead starting from scrath, lets asking help to bolt.new to create interface that will communicate with our ollama server in local.\nthere is a reason why i learn this. i want to do …. lets wait for another post 😄\nbolt.new this is bolt.new is actually worrying. i dont know this kind of software is good or not but its exist now. little bit worried but still its awesome.\nthis is my prompt that i use to create the interface\ncreate me a chat bot interface with dark theme using nextjs 14. the chat will be using ollama.js that communicate with ollama server in my local. why i ask for specific next js 14 because thats the one that i currently know so editing and adjusting the code will be fine.\nlet bolt.new cook the bootstrap. and see from there\ndownload from bolt.new run on local and its failed and error 404 when hitting ollama/api/chat in\nollama serve\ntime=2024-11-21T00:52:25.492+07:00 level=INFO source=common.go:49 msg=\"Dynamic LLM libraries\" runners=[metal] time=2024-11-21T00:52:25.587+07:00 level=INFO source=types.go:123 msg=\"inference compute\" id=0 library=metal variant=\"\" compute=\"\" driver=0.0 name=\"\" total=\"5.3 GiB\" available=\"5.3 GiB\" [GIN] 2024/11/21 - 00:52:32 | 404 | 5.942542ms | 127.0.0.1 | POST \"/api/chat\" but turns out i need to fix on the js since the model is not in my local\nexport default function Chat() { const [messages, setMessages] = useState\u003cMessage[]\u003e([]); const [input, setInput] = useState(\"\"); const [isLoading, setIsLoading] = useState(false); const handleSubmit = async (e: React.FormEvent) =\u003e { e.preventDefault(); if (!input.trim() || isLoading) return; const userMessage = { role: \"user\", content: input }; setMessages((prev) =\u003e [...prev, userMessage]); setInput(\"\"); setIsLoading(true); try { const response = await fetch(\"http://localhost:11434/api/chat\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\", }, body: JSON.stringify({ model: \"mistral\", //generated code from bolt.new was llama2 messages: [...messages, userMessage], }), }); and after debugging its still error. and like another normal person i am debug the issue and turnsout response from ollama not handled properly by bolt.new and need some adjustment. so ollama response per word is actually json. so we just neeed that on full text and show.\nof course this is helped by ai. but like normal engineer i should understand what the code do.\ntrim and split base on new line \\n map the lines and parse the line (the line already valid json) and trim also join all the trimmed line to content //example output from ollama const multilineResponse = ` {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.445645Z\",\"message\":{\"role\":\"assistant\",\"content\":\" No\"},\"done\":false} {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.476658Z\",\"message\":{\"role\":\"assistant\",\"content\":\",\"},\"done\":false} {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.533155Z\",\"message\":{\"role\":\"assistant\",\"content\":\" I\"},\"done\":false} {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.590882Z\",\"message\":{\"role\":\"assistant\",\"content\":\" am\"},\"done\":false} {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.647298Z\",\"message\":{\"role\":\"assistant\",\"content\":\" a\"},\"done\":false} {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.708117Z\",\"message\":{\"role\":\"assistant\",\"content\":\" model\"},\"done\":false} {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.766677Z\",\"message\":{\"role\":\"assistant\",\"content\":\" from\"},\"done\":false} {\"model\":\"mistral\",\"created_at\":\"2024-11-20T18:32:11.82184Z\",\"message\":{\"role\":\"assistant\",\"content\":\" Mist\"},\"done\":false} `; const lines = multilineResponse.trim().split(\"\\n\"); const content = lines .map(line =\u003e JSON.parse(line).message.content.trim()) // Parse each line and get the content .join(\"\"); // Combine all content into a single string const result = { role: \"assistant\", content: content }; console.log(JSON.stringify(result, null, 2)); and\nNo,I'mnotMistralAI.MistralAIisacutting-edgecompanybasedinParis,France,developinglargelanguagemodels.Iama\nhaha trimming all the way is trim all space in original line from ollama so i think we dont need to trim every content in per line so we should adjust json parsing from ollama to\nconst content = lines .map(line =\u003e JSON.parse(line).message.content) // Parse each line and get the content .join(\"\"); // Combine all content into a single string with this we should ok. lets see. i am writing this with debuging so its not just work and walaaa its working now. i could chat with mistral from browser.\nnext term that i want to explore is RAG.\nRealization bolt.new is really great helper, a lot of errors that still need to fix and adjust. bolt.new will perform better if we already know the context fully, like: what payload from ollama explain it in detail with example how i want to perform the output bolt.new sometimes generate unecessary files and component. mistral is the most ‘OK’ run in local. ollama is awesome tools. this /api/chat is awesome. transformer and do RAG will be next see ya\n",
+  "wordCount" : "674",
+  "inLanguage": "en",
+  "datePublished": "2024-11-21T00:31:49+07:00",
+  "dateModified": "2024-11-21T00:31:49+07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "teraskula.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teraskula.com/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+
+</noscript>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                
+                
+
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://teraskula.com/posts/about-teraskula/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/categories/" title="categories">
+                    <span>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li></ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+
+    <h1 class="post-title">
+      Ollama Chat From Browser Using Nextjs
+    </h1>
+    <div class="post-meta">November 21, 2024
+
+
+</div>
+  </header> 
+
+  <div class="post-content">
+<h3 id="ollama-chat-from-browser-using-nextjs">Ollama Chat From Browser Using Nextjs<a hidden class="anchor" aria-hidden="true" href="#ollama-chat-from-browser-using-nextjs">#</a></h3>
+<p>This writing will be so small.
+it should be a step by step on creating nextjs app that will communicate with local ollama.
+the model that i use is mistral its the fastest now running in my local.</p>
+<p>but instead starting from scrath, lets asking help to <a href="bolt.new">bolt.new</a>
+to create interface that will communicate with our ollama server in local.</p>
+<p>there is a reason why i learn this. i want to do &hellip;. lets wait for another post 😄</p>
+<h3 id="boltnew">bolt.new<a hidden class="anchor" aria-hidden="true" href="#boltnew">#</a></h3>
+<p>this is <a href="bolt.new">bolt.new</a> is actually worrying. i dont know this kind of software is good or not but its exist now.
+little bit worried but still its awesome.</p>
+<p>this is my prompt that i use to create the interface</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>create me a chat bot interface with dark theme using nextjs 14.
+</span></span><span style="display:flex;"><span>the chat will be using ollama.js that communicate with ollama server in my local.
+</span></span></code></pre></div><p>why i ask for specific next js 14 because thats the one that i currently know so editing and adjusting the code will be fine.</p>
+<p><img loading="lazy" src="/img/nextjs-ollama-1.png" alt="bolt.nw"  />
+</p>
+<p>let bolt.new cook the bootstrap. and see from there</p>
+<ul>
+<li>download from bolt.new</li>
+<li>run on local</li>
+</ul>
+<p>and its failed and error 404 when hitting ollama/api/chat in</p>
+<p><code>ollama serve</code></p>
+<pre tabindex="0"><code class="language-log" data-lang="log">time=2024-11-21T00:52:25.492+07:00 level=INFO source=common.go:49 msg=&#34;Dynamic LLM libraries&#34; runners=[metal]
+time=2024-11-21T00:52:25.587+07:00 level=INFO source=types.go:123 msg=&#34;inference compute&#34; id=0 library=metal variant=&#34;&#34; compute=&#34;&#34; driver=0.0 name=&#34;&#34; total=&#34;5.3 GiB&#34; available=&#34;5.3 GiB&#34;
+[GIN] 2024/11/21 - 00:52:32 | 404 |    5.942542ms |       127.0.0.1 | POST     &#34;/api/chat&#34;
+</code></pre><p>but turns out i need to fix on the js since the model is not in my local</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ts" data-lang="ts"><span style="display:flex;"><span><span style="color:#66d9ef">export</span> <span style="color:#66d9ef">default</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">Chat() {</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">messages</span>, <span style="color:#a6e22e">setMessages</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>&lt;<span style="color:#f92672">Message</span><span style="color:#960050;background-color:#1e0010">[]</span>&gt;([]);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">input</span>, <span style="color:#a6e22e">setInput</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> [<span style="color:#a6e22e">isLoading</span>, <span style="color:#a6e22e">setIsLoading</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">useState</span>(<span style="color:#66d9ef">false</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">handleSubmit</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">async</span> (<span style="color:#a6e22e">e</span>: <span style="color:#66d9ef">React.FormEvent</span>) <span style="color:#f92672">=&gt;</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">preventDefault</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">input</span>.<span style="color:#a6e22e">trim</span>() <span style="color:#f92672">||</span> <span style="color:#a6e22e">isLoading</span>) <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">userMessage</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">role</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#a6e22e">content</span>: <span style="color:#66d9ef">input</span> };
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setMessages</span>((<span style="color:#a6e22e">prev</span>) <span style="color:#f92672">=&gt;</span> [...<span style="color:#a6e22e">prev</span>, <span style="color:#a6e22e">userMessage</span>]);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setInput</span>(<span style="color:#e6db74">&#34;&#34;</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">setIsLoading</span>(<span style="color:#66d9ef">true</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">response</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">fetch</span>(<span style="color:#e6db74">&#34;http://localhost:11434/api/chat&#34;</span>, {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">method</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;POST&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">headers</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#e6db74">&#34;Content-Type&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;application/json&#34;</span>,
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">body</span>: <span style="color:#66d9ef">JSON.stringify</span>({
+</span></span><span style="display:flex;"><span>          <span style="color:#a6e22e">model</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;mistral&#34;</span>, <span style="color:#75715e">//generated code from bolt.new was llama2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>          <span style="color:#a6e22e">messages</span><span style="color:#f92672">:</span> [...<span style="color:#a6e22e">messages</span>, <span style="color:#a6e22e">userMessage</span>],
+</span></span><span style="display:flex;"><span>        }),
+</span></span><span style="display:flex;"><span>      });
+</span></span></code></pre></div><p>and after debugging its still error. and like another normal person i am debug the issue and turnsout response from ollama not handled properly by bolt.new and need some adjustment. so ollama response per word is actually json. so we just neeed that on full text and show.</p>
+<p>of course this is helped by ai. but like normal engineer i should understand what the code do.</p>
+<ul>
+<li>trim and split base on new line <code>\n</code></li>
+<li>map the lines and parse the line (the line already valid json) and trim</li>
+<li>also join all the trimmed line to content</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//example output from ollama
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">multilineResponse</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">`
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.445645Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34; No&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.476658Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34;,&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.533155Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34; I&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.590882Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34; am&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.647298Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34; a&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.708117Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34; model&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.766677Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34; from&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">{&#34;model&#34;:&#34;mistral&#34;,&#34;created_at&#34;:&#34;2024-11-20T18:32:11.82184Z&#34;,&#34;message&#34;:{&#34;role&#34;:&#34;assistant&#34;,&#34;content&#34;:&#34; Mist&#34;},&#34;done&#34;:false}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">`</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">lines</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">multilineResponse</span>.<span style="color:#a6e22e">trim</span>().<span style="color:#a6e22e">split</span>(<span style="color:#e6db74">&#34;\n&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lines</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">line</span> =&gt; <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">line</span>).<span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">content</span>.<span style="color:#a6e22e">trim</span>()) <span style="color:#75715e">// Parse each line and get the content
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  .<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>); <span style="color:#75715e">// Combine all content into a single string
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">role</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;assistant&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">content</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">content</span>
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">result</span>, <span style="color:#66d9ef">null</span>, <span style="color:#ae81ff">2</span>));
+</span></span></code></pre></div><p>and</p>
+<p><code>No,I'mnotMistralAI.MistralAIisacutting-edgecompanybasedinParis,France,developinglargelanguagemodels.Iama</code></p>
+<p>haha trimming all the way is trim all space in original line from ollama so i think we dont need to trim every content in per line
+so we should adjust json parsing from ollama to</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">lines</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">map</span>(<span style="color:#a6e22e">line</span> =&gt; <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">parse</span>(<span style="color:#a6e22e">line</span>).<span style="color:#a6e22e">message</span>.<span style="color:#a6e22e">content</span>) <span style="color:#75715e">// Parse each line and get the content
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  .<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">&#34;&#34;</span>); <span style="color:#75715e">// Combine all content into a single string
+</span></span></span></code></pre></div><p>with this we should ok. lets see. i am writing this with debuging so its not <strong>just work</strong>
+and walaaa its working now. i could chat with mistral from browser.</p>
+<p><img loading="lazy" src="/img/nextjs-ollama-2.png" alt="bolt.nw"  />
+</p>
+<p>next <em>term</em> that i want to explore is <strong>RAG</strong>.</p>
+<h2 id="realization">Realization<a hidden class="anchor" aria-hidden="true" href="#realization">#</a></h2>
+<ul>
+<li>bolt.new is really great helper, a lot of errors that still need to fix and adjust.</li>
+<li>bolt.new will perform better if we already know the context fully, like:
+<ul>
+<li>what payload from ollama explain it in detail with example</li>
+<li>how i want to perform the output</li>
+</ul>
+</li>
+<li>bolt.new sometimes generate unecessary files and component.</li>
+<li>mistral is the most &lsquo;OK&rsquo; run in local.</li>
+<li>ollama is awesome tools. this /api/chat is awesome.</li>
+<li>transformer and do RAG will be next</li>
+</ul>
+<p>see ya</p>
+
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
+      <li><a href="https://teraskula.com/tags/ai/">Ai</a></li>
+      <li><a href="https://teraskula.com/tags/nextjs/">Nextjs</a></li>
+    </ul>
+  </footer>
+
+<div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = 'https:\/\/teraskula.com\/posts\/ollama-chat-from-browser-using-nextjs\/';  
+    this.page.identifier = 'T2xsYW1hIENoYXQgRnJvbSBCcm93c2VyIFVzaW5nIE5leHRqcw=='; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://prima101112.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2024 <a href="https://teraskula.com/">teraskula.com</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+
+
+<script defer src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
