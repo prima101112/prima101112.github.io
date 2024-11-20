@@ -59,10 +59,6 @@
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
     }
 
 </script>
@@ -73,33 +69,6 @@
             display: none;
         }
 
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: #1d1e20;
-                --entry: #2e2e33;
-                --primary: rgba(255, 255, 255, 0.84);
-                --secondary: rgba(255, 255, 255, 0.56);
-                --tertiary: rgba(255, 255, 255, 0.16);
-                --content: rgba(255, 255, 255, 0.74);
-                --hljs-bg: #2e2e33;
-                --code-bg: #37383e;
-                --border: #333;
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
-        }
     </style>
 
 </noscript>
@@ -172,7 +141,7 @@
     </h2>
   </header>
   <section class="entry-content">
-    <p>Running qwen-2.5-coder:7B on macbook Air M2 using ollama This is part of stay hungry stay folish mindset, and my interest in AI. Search possible solution to get cheapest code assistant as possible. i was subscribe to copilot but now after found continou.dev &#43; anthropic API, thats the current choice.
+    <p>Running qwen-2.5-coder:7B on macbook Air M2 using ollama This is part of stay hungry stay folish mindset, and my interest in AI. Search possible solution to get cheapest code assistant as possible. i was subscribe to copilot but now after found continue.dev &#43; anthropic API, thats the current choice.
 Its small decrease in cost. copilot is $10 per month but now i am not that code heavy so subs to token based payment (anthropic claude 3....</p>
   </section>
   <footer class="entry-footer">November 20, 2024

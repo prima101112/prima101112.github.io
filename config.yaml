@@ -4,6 +4,7 @@ title: 'teraskula.com'
 theme: 'PaperMod'
 publishDir: 'docs'
 params:
+  defaultTheme: light
   comments: true
   homeInfoParams:
       Title: Kulonuwun (Hi)
@@ -13,6 +14,8 @@ params:
         url: "https://github.com/prima101112"
       - name: "strava"
         url: "https://strava.com/athletes/87122737"
+      - name: "linkedin"
+        url: "https://www.linkedin.com/in/prima-adi-pradana"
 taxonomies:
   categories: 'categories'
   tags: 'tags'
