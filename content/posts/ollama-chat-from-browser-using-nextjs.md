@@ -34,12 +34,12 @@ why i ask for specific next js 14 because thats the one that i currently know so
 
 ![bolt.nw](/img/nextjs-ollama-1.png)
 
-let bolt.new cook the bootstrap. and see from there
+let bolt.new cook the bootstrap. and see from there.
 
 - download from bolt.new
 - run on local
 
-and its failed and error 404 when hitting ollama/api/chat in 
+and its failed and error 404 when hitting ollama/api/chat in.
 
 `ollama serve`
 
@@ -119,7 +119,7 @@ and
 `No,I'mnotMistralAI.MistralAIisacutting-edgecompanybasedinParis,France,developinglargelanguagemodels.Iama`
 
 haha trimming all the way is trim all space in original line from ollama so i think we dont need to trim every content in per line
-so we should adjust json parsing from ollama to 
+so we should adjust json parsing from ollama to
 
 ```jsx
 const content = lines
@@ -146,9 +146,3 @@ next *term* that i want to explore is **RAG**.
 - transformer and do RAG will be next
 
 see ya
-
-
-
-
-
-
