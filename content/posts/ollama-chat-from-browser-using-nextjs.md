@@ -83,24 +83,20 @@ and after debugging its still error. and like another normal person i am debug t
 
 of course this is helped by ai. but like normal engineer i should understand what the code do.
 
-- trim and split base on new line `\n`
-- map the lines and parse the line (the line already valid json) and trim
-- also join all the trimmed line to content
+- trim and split base on new line `\n`.
+- map the lines and parse the line (the line already valid json) and trim.
+- also join all the trimmed line to content.
 
-```jsx
+this is response from ollama
 
-//example output from ollama
-const multilineResponse = `
+```txt
 {"model":"mistral","created_at":"2024-11-20T18:32:11.445645Z","message":{"role":"assistant","content":" No"},"done":false}
 {"model":"mistral","created_at":"2024-11-20T18:32:11.476658Z","message":{"role":"assistant","content":","},"done":false}
 {"model":"mistral","created_at":"2024-11-20T18:32:11.533155Z","message":{"role":"assistant","content":" I"},"done":false}
 {"model":"mistral","created_at":"2024-11-20T18:32:11.590882Z","message":{"role":"assistant","content":" am"},"done":false}
-{"model":"mistral","created_at":"2024-11-20T18:32:11.647298Z","message":{"role":"assistant","content":" a"},"done":false}
-{"model":"mistral","created_at":"2024-11-20T18:32:11.708117Z","message":{"role":"assistant","content":" model"},"done":false}
-{"model":"mistral","created_at":"2024-11-20T18:32:11.766677Z","message":{"role":"assistant","content":" from"},"done":false}
-{"model":"mistral","created_at":"2024-11-20T18:32:11.82184Z","message":{"role":"assistant","content":" Mist"},"done":false}
-`;
+```
 
+```jsx
 const lines = multilineResponse.trim().split("\n");
 const content = lines
   .map(line => JSON.parse(line).message.content.trim()) // Parse each line and get the content
@@ -118,7 +114,7 @@ and
 
 `No,I'mnotMistralAI.MistralAIisacutting-edgecompanybasedinParis,France,developinglargelanguagemodels.Iama`
 
-haha trimming all the way is trim all space in original line from ollama so i think we dont need to trim every content in per line
+haha trimming all the way. its trim all space in original line from ollama so i think we dont need to trim every content in per line
 so we should adjust json parsing from ollama to
 
 ```jsx
