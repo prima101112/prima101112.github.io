@@ -6,7 +6,17 @@
     <description>Recent content in Ai on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2024 00:31:49 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Dec 2024 23:12:46 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Langchain Pdf Ollama RAG</title>
+      <link>https://teraskula.com/posts/langchain-pdf-ollama-rag/</link>
+      <pubDate>Mon, 02 Dec 2024 23:12:46 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/langchain-pdf-ollama-rag/</guid>
+      <description>Give PDF and talk about it using lanchain to perform RAG using Ollama embedings and FAISS vectorstore yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.
+so in this state we are gonna learn langchain that will get pdf files and we ask something about it</description>
+    </item>
+    
     <item>
       <title>Ollama Chat From Browser Using Nextjs</title>
       <link>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</link>

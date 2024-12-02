@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Langchain Pdf Ollama RAG | teraskula.com</title>
+
+<meta name="keywords" content="technology, ai, nextjs" />
+<meta name="description" content="Give PDF and talk about it using lanchain to perform RAG using Ollama embedings and FAISS vectorstore yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.
+so in this state we are gonna learn langchain that will get pdf files and we ask something about it">
+<meta name="author" content="">
+<link rel="canonical" href="https://teraskula.com/posts/langchain-pdf-ollama-rag/" />
+<link href="/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css" integrity="sha256-dGqGtYuysFK15N&#43;CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet"
+    as="style">
+
+<link rel="icon" href="https://teraskula.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://teraskula.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.126.1">
+<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/langchain-pdf-ollama-rag/" />
+
+
+<meta property="og:title" content="Langchain Pdf Ollama RAG" />
+<meta property="og:description" content="Give PDF and talk about it using lanchain to perform RAG using Ollama embedings and FAISS vectorstore yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.
+so in this state we are gonna learn langchain that will get pdf files and we ask something about it" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://teraskula.com/posts/langchain-pdf-ollama-rag/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-02T23:12:46&#43;07:00" />
+<meta property="article:modified_time" content="2024-12-02T23:12:46&#43;07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Langchain Pdf Ollama RAG"/>
+<meta name="twitter:description" content="Give PDF and talk about it using lanchain to perform RAG using Ollama embedings and FAISS vectorstore yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.
+so in this state we are gonna learn langchain that will get pdf files and we ask something about it"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://teraskula.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Langchain Pdf Ollama RAG",
+      "item": "https://teraskula.com/posts/langchain-pdf-ollama-rag/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Langchain Pdf Ollama RAG",
+  "name": "Langchain Pdf Ollama RAG",
+  "description": "Give PDF and talk about it using lanchain to perform RAG using Ollama embedings and FAISS vectorstore yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.\nso in this state we are gonna learn langchain that will get pdf files and we ask something about it",
+  "keywords": [
+    "technology", "ai", "nextjs"
+  ],
+  "articleBody": "Give PDF and talk about it using lanchain to perform RAG using Ollama embedings and FAISS vectorstore yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.\nso in this state we are gonna learn langchain that will get pdf files and we ask something about it\nlets go:\nLANGCHAIN PYTHON API REFERENCE\nthats reference is make us easy to refer what the function or method is actually do.\nwhat we are gonna do is 3 step.\n1. Load pdf files and split to chunks load the pdf file. since we are using langchain in the langchain_community there is pdfloader. and split the documents to chunks.\n# Step 1: Load the PDF def load_pdf(pdf_path): loader = PyPDFLoader(pdf_path) documents = loader.load() return documents # Split the text into chunks def split_text(documents): text_splitter = RecursiveCharacterTextSplitter( chunk_size=1000, chunk_overlap=200 ) return text_splitter.split_documents(documents) 2. do embedings -\u003e vectorstores we need to split the pdf text to chunks so it could translate our docs to vecrorstore. we could say its a data that could understand bt the LLM’s. and because we not yet big lets use vectorestore FAISS using in memory databses. in python and in this AI world. everything is already wraped. but if you want to learn more FAISS also there is a paper in it faiss paper\nthe embedding: since we use ollama we use OllamaEmbeddings there should be OpenAIEmbbedings also full docs could read here ollama embedings\n# Step 2: generate embeddings using OllamaEmbedings def create_vectorstore(chunks): embeddings = OllamaEmbeddings(model=\"mistral\") #just use mistral its run on local btw vectorstore = FAISS.from_documents(chunks, embeddings) return vectorstore we also could use another vectorstore but now we use FAISS\n3. build the RAG chains Build the RAG pipeline. honestly i am using AI to find this code cause reading this still strugling chain there is many chain and i am using the RetrievalQA\ndef build_rag(vectorstore): retriever = vectorstore.as_retriever() llm = OllamaLLM(model=\"mistral\") # Specify Mistral model qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) return qa_chain Combine that together as Q\u0026A system prompt. # Combine all to main def main(): pdf_path = \"/Users/prima/Downloads/jefferey-ollama.pdf\" # Path to your PDF file documents = load_pdf(pdf_path) chunks = split_text(documents) vectorstore = create_vectorstore(chunks) qa_chain = build_rag(vectorstore) # Chat with the PDF while True: query = input(\"Ask a question about the document: \") if query.lower() == \"exit\": break response = qa_chain.invoke(query) print(f\"Answer: {response}\") Result and Learnings with this we are able to ask something about the pdf that we are give to the system. in this example i am creating pdf files base on Jeffrey Morgan linked in profile export pdf jeffrey Morgan.\nchatgpt (not mentioning ollama) jeffrey morgan is: jeffrey is an actor\nolama mistral without pdf (clean mistral) not using RAG jeffrey is an actor\nwhen i ask our RAG ollama and ask about jefferey morgan the reult is success: jeffrey is an engineer\nthis is the full code and enjoy\nfrom langchain_community.document_loaders import PyPDFLoader from langchain.text_splitter import RecursiveCharacterTextSplitter from langchain_ollama import OllamaLLM, OllamaEmbeddings from langchain_community.vectorstores import FAISS from langchain.chains import RetrievalQA # Step 1: Load the PDF def load_pdf(pdf_path): loader = PyPDFLoader(pdf_path) documents = loader.load() return documents # Split the text into chunks def split_text(documents): text_splitter = RecursiveCharacterTextSplitter( chunk_size=1000, chunk_overlap=200 ) return text_splitter.split_documents(documents) # Step 2: generate embeddings using OllamaEmbedings def create_vectorstore(chunks): embeddings = OllamaEmbeddings(model=\"mistral\") #just use mistral its run on local btw vectorstore = FAISS.from_documents(chunks, embeddings) return vectorstore # Step 3: Build the RAG system def build_rag(vectorstore): retriever = vectorstore.as_retriever() llm = OllamaLLM(model=\"mistral\") # Specify Mistral model qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) return qa_chain # Combine all to main def main(): pdf_path = \"/Users/prima/Downloads/jefferey-ollama.pdf\" # Path to your PDF file documents = load_pdf(pdf_path) chunks = split_text(documents) vectorstore = create_vectorstore(chunks) qa_chain = build_rag(vectorstore) # Chat with the PDF while True: query = input(\"Ask a question about the document: \") if query.lower() == \"exit\": break response = qa_chain.invoke(query) print(f\"Answer: {response}\") if __name__ == \"__main__\": main() make sure have pip and python also install all requirements\nlangchain has move their community module to langchain_community since they are have enterprise package and products.\n",
+  "wordCount" : "702",
+  "inLanguage": "en",
+  "datePublished": "2024-12-02T23:12:46+07:00",
+  "dateModified": "2024-12-02T23:12:46+07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teraskula.com/posts/langchain-pdf-ollama-rag/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "teraskula.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teraskula.com/favicon.ico"
+    }
+  }
+}
+</script>
+
+
+
+
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+
+</noscript>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                
+                
+
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
+        </div>
+        <ul id="menu" onscroll="menu_on_scroll()">
+            <li>
+                <a href="https://teraskula.com/posts/about-teraskula/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/categories/" title="categories">
+                    <span>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li></ul>
+    </nav>
+</header>
+
+    <main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+
+    <h1 class="post-title">
+      Langchain Pdf Ollama RAG
+    </h1>
+    <div class="post-meta">December 2, 2024
+
+
+</div>
+  </header> 
+
+  <div class="post-content">
+<h2 id="give-pdf-and-talk-about-it">Give PDF and talk about it<a hidden class="anchor" aria-hidden="true" href="#give-pdf-and-talk-about-it">#</a></h2>
+<h4 id="using-lanchain-to-perform-rag-using-ollama-embedings-and-faiss-vectorstore">using lanchain to perform RAG using Ollama embedings and FAISS vectorstore<a hidden class="anchor" aria-hidden="true" href="#using-lanchain-to-perform-rag-using-ollama-embedings-and-faiss-vectorstore">#</a></h4>
+<p>yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.</p>
+<p>so in this state we are gonna learn <code>langchain</code> that will get pdf files and we ask something about it</p>
+<p>lets go:</p>
+<p><a href="https://api.python.langchain.com/en/latest/langchain_api_reference.html">LANGCHAIN PYTHON API REFERENCE</a></p>
+<p>thats reference is make us easy to refer what the function or method is actually do.</p>
+<p>what we are gonna do is 3 step.</p>
+<h4 id="1-load-pdf-files-and-split-to-chunks">1. Load pdf files and split to chunks<a hidden class="anchor" aria-hidden="true" href="#1-load-pdf-files-and-split-to-chunks">#</a></h4>
+<p>load the pdf file. since we are using langchain in the langchain_community there is <a href="https://python.langchain.com/docs/integrations/document_loaders/pypdfloader/">pdfloader</a>. and split the documents to chunks.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Load the PDF</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_pdf</span>(pdf_path):
+</span></span><span style="display:flex;"><span>    loader <span style="color:#f92672">=</span> PyPDFLoader(pdf_path)
+</span></span><span style="display:flex;"><span>    documents <span style="color:#f92672">=</span> loader<span style="color:#f92672">.</span>load()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> documents
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Split the text into chunks</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">split_text</span>(documents):
+</span></span><span style="display:flex;"><span>    text_splitter <span style="color:#f92672">=</span> RecursiveCharacterTextSplitter(
+</span></span><span style="display:flex;"><span>        chunk_size<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>,
+</span></span><span style="display:flex;"><span>        chunk_overlap<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> text_splitter<span style="color:#f92672">.</span>split_documents(documents)
+</span></span></code></pre></div><h4 id="2-do-embedings---vectorstores">2. do embedings -&gt; vectorstores<a hidden class="anchor" aria-hidden="true" href="#2-do-embedings---vectorstores">#</a></h4>
+<p>we need to <strong>split the pdf text to chunks</strong> so it could translate our docs to <strong>vecrorstore</strong>. we could say its a data that could understand bt the LLM&rsquo;s. and because we not yet big lets use vectorestore FAISS using in memory databses. in python and in this AI world. everything is already wraped. but if you want to learn more <a href="https://api.python.langchain.com/en/latest/vectorstores/langchain_community.vectorstores.faiss.FAISS.html#langchain_community.vectorstores.faiss.FAISS">FAISS</a> also there is a paper in it <a href="https://arxiv.org/pdf/2401.08281">faiss paper</a></p>
+<p>the <strong>embedding</strong>: since we use ollama we use OllamaEmbeddings there should be OpenAIEmbbedings also
+full docs could read <a href="https://python.langchain.com/v0.2/api_reference/ollama/embeddings/langchain_ollama.embeddings.OllamaEmbeddings.html#langchain_ollama.embeddings.OllamaEmbeddings">here ollama embedings</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Step 2: generate embeddings using OllamaEmbedings</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_vectorstore</span>(chunks):
+</span></span><span style="display:flex;"><span>    embeddings <span style="color:#f92672">=</span> OllamaEmbeddings(model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mistral&#34;</span>) <span style="color:#75715e">#just use mistral its run on local btw</span>
+</span></span><span style="display:flex;"><span>    vectorstore <span style="color:#f92672">=</span> FAISS<span style="color:#f92672">.</span>from_documents(chunks, embeddings)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> vectorstore
+</span></span></code></pre></div><p>we also could use another vectorstore but now we use FAISS</p>
+<h4 id="3-build-the-rag-chains">3. build the RAG chains<a hidden class="anchor" aria-hidden="true" href="#3-build-the-rag-chains">#</a></h4>
+<p>Build the RAG pipeline. honestly i am using AI to find this code cause reading this still strugling <a href="https://python.langchain.com/v0.1/docs/modules/chains/">chain</a> there is many chain and i am using the <code>RetrievalQA</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build_rag</span>(vectorstore):
+</span></span><span style="display:flex;"><span>    retriever <span style="color:#f92672">=</span> vectorstore<span style="color:#f92672">.</span>as_retriever()
+</span></span><span style="display:flex;"><span>    llm <span style="color:#f92672">=</span> OllamaLLM(model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mistral&#34;</span>)  <span style="color:#75715e"># Specify Mistral model</span>
+</span></span><span style="display:flex;"><span>    qa_chain <span style="color:#f92672">=</span> RetrievalQA<span style="color:#f92672">.</span>from_chain_type(llm, retriever<span style="color:#f92672">=</span>retriever)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> qa_chain
+</span></span></code></pre></div><h4 id="combine-that-together-as-qa-system-prompt">Combine that together as Q&amp;A system prompt.<a hidden class="anchor" aria-hidden="true" href="#combine-that-together-as-qa-system-prompt">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Combine all to main</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    pdf_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/prima/Downloads/jefferey-ollama.pdf&#34;</span>  <span style="color:#75715e"># Path to your PDF file</span>
+</span></span><span style="display:flex;"><span>    documents <span style="color:#f92672">=</span> load_pdf(pdf_path)
+</span></span><span style="display:flex;"><span>    chunks <span style="color:#f92672">=</span> split_text(documents)
+</span></span><span style="display:flex;"><span>    vectorstore <span style="color:#f92672">=</span> create_vectorstore(chunks)
+</span></span><span style="display:flex;"><span>    qa_chain <span style="color:#f92672">=</span> build_rag(vectorstore)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Chat with the PDF</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        query <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Ask a question about the document: &#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> query<span style="color:#f92672">.</span>lower() <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;exit&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        response <span style="color:#f92672">=</span> qa_chain<span style="color:#f92672">.</span>invoke(query)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Answer: </span><span style="color:#e6db74">{</span>response<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><h2 id="result-and-learnings">Result and Learnings<a hidden class="anchor" aria-hidden="true" href="#result-and-learnings">#</a></h2>
+<p>with this we are able to ask something about the pdf that we are give to the system. in this <em>example</em> i am creating pdf files base on <strong>Jeffrey Morgan</strong> linked in profile export pdf <a href="https://www.linkedin.com/in/jmorganca/?originalSubdomain=ca">jeffrey Morgan</a>.</p>
+<h4 id="chatgpt-not-mentioning-ollama-jeffrey-morgan-is">chatgpt (not mentioning ollama) jeffrey morgan is:<a hidden class="anchor" aria-hidden="true" href="#chatgpt-not-mentioning-ollama-jeffrey-morgan-is">#</a></h4>
+<p>jeffrey is an actor</p>
+<p><img loading="lazy" src="/img/langchain-rag-ollama-1.png" alt="langchain ollama rag"  />
+</p>
+<h4 id="olama-mistral-without-pdf-clean-mistral-not-using-rag">olama mistral without pdf (clean mistral) not using RAG<a hidden class="anchor" aria-hidden="true" href="#olama-mistral-without-pdf-clean-mistral-not-using-rag">#</a></h4>
+<p>jeffrey is an actor</p>
+<p><img loading="lazy" src="/img/langchain-rag-ollama-4.png" alt="langchain ollama rag"  />
+</p>
+<h4 id="when-i-ask-our-rag-ollama-and-ask-about-jefferey-morgan-the-reult-is-success">when i ask our RAG ollama and ask about jefferey morgan the reult is success:<a hidden class="anchor" aria-hidden="true" href="#when-i-ask-our-rag-ollama-and-ask-about-jefferey-morgan-the-reult-is-success">#</a></h4>
+<p>jeffrey is an engineer</p>
+<p><img loading="lazy" src="/img/langchain-rag-ollama-3.png" alt="langchain ollama rag"  />
+</p>
+<p>this is the full code and enjoy</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_community.document_loaders <span style="color:#f92672">import</span> PyPDFLoader
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.text_splitter <span style="color:#f92672">import</span> RecursiveCharacterTextSplitter
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_ollama <span style="color:#f92672">import</span> OllamaLLM, OllamaEmbeddings
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_community.vectorstores <span style="color:#f92672">import</span> FAISS
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.chains <span style="color:#f92672">import</span> RetrievalQA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 1: Load the PDF</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_pdf</span>(pdf_path):
+</span></span><span style="display:flex;"><span>    loader <span style="color:#f92672">=</span> PyPDFLoader(pdf_path)
+</span></span><span style="display:flex;"><span>    documents <span style="color:#f92672">=</span> loader<span style="color:#f92672">.</span>load()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> documents
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Split the text into chunks</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">split_text</span>(documents):
+</span></span><span style="display:flex;"><span>    text_splitter <span style="color:#f92672">=</span> RecursiveCharacterTextSplitter(
+</span></span><span style="display:flex;"><span>        chunk_size<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>,
+</span></span><span style="display:flex;"><span>        chunk_overlap<span style="color:#f92672">=</span><span style="color:#ae81ff">200</span>
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> text_splitter<span style="color:#f92672">.</span>split_documents(documents)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 2: generate embeddings using OllamaEmbedings</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_vectorstore</span>(chunks):
+</span></span><span style="display:flex;"><span>    embeddings <span style="color:#f92672">=</span> OllamaEmbeddings(model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mistral&#34;</span>) <span style="color:#75715e">#just use mistral its run on local btw</span>
+</span></span><span style="display:flex;"><span>    vectorstore <span style="color:#f92672">=</span> FAISS<span style="color:#f92672">.</span>from_documents(chunks, embeddings)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> vectorstore
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Step 3: Build the RAG system</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build_rag</span>(vectorstore):
+</span></span><span style="display:flex;"><span>    retriever <span style="color:#f92672">=</span> vectorstore<span style="color:#f92672">.</span>as_retriever()
+</span></span><span style="display:flex;"><span>    llm <span style="color:#f92672">=</span> OllamaLLM(model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mistral&#34;</span>)  <span style="color:#75715e"># Specify Mistral model</span>
+</span></span><span style="display:flex;"><span>    qa_chain <span style="color:#f92672">=</span> RetrievalQA<span style="color:#f92672">.</span>from_chain_type(llm, retriever<span style="color:#f92672">=</span>retriever)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> qa_chain
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Combine all to main</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+</span></span><span style="display:flex;"><span>    pdf_path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/Users/prima/Downloads/jefferey-ollama.pdf&#34;</span>  <span style="color:#75715e"># Path to your PDF file</span>
+</span></span><span style="display:flex;"><span>    documents <span style="color:#f92672">=</span> load_pdf(pdf_path)
+</span></span><span style="display:flex;"><span>    chunks <span style="color:#f92672">=</span> split_text(documents)
+</span></span><span style="display:flex;"><span>    vectorstore <span style="color:#f92672">=</span> create_vectorstore(chunks)
+</span></span><span style="display:flex;"><span>    qa_chain <span style="color:#f92672">=</span> build_rag(vectorstore)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Chat with the PDF</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        query <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Ask a question about the document: &#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> query<span style="color:#f92672">.</span>lower() <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;exit&#34;</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        response <span style="color:#f92672">=</span> qa_chain<span style="color:#f92672">.</span>invoke(query)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Answer: </span><span style="color:#e6db74">{</span>response<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+</span></span><span style="display:flex;"><span>    main()
+</span></span></code></pre></div><blockquote>
+<p>make sure have pip and python also install all requirements</p>
+</blockquote>
+<blockquote>
+<p>langchain has move their community module to <code>langchain_community</code> since they are have enterprise package and products.</p>
+</blockquote>
+
+</div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
+      <li><a href="https://teraskula.com/tags/ai/">Ai</a></li>
+      <li><a href="https://teraskula.com/tags/nextjs/">Nextjs</a></li>
+    </ul>
+  </footer>
+
+<div id="disqus_thread"></div>
+<script>
+    
+
+    
+    var disqus_config = function () {
+    this.page.url = 'https:\/\/teraskula.com\/posts\/langchain-pdf-ollama-rag\/';  
+    this.page.identifier = 'TGFuZ2NoYWluIFBkZiBPbGxhbWEgUkFH'; 
+    };
+    
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://prima101112.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</article>
+    </main><footer class="footer">
+    <span>&copy; 2024 <a href="https://teraskula.com/">teraskula.com</a></span>
+    <span>&middot;</span>
+    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
+    <span>&middot;</span>
+    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+
+
+<script defer src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<script>
+    window.onload = function () {
+        if (localStorage.getItem("menu-scroll-position")) {
+            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+        }
+    }
+
+    function menu_on_scroll() {
+        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+
+</body>
+
+</html>
