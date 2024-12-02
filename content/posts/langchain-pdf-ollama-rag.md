@@ -13,7 +13,11 @@ languageCode: 'en-us'
 
 yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.
 
-so in this state we are gonna learn `langchain` that will get pdf files and we ask something about it
+first thing first what is RAG? RAG is Retrieval-Augmented Generation 
+
+RAG is like asking a person who doesn’t just rely on memory (llms default) but goes to check a book (pdf in this case) or notes before answering. First, it finds the right information (retrieval), then it uses that to give us a clear answer (generation). It’s smarter and targeted.
+
+In this state we are gonna learn `langchain` that will get pdf files and we ask something about it using RAG.
 
 lets go:
 
