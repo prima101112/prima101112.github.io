@@ -1,5 +1,5 @@
 ---
-title: "Langchain Pdf Ollama RAG"
+title: "Langchain PDF Ollama RAG (Retrieval Augmented Generation)"
 date: 2024-12-02T23:12:46+07:00
 draft: false
 categories: ['technology', 'blog','ai']
@@ -13,7 +13,7 @@ languageCode: 'en-us'
 
 yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.
 
-first thing first what is **RAG**? RAG is **Retrieval-Augmented Generation** 
+first thing first what is **RAG**? RAG is **Retrieval Augmented Generation** 
 
 **RAG** is like asking a person who doesn’t just rely on memory (llms default) but goes to check a book (pdf in this case) or notes before answering. First, it finds the right information (retrieval), then it uses that to give us a clear answer (generation). It’s smarter and targeted.
 
@@ -49,9 +49,9 @@ def split_text(documents):
 
 #### 2. do embedings -> vectorstores
 
-we need to **split the pdf text to chunks** so it could translate our docs to **vecrorstore**. we could say its a data that could understand bt the LLM's. and because we not yet big lets use vectorestore FAISS using in memory databses. in python and in this AI world. everything is already wraped. but if you want to learn more [FAISS](https://api.python.langchain.com/en/latest/vectorstores/langchain_community.vectorstores.faiss.FAISS.html#langchain_community.vectorstores.faiss.FAISS) also there is a paper in it [faiss paper](https://arxiv.org/pdf/2401.08281)
+we need to **split the pdf text to chunks** so it could translate our docs to **vecrorstore**. we could say its a data that could understand by the LLM's. and because we not yet big lets use vectorestore FAISS using in memory. In python and in this AI world. everything is already wraped. but if you want to learn more [FAISS here](https://api.python.langchain.com/en/latest/vectorstores/langchain_community.vectorstores.faiss.FAISS.html#langchain_community.vectorstores.faiss.FAISS) also there is a paper in it [faiss paper](https://arxiv.org/pdf/2401.08281)
 
-the **embedding**: since we use ollama we use OllamaEmbeddings there should be OpenAIEmbbedings also
+the **embedding**: since we use ollama we use OllamaEmbeddings there should be OpenAIEmbbedings, also
 full docs could read [here ollama embedings](https://python.langchain.com/v0.2/api_reference/ollama/embeddings/langchain_ollama.embeddings.OllamaEmbeddings.html#langchain_ollama.embeddings.OllamaEmbeddings)
 
 ```python
