@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Learn on teraskula.com</title>
+    <link>https://teraskula.com/tags/learn/</link>
+    <description>Recent content in Learn on teraskula.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Dec 2024 09:44:36 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/learn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Important of Technical Discussion RAG</title>
+      <link>https://teraskula.com/posts/the-important-of-technical-discussion-rag/</link>
+      <pubDate>Fri, 06 Dec 2024 09:44:36 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/the-important-of-technical-discussion-rag/</guid>
+      <description>&lt;p&gt;Recently i am creating a blog that code and create RAG pipeline.
+Since Langchain (the library that I use) wraps all the functions behind the curtain, some users, like myself, may misunderstand its workings. I want to discuss this part of the code:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;build_rag&lt;/span&gt;(vectorstore):
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    retriever &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; vectorstore&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;as_retriever()
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    llm &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; OllamaLLM(model&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;mistral&amp;#34;&lt;/span&gt;)  &lt;span style=&#34;color:#75715e&#34;&gt;# Specify Mistral model&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    qa_chain &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; RetrievalQA&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;from_chain_type(llm, retriever&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;retriever)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; qa_chain
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In understanding this code I &lt;em&gt;assume&lt;/em&gt; that when &lt;code&gt;qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever)&lt;/code&gt; retreiver is vectorstore right?.
+i &lt;em&gt;assume again&lt;/em&gt; that llm is actually read the vector.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
