@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nextjs on teraskula.com</title>
     <link>https://teraskula.com/tags/nextjs/</link>
@@ -13,8 +13,10 @@
       <pubDate>Mon, 02 Dec 2024 23:12:46 +0700</pubDate>
       
       <guid>https://teraskula.com/posts/langchain-pdf-ollama-rag/</guid>
-      <description>Give PDF and talk about it using lanchain to perform RAG using Ollama embedings and FAISS vectorstore yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.
-first thing first what is RAG?</description>
+      <description>&lt;h2 id=&#34;give-pdf-and-talk-about-it&#34;&gt;Give PDF and talk about it&lt;/h2&gt;
+&lt;h4 id=&#34;using-lanchain-to-perform-rag-using-ollama-embedings-and-faiss-vectorstore&#34;&gt;using lanchain to perform RAG using Ollama embedings and FAISS vectorstore&lt;/h4&gt;
+&lt;p&gt;yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.&lt;/p&gt;
+&lt;p&gt;first thing first what is &lt;strong&gt;RAG&lt;/strong&gt;? RAG is &lt;strong&gt;Retrieval Augmented Generation&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,9 +25,13 @@ first thing first what is RAG?</description>
       <pubDate>Thu, 21 Nov 2024 00:31:49 +0700</pubDate>
       
       <guid>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</guid>
-      <description>Ollama Chat From Browser Using Nextjs This writing will be so small. it should be a step by step on creating nextjs app that will communicate with local ollama. the model that i use is mistral its the fastest now running in my local.
-but instead starting from scrath, lets asking help to bolt.new to create interface that will communicate with our ollama server in local.
-there is a reason why i learn this.</description>
+      <description>&lt;h3 id=&#34;ollama-chat-from-browser-using-nextjs&#34;&gt;Ollama Chat From Browser Using Nextjs&lt;/h3&gt;
+&lt;p&gt;This writing will be so small.
+it should be a step by step on creating nextjs app that will communicate with local ollama.
+the model that i use is mistral its the fastest now running in my local.&lt;/p&gt;
+&lt;p&gt;but instead starting from scrath, lets asking help to &lt;a href=&#34;bolt.new&#34;&gt;bolt.new&lt;/a&gt;
+to create interface that will communicate with our ollama server in local.&lt;/p&gt;
+&lt;p&gt;there is a reason why i learn this. i want to do &amp;hellip;. lets wait for another post 😄&lt;/p&gt;</description>
     </item>
     
   </channel>

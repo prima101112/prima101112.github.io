@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chatgpt on teraskula.com</title>
     <link>https://teraskula.com/tags/chatgpt/</link>
@@ -13,10 +13,12 @@
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
       <guid>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</guid>
-      <description>ChatGPT is it scary? it could be the end of yaml (kubernetes) engineers.
-there is phenomenon. in this time i write this post, i just try the viral AI in a programming world. openAI just released a product, or reasearch, or a robot called chatGPT
-they said
-We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.</description>
+      <description>&lt;h2 id=&#34;chatgpt-is-it-scary&#34;&gt;ChatGPT is it scary?&lt;/h2&gt;
+&lt;p&gt;it could be the end of yaml (kubernetes) engineers.&lt;/p&gt;
+&lt;p&gt;there is phenomenon. in this time i write this post, i just try the viral AI in a programming world. openAI just released a product, or reasearch, or a robot called &lt;a href=&#34;https://openai.com/blog/chatgpt/&#34;&gt;chatGPT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;they said&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it possible for ChatGPT to answer followup questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests. ChatGPT is a sibling model to InstructGPT, which is trained to follow an instruction in a prompt and provide a detailed response.&lt;/p&gt;</description>
     </item>
     
   </channel>

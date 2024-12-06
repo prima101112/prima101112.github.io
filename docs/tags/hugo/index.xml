@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hugo on teraskula.com</title>
     <link>https://teraskula.com/tags/hugo/</link>
@@ -13,8 +13,13 @@
       <pubDate>Thu, 24 Nov 2022 17:30:15 +0700</pubDate>
       
       <guid>https://teraskula.com/posts/hugo-is-calm-blog-engine/</guid>
-      <description>Hugo x Github Pages This is my 4th time to redeploy my blog as a note for myself. deciding using hugo x ghpages because it will be just a note could be a tech note or just random thought. why hugo is calm?, because its quite simple, its static, it is fun adn quite fast (to generate).
-Hugo what is hugo? Hugo is blog engine that use markdown as their main source of content.</description>
+      <description>&lt;h2 id=&#34;hugo-x-github-pages&#34;&gt;Hugo x Github Pages&lt;/h2&gt;
+&lt;p&gt;This is my 4th time to redeploy my blog as a note for myself.
+deciding using hugo x ghpages because it will be just a note could be a tech note or just random thought.
+why hugo is calm?, because its quite simple, its static, it is fun adn quite fast (to generate).&lt;/p&gt;
+&lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;
+&lt;p&gt;what is hugo? Hugo is blog engine that use markdown as their main source of content. generate that markdown file as static site and deploy it.
+you could see more about hugo here &lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

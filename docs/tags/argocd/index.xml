@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Argocd on teraskula.com</title>
     <link>https://teraskula.com/tags/argocd/</link>
@@ -13,9 +13,13 @@
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
       <guid>https://teraskula.com/posts/argocd-starting-up/</guid>
-      <description>Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.
-Installation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
-Lets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.</description>
+      <description>&lt;h2 id=&#34;argo-cd-starting-up&#34;&gt;Argo CD Starting up&lt;/h2&gt;
+&lt;p&gt;Recently argocd is graduated from CNCF incubating project.
+we already using argocd in production almost 9 months. and its working awesome.&lt;/p&gt;
+&lt;h3 id=&#34;installation-getting-started&#34;&gt;Installation getting Started&lt;/h3&gt;
+&lt;p&gt;to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]&lt;/p&gt;
+&lt;h2 id=&#34;lets-go&#34;&gt;Lets Go&lt;/h2&gt;
+&lt;p&gt;I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.&lt;/p&gt;</description>
     </item>
     
   </channel>

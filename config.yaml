@@ -3,8 +3,13 @@ languageCode: 'en-us'
 title: 'teraskula.com'
 theme: 'PaperMod'
 publishDir: 'docs'
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 params:
   defaultTheme: light
+  DateFormat: "2.1.2006"
   comments: true
   homeInfoParams:
       Title: Kulonuwun (Hi)

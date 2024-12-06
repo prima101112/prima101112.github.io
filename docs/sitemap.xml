@@ -2,37 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://teraskula.com/categories/blog/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/learn/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/learning/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/social-interaction/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/technology/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/technology/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/the-important-of-technical-discussion-rag/</loc>
+    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/tags/ai/</loc>
     <lastmod>2024-12-02T23:12:46+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/ai/</loc>
     <lastmod>2024-12-02T23:12:46+07:00</lastmod>
   </url><url>
-    <loc>https://teraskula.com/categories/blog/</loc>
-    <lastmod>2024-12-02T23:12:46+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/categories/</loc>
-    <lastmod>2024-12-02T23:12:46+07:00</lastmod>
-  </url><url>
     <loc>https://teraskula.com/posts/langchain-pdf-ollama-rag/</loc>
     <lastmod>2024-12-02T23:12:46+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/nextjs/</loc>
-    <lastmod>2024-12-02T23:12:46+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/posts/</loc>
-    <lastmod>2024-12-02T23:12:46+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/</loc>
-    <lastmod>2024-12-02T23:12:46+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/technology/</loc>
-    <lastmod>2024-12-02T23:12:46+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/categories/technology/</loc>
-    <lastmod>2024-12-02T23:12:46+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/</loc>
     <lastmod>2024-12-02T23:12:46+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</loc>

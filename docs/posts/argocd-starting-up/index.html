@@ -6,16 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Argocd Starting Up | teraskula.com</title>
-
-<meta name="keywords" content="technology, argocd, ci/cd" />
-<meta name="description" content="Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.
-Installation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
-Lets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.">
+<meta name="keywords" content="technology, argocd, ci/cd">
+<meta name="description" content="Argo CD Starting up
+Recently argocd is graduated from CNCF incubating project.
+we already using argocd in production almost 9 months. and its working awesome.
+Installation getting Started
+to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
+Lets Go
+I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.">
 <meta name="author" content="">
-<link rel="canonical" href="https://teraskula.com/posts/argocd-starting-up/" />
-<link href="/assets/css/stylesheet.min.746a86b58bb2b052b5e4df8216510494f04f81e62c08d626150c26c69ca929da.css" integrity="sha256-dGqGtYuysFK15N&#43;CFlEElPBPgeYsCNYmFQwmxpypKdo=" rel="preload stylesheet"
-    as="style">
-
+<link rel="canonical" href="https://teraskula.com/posts/argocd-starting-up/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="https://teraskula.com/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
@@ -23,24 +26,37 @@ Lets Go I will not explain how to install or how to configure argocd but i will 
 <link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<meta name="generator" content="Hugo 0.126.1">
-<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/argocd-starting-up/" />
+<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/argocd-starting-up/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
 
-
-<meta property="og:title" content="Argocd Starting Up" />
-<meta property="og:description" content="Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.
-Installation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
-Lets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase." />
+    </style>
+</noscript><meta property="og:title" content="Argocd Starting Up" />
+<meta property="og:description" content="Argo CD Starting up
+Recently argocd is graduated from CNCF incubating project.
+we already using argocd in production almost 9 months. and its working awesome.
+Installation getting Started
+to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
+Lets Go
+I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://teraskula.com/posts/argocd-starting-up/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-11-30T08:48:47&#43;07:00" />
-<meta property="article:modified_time" content="2022-11-30T08:48:47&#43;07:00" />
+<meta property="article:published_time" content="2022-11-30T08:48:47+07:00" />
+<meta property="article:modified_time" content="2022-11-30T08:48:47+07:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Argocd Starting Up"/>
-<meta name="twitter:description" content="Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.
-Installation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
-Lets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase."/>
+<meta name="twitter:description" content="Argo CD Starting up
+Recently argocd is graduated from CNCF incubating project.
+we already using argocd in production almost 9 months. and its working awesome.
+Installation getting Started
+to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]
+Lets Go
+I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase."/>
 
 
 <script type="application/ld+json">
@@ -69,7 +85,7 @@ Lets Go I will not explain how to install or how to configure argocd but i will 
   "@type": "BlogPosting",
   "headline": "Argocd Starting Up",
   "name": "Argocd Starting Up",
-  "description": "Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.\nInstallation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]\nLets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.",
+  "description": "Argo CD Starting up Recently argocd is graduated from CNCF incubating project. we already using argocd in production almost 9 months. and its working awesome.\nInstallation getting Started to install argocd and setting this up you could easy follow this (argocd start)[https://argo-cd.readthedocs.io/en/stable/getting_started/]\nLets Go I will not explain how to install or how to configure argocd but i will share my experience of using it in production in our usecase.\n",
   "keywords": [
     "technology", "argocd", "ci/cd"
   ],
@@ -92,10 +108,6 @@ Lets Go I will not explain how to install or how to configure argocd but i will 
   }
 }
 </script>
-
-
-
-
 </head>
 
 <body class="" id="top">
@@ -105,28 +117,19 @@ Lets Go I will not explain how to install or how to configure argocd but i will 
     }
 
 </script>
-<noscript>
-    <style type="text/css">
-        #theme-toggle,
-        .top-link {
-            display: none;
-        }
 
-    </style>
-
-</noscript>
 <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
-            <span class="logo-switches">
+            <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
@@ -140,14 +143,11 @@ Lets Go I will not explain how to install or how to configure argocd but i will 
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-                
-                
-
                 <ul class="lang-switch"><li>|</li>
                 </ul>
-            </span>
+            </div>
         </div>
-        <ul id="menu" onscroll="menu_on_scroll()">
+        <ul id="menu">
             <li>
                 <a href="https://teraskula.com/posts/about-teraskula/" title="About">
                     <span>About</span>
@@ -162,26 +162,25 @@ Lets Go I will not explain how to install or how to configure argocd but i will 
                 <a href="https://teraskula.com/tags/" title="tags">
                     <span>tags</span>
                 </a>
-            </li></ul>
+            </li>
+        </ul>
     </nav>
-</header>
 
-    <main class="main">
+
+</header>
+<main class="main">
 
 <article class="post-single">
   <header class="post-header">
-
+    
     <h1 class="post-title">
       Argocd Starting Up
     </h1>
-    <div class="post-meta">November 30, 2022
-
+    <div class="post-meta">30 November 2022
 
 </div>
   </header> 
-
-  <div class="post-content">
-<h2 id="argo-cd-starting-up">Argo CD Starting up<a hidden class="anchor" aria-hidden="true" href="#argo-cd-starting-up">#</a></h2>
+  <div class="post-content"><h2 id="argo-cd-starting-up">Argo CD Starting up<a hidden class="anchor" aria-hidden="true" href="#argo-cd-starting-up">#</a></h2>
 <p>Recently argocd is graduated from CNCF incubating project.
 we already using argocd in production almost 9 months. and its working awesome.</p>
 <h3 id="installation-getting-started">Installation getting Started<a hidden class="anchor" aria-hidden="true" href="#installation-getting-started">#</a></h3>
@@ -218,7 +217,9 @@ this tools also allow devs to build deploy and test in 1 straight command line.<
 <p>this tools is help alot to standarize the command inside every pipeline</p>
 <p>Thanks.</p>
 
-</div>
+
+  </div>
+
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
@@ -226,55 +227,30 @@ this tools also allow devs to build deploy and test in 1 straight command line.<
       <li><a href="https://teraskula.com/tags/ci/cd/">Ci/Cd</a></li>
     </ul>
   </footer>
-
-<div id="disqus_thread"></div>
-<script>
-    
-
-    
-    var disqus_config = function () {
-    this.page.url = 'https:\/\/teraskula.com\/posts\/argocd-starting-up\/';  
-    this.page.identifier = 'QXJnb2NkIFN0YXJ0aW5nIFVw'; 
-    };
-    
-    (function() { 
-    var d = document, s = d.createElement('script');
-    s.src = 'https://prima101112.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
 </article>
-    </main><footer class="footer">
+    </main>
+    
+<footer class="footer">
     <span>&copy; 2024 <a href="https://teraskula.com/">teraskula.com</a></span>
-    <span>&middot;</span>
-    <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a></span>
-    <span>&middot;</span>
-    <span>Theme <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
 </footer>
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
-    <button class="top-link" id="top-link" type="button" accesskey="g">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-            <path d="M12 6H0l6-6z" />
-        </svg>
-    </button>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
 </a>
 
-
-
-<script defer src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
-    onload="hljs.initHighlightingOnLoad();"></script>
 <script>
-    window.onload = function () {
-        if (localStorage.getItem("menu-scroll-position")) {
-            document.getElementById('menu').scrollLeft = localStorage.getItem("menu-scroll-position");
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
-    }
-
-    function menu_on_scroll() {
-        localStorage.setItem("menu-scroll-position", document.getElementById('menu').scrollLeft);
     }
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -322,7 +298,6 @@ this tools also allow devs to build deploy and test in 1 straight command line.<
     })
 
 </script>
-
 </body>
 
 </html>

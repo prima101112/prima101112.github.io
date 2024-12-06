@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Commit2 on teraskula.com</title>
     <link>https://teraskula.com/tags/commit2/</link>
@@ -13,8 +13,9 @@
       <pubDate>Wed, 20 Nov 2024 00:57:25 +0700</pubDate>
       
       <guid>https://teraskula.com/posts/running-qwen-in-m2-mac-air-machine/</guid>
-      <description>Running qwen-2.5-coder:7B on macbook Air M2 using ollama This is part of stay hungry stay folish mindset, and my interest in AI. Search possible solution to get cheapest code assistant as possible. i was subscribe to copilot but now after found continue.dev + anthropic API, thats the current choice.
-Its small decrease in cost. copilot is $10 per month but now i am not that code heavy so subs to token based payment (anthropic claude 3.</description>
+      <description>&lt;h3 id=&#34;running-qwen-25-coder7b-on-macbook-air-m2-using-ollama&#34;&gt;Running qwen-2.5-coder:7B on macbook Air M2 using ollama&lt;/h3&gt;
+&lt;p&gt;This is part of stay hungry stay folish mindset, and my interest in AI. Search possible solution to get cheapest code assistant as possible. i was subscribe to copilot but now after found &lt;a href=&#34;https://www.continue.dev/&#34;&gt;continue.dev&lt;/a&gt; + &lt;a href=&#34;https://www.anthropic.com/pricing#anthropic-api&#34;&gt;anthropic&lt;/a&gt; API, thats the current choice.&lt;/p&gt;
+&lt;p&gt;Its small decrease in cost. copilot is $10 per month but now i am not that code heavy so subs to token based payment (anthropic claude 3.5 sonnet) is more cost effective. and pay base on what i use.&lt;/p&gt;</description>
     </item>
     
   </channel>
