@@ -2,143 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on teraskula.com</title>
-    <link>https://teraskula.com/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2024 09:44:36 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Dec 2024 09:44:36 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn</title>
-      <link>https://teraskula.com/tags/learn/</link>
+      <link>http://localhost:1313/tags/learn/</link>
       <pubDate>Fri, 06 Dec 2024 09:44:36 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/learn/</guid>
+      <guid>http://localhost:1313/tags/learn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Social Interaction</title>
-      <link>https://teraskula.com/tags/social-interaction/</link>
+      <link>http://localhost:1313/tags/social-interaction/</link>
       <pubDate>Fri, 06 Dec 2024 09:44:36 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/social-interaction/</guid>
+      <guid>http://localhost:1313/tags/social-interaction/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Technology</title>
-      <link>https://teraskula.com/tags/technology/</link>
+      <link>http://localhost:1313/tags/technology/</link>
       <pubDate>Fri, 06 Dec 2024 09:44:36 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/technology/</guid>
+      <guid>http://localhost:1313/tags/technology/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ai</title>
-      <link>https://teraskula.com/tags/ai/</link>
+      <link>http://localhost:1313/tags/ai/</link>
       <pubDate>Mon, 02 Dec 2024 23:12:46 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/ai/</guid>
+      <guid>http://localhost:1313/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nextjs</title>
-      <link>https://teraskula.com/tags/nextjs/</link>
+      <link>http://localhost:1313/tags/nextjs/</link>
       <pubDate>Mon, 02 Dec 2024 23:12:46 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/nextjs/</guid>
+      <guid>http://localhost:1313/tags/nextjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Commit2</title>
-      <link>https://teraskula.com/tags/commit2/</link>
+      <link>http://localhost:1313/tags/commit2/</link>
       <pubDate>Wed, 20 Nov 2024 00:57:25 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/commit2/</guid>
+      <guid>http://localhost:1313/tags/commit2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://teraskula.com/tags/docker/</link>
+      <link>http://localhost:1313/tags/docker/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/docker/</guid>
+      <guid>http://localhost:1313/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://teraskula.com/tags/kubernetes/</link>
+      <link>http://localhost:1313/tags/kubernetes/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/kubernetes/</guid>
+      <guid>http://localhost:1313/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Workaround</title>
-      <link>https://teraskula.com/tags/workaround/</link>
+      <link>http://localhost:1313/tags/workaround/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/workaround/</guid>
+      <guid>http://localhost:1313/tags/workaround/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chatbot</title>
-      <link>https://teraskula.com/tags/chatbot/</link>
+      <link>http://localhost:1313/tags/chatbot/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/chatbot/</guid>
+      <guid>http://localhost:1313/tags/chatbot/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chatgpt</title>
-      <link>https://teraskula.com/tags/chatgpt/</link>
+      <link>http://localhost:1313/tags/chatgpt/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/chatgpt/</guid>
+      <guid>http://localhost:1313/tags/chatgpt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Argocd</title>
-      <link>https://teraskula.com/tags/argocd/</link>
+      <link>http://localhost:1313/tags/argocd/</link>
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/argocd/</guid>
+      <guid>http://localhost:1313/tags/argocd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ci/Cd</title>
-      <link>https://teraskula.com/tags/ci/cd/</link>
+      <link>http://localhost:1313/tags/ci/cd/</link>
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/ci/cd/</guid>
+      <guid>http://localhost:1313/tags/ci/cd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Initial</title>
-      <link>https://teraskula.com/tags/initial/</link>
+      <link>http://localhost:1313/tags/initial/</link>
       <pubDate>Fri, 25 Nov 2022 16:38:00 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/initial/</guid>
+      <guid>http://localhost:1313/tags/initial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://teraskula.com/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Thu, 24 Nov 2022 17:30:15 +0700</pubDate>
       
-      <guid>https://teraskula.com/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     

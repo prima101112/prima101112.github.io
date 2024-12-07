@@ -25,6 +25,23 @@ lets go:
 
 thats reference is make us easy to refer what the function or method is actually do.
 
+this is the basic flow chart from what we are gonna build
+
+{{% mermaid %}}
+graph TD
+    A[User Input: PDF Document] -->|Preprocess PDF| B[Extracted Text]
+    B -->|Embed Text| C[Document Embeddings]
+    C -->|Store Embeddings| D[FAISS Vector Database]
+    E[User Query] -->|Input Query| F[Vector Database Search]
+    D -->|Retrieve Matching Vectors| F
+    subgraph ide1 [rag]
+    F -->|Find Matching Vectors| G[Relevant Document Embeddings]
+    G -->|Convert Vectors to Text| H((("`**Retrieved Text Documents**`")))
+    H -->|Provide Context| I[Language Model LLM]
+    end
+    I -->|Generate Response| J[Final Answer]
+{{% /mermaid %}}
+
 what we are gonna do is 3 step.
 
 #### 1. Load pdf files and split to chunks

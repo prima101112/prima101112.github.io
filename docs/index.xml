@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>teraskula.com</title>
-    <link>https://teraskula.com/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2024 09:44:36 +0700</lastBuildDate><atom:link href="https://teraskula.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Dec 2024 09:44:36 +0700</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The Important of Technical Discussion RAG</title>
-      <link>https://teraskula.com/posts/the-important-of-technical-discussion-rag/</link>
+      <title>The Important of Technical Discussion</title>
+      <link>http://localhost:1313/posts/the-important-of-technical-discussion-rag/</link>
       <pubDate>Fri, 06 Dec 2024 09:44:36 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/the-important-of-technical-discussion-rag/</guid>
+      <guid>http://localhost:1313/posts/the-important-of-technical-discussion-rag/</guid>
       <description>&lt;p&gt;Recently i am creating a blog that code and create RAG pipeline.
 Since Langchain (the library that I use) wraps all the functions behind the curtain, some users, like myself, may misunderstand its workings. I want to discuss this part of the code:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;build_rag&lt;/span&gt;(vectorstore):
@@ -26,10 +26,10 @@ i &lt;em&gt;assume again&lt;/em&gt; that llm is actually read the vector.&lt;/p&
     
     <item>
       <title>Langchain PDF Ollama RAG (Retrieval Augmented Generation)</title>
-      <link>https://teraskula.com/posts/langchain-pdf-ollama-rag/</link>
+      <link>http://localhost:1313/posts/langchain-pdf-ollama-rag/</link>
       <pubDate>Mon, 02 Dec 2024 23:12:46 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/langchain-pdf-ollama-rag/</guid>
+      <guid>http://localhost:1313/posts/langchain-pdf-ollama-rag/</guid>
       <description>&lt;h2 id=&#34;give-pdf-and-talk-about-it&#34;&gt;Give PDF and talk about it&lt;/h2&gt;
 &lt;h4 id=&#34;using-lanchain-to-perform-rag-using-ollama-embedings-and-faiss-vectorstore&#34;&gt;using lanchain to perform RAG using Ollama embedings and FAISS vectorstore&lt;/h4&gt;
 &lt;p&gt;yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.&lt;/p&gt;
@@ -38,10 +38,10 @@ i &lt;em&gt;assume again&lt;/em&gt; that llm is actually read the vector.&lt;/p&
     
     <item>
       <title>Ollama Chat From Browser Using Nextjs</title>
-      <link>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</link>
+      <link>http://localhost:1313/posts/ollama-chat-from-browser-using-nextjs/</link>
       <pubDate>Thu, 21 Nov 2024 00:31:49 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</guid>
+      <guid>http://localhost:1313/posts/ollama-chat-from-browser-using-nextjs/</guid>
       <description>&lt;h3 id=&#34;ollama-chat-from-browser-using-nextjs&#34;&gt;Ollama Chat From Browser Using Nextjs&lt;/h3&gt;
 &lt;p&gt;This writing will be so small.
 it should be a step by step on creating nextjs app that will communicate with local ollama.
@@ -53,10 +53,10 @@ to create interface that will communicate with our ollama server in local.&lt;/p
     
     <item>
       <title>Running Qwen in M2 Mac Air Machine using Ollama</title>
-      <link>https://teraskula.com/posts/running-qwen-in-m2-mac-air-machine/</link>
+      <link>http://localhost:1313/posts/running-qwen-in-m2-mac-air-machine/</link>
       <pubDate>Wed, 20 Nov 2024 00:57:25 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/running-qwen-in-m2-mac-air-machine/</guid>
+      <guid>http://localhost:1313/posts/running-qwen-in-m2-mac-air-machine/</guid>
       <description>&lt;h3 id=&#34;running-qwen-25-coder7b-on-macbook-air-m2-using-ollama&#34;&gt;Running qwen-2.5-coder:7B on macbook Air M2 using ollama&lt;/h3&gt;
 &lt;p&gt;This is part of stay hungry stay folish mindset, and my interest in AI. Search possible solution to get cheapest code assistant as possible. i was subscribe to copilot but now after found &lt;a href=&#34;https://www.continue.dev/&#34;&gt;continue.dev&lt;/a&gt; + &lt;a href=&#34;https://www.anthropic.com/pricing#anthropic-api&#34;&gt;anthropic&lt;/a&gt; API, thats the current choice.&lt;/p&gt;
 &lt;p&gt;Its small decrease in cost. copilot is $10 per month but now i am not that code heavy so subs to token based payment (anthropic claude 3.5 sonnet) is more cost effective. and pay base on what i use.&lt;/p&gt;</description>
@@ -64,13 +64,13 @@ to create interface that will communicate with our ollama server in local.&lt;/p
     
     <item>
       <title>Getting Pull Rate Limit and Workaround</title>
-      <link>https://teraskula.com/posts/getting-pull-rate-limit/</link>
+      <link>http://localhost:1313/posts/getting-pull-rate-limit/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/getting-pull-rate-limit/</guid>
+      <guid>http://localhost:1313/posts/getting-pull-rate-limit/</guid>
       <description>&lt;h1 id=&#34;when-docker-hub-want-you-to-authenticate&#34;&gt;When docker hub want you to authenticate&lt;/h1&gt;
 &lt;p&gt;there is a stable system using public images from docker hub. and suddently pull rate limit error is showing up.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://teraskula.com/img/getting-pull-rate-limit-3.png&#34; alt=&#34;Rate Limit Error&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/getting-pull-rate-limit-3.png&#34; alt=&#34;Rate Limit Error&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;this-is-how-we-implement-the-workaround&#34;&gt;This is How we implement the Workaround&lt;/h2&gt;
 &lt;p&gt;Our system is running in AWS EKS and using all internal image registry (ECR) for application images. Most of application is using docker images and run&amp;rsquo;s on kubernetes.
@@ -79,10 +79,10 @@ but some POC and small services is using public images from docker hub. it needs
     
     <item>
       <title>ChatGPT Open Ai, Is It Scary?</title>
-      <link>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</link>
+      <link>http://localhost:1313/posts/chatgpt-open-ai-is-it-scary/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</guid>
+      <guid>http://localhost:1313/posts/chatgpt-open-ai-is-it-scary/</guid>
       <description>&lt;h2 id=&#34;chatgpt-is-it-scary&#34;&gt;ChatGPT is it scary?&lt;/h2&gt;
 &lt;p&gt;it could be the end of yaml (kubernetes) engineers.&lt;/p&gt;
 &lt;p&gt;there is phenomenon. in this time i write this post, i just try the viral AI in a programming world. openAI just released a product, or reasearch, or a robot called &lt;a href=&#34;https://openai.com/blog/chatgpt/&#34;&gt;chatGPT&lt;/a&gt;&lt;/p&gt;
@@ -93,10 +93,10 @@ but some POC and small services is using public images from docker hub. it needs
     
     <item>
       <title>Argocd Starting Up</title>
-      <link>https://teraskula.com/posts/argocd-starting-up/</link>
+      <link>http://localhost:1313/posts/argocd-starting-up/</link>
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/argocd-starting-up/</guid>
+      <guid>http://localhost:1313/posts/argocd-starting-up/</guid>
       <description>&lt;h2 id=&#34;argo-cd-starting-up&#34;&gt;Argo CD Starting up&lt;/h2&gt;
 &lt;p&gt;Recently argocd is graduated from CNCF incubating project.
 we already using argocd in production almost 9 months. and its working awesome.&lt;/p&gt;
@@ -108,10 +108,10 @@ we already using argocd in production almost 9 months. and its working awesome.&
     
     <item>
       <title>Layoff Phenomenon 2022</title>
-      <link>https://teraskula.com/posts/layoff-phenomenon-2022/</link>
+      <link>http://localhost:1313/posts/layoff-phenomenon-2022/</link>
       <pubDate>Fri, 25 Nov 2022 16:38:00 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/layoff-phenomenon-2022/</guid>
+      <guid>http://localhost:1313/posts/layoff-phenomenon-2022/</guid>
       <description>&lt;h2 id=&#34;layoff-2022&#34;&gt;Layoff 2022&lt;/h2&gt;
 &lt;p&gt;In the end of the 2022 there is phenomenon called &amp;ldquo;massive layoff&amp;rdquo;, a lot of my friends is impacted during this time. i just wonder what is happening.&lt;/p&gt;
 &lt;p&gt;First, i am not an expert in investing, bussiness. but i kind of know (correct me if i am wrong) how to count a profit. its as simple as&lt;/p&gt;
@@ -122,10 +122,10 @@ i have hypotesis by my stupid logic.&lt;/p&gt;</description>
     
     <item>
       <title>Hugo Is Calm Blog Engine</title>
-      <link>https://teraskula.com/posts/hugo-is-calm-blog-engine/</link>
+      <link>http://localhost:1313/posts/hugo-is-calm-blog-engine/</link>
       <pubDate>Thu, 24 Nov 2022 17:30:15 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/hugo-is-calm-blog-engine/</guid>
+      <guid>http://localhost:1313/posts/hugo-is-calm-blog-engine/</guid>
       <description>&lt;h2 id=&#34;hugo-x-github-pages&#34;&gt;Hugo x Github Pages&lt;/h2&gt;
 &lt;p&gt;This is my 4th time to redeploy my blog as a note for myself.
 deciding using hugo x ghpages because it will be just a note could be a tech note or just random thought.
@@ -137,10 +137,10 @@ you could see more about hugo here &lt;a href=&#34;https://gohugo.io/&#34;&gt;ht
     
     <item>
       <title>About Teraskula</title>
-      <link>https://teraskula.com/posts/about-teraskula/</link>
+      <link>http://localhost:1313/posts/about-teraskula/</link>
       <pubDate>Wed, 23 Nov 2022 21:15:30 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/about-teraskula/</guid>
+      <guid>http://localhost:1313/posts/about-teraskula/</guid>
       <description>&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
 &lt;p&gt;i am prima&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;wong biasa, kawulane gusti Allah, anake bapak ibuk, bapake anak anak, bojone bojoku.&lt;/em&gt;&lt;/p&gt;

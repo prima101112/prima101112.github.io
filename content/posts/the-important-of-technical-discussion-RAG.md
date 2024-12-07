@@ -1,5 +1,5 @@
 ---
-title: "The Important of Technical Discussion RAG"
+title: "The Important of Technical Discussion"
 date: 2024-12-06T09:44:36+07:00
 draft: false
 categories: ['technology', 'blog','learning']
