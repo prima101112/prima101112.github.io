@@ -2,6 +2,9 @@
 title: "10 Important Prompt for Software Engineers"
 date: 2024-12-16T13:25:09+07:00
 draft: false
+categories: ['technology', 'blog']
+tags: ['technology', 'argocd','AI', 'wondering']
+languageCode: 'en-us'
 ---
 
 ### 1. **Code Refactoring**  
