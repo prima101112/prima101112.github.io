@@ -138,7 +138,7 @@ languageCode: 'en-us'
     4. **Delivery**: Use a CDN for fast delivery of images."*
     
 
-To be honnest this is created by AI, with **my great prompt**. prompting is the key of learning anything now. when it used to be a **google search technique**. 
+To be honnest this is created by AI, with **my 'great' prompt** 😃 . prompting is the key of learning anything now. when it used to be a **google search technique**. 
 If content in Internet now somehow could easyly created by AI **is the prompt is actually more important to kmow than the content it self?**
 just wondering.
 
