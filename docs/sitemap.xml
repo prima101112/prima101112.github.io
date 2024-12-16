@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://teraskula.com/posts/10-important-prompt-for-software-engineers/</loc>
+    <lastmod>2024-12-16T13:25:09+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/</loc>
+    <lastmod>2024-12-16T13:25:09+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/</loc>
+    <lastmod>2024-12-16T13:25:09+07:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/categories/blog/</loc>
     <lastmod>2024-12-06T09:44:36+07:00</lastmod>
   </url><url>
@@ -14,9 +23,6 @@
     <loc>https://teraskula.com/categories/learning/</loc>
     <lastmod>2024-12-06T09:44:36+07:00</lastmod>
   </url><url>
-    <loc>https://teraskula.com/posts/</loc>
-    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
-  </url><url>
     <loc>https://teraskula.com/tags/social-interaction/</loc>
     <lastmod>2024-12-06T09:44:36+07:00</lastmod>
   </url><url>
@@ -27,9 +33,6 @@
     <lastmod>2024-12-06T09:44:36+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/technology/</loc>
-    <lastmod>2024-12-06T09:44:36+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/</loc>
     <lastmod>2024-12-06T09:44:36+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/the-important-of-technical-discussion-rag/</loc>
