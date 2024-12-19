@@ -51,9 +51,11 @@ its funny how we could imagine a world where AI generates content, manages socia
 
 just imagine
 
-create a robotic AI scan all internet whats hot in niche area create article and post. its agentic so it things set random intervals search in internet create articels and post. 
+create a robotic AI, scan all internet, whats hot in niche area, create article and post. its agentic so it things set random intervals search in internet create articels and post.
+
 and certainly there will be time where we quesions a comment on social media wheter its human or not.
-and questioning even is the traffict or engadgement real or artificially generated. This raises important ethical questions about authenticity, trust, and the nature of online interactions in an AI-driven world.
+
+and questioning even is the traffic or engadgement real or artificially generated. This raises important ethical questions about authenticity, trust, and the nature of online interactions in an AI world.
 
 > ai hit again
 
