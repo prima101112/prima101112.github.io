@@ -7,6 +7,16 @@
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
+{{- /* Google tag */}}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99V7B3NL74"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-99V7B3NL74');
+</script>
+
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
 

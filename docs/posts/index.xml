@@ -6,7 +6,158 @@
     <description>Recent content in Posts on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Dec 2024 09:44:36 +0700</lastBuildDate><atom:link href="https://teraskula.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 19 Dec 2024 16:25:05 +0700</lastBuildDate><atom:link href="https://teraskula.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ai Generated Content Emmerge</title>
+      <link>https://teraskula.com/posts/ai-generated-content-emmerge/</link>
+      <pubDate>Thu, 19 Dec 2024 16:25:05 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/ai-generated-content-emmerge/</guid>
+      <description>&lt;h2 id=&#34;is-the-internet-still-could-be-trusted-&#34;&gt;is the internet still could be trusted ?&lt;/h2&gt;
+&lt;p&gt;Its bothering me in this last couple of month i am seeing or feel seeing and reading AI generated content. it could be text, images or video.
+and i wonder if articles or video was took a day to research and write or create, now, could take a couple of minutes? second?&lt;/p&gt;
+&lt;h3 id=&#34;content-creation-before-ai&#34;&gt;Content Creation Before AI&lt;/h3&gt;
+&lt;p&gt;Before the adoption of AI, content creation relied heavily on human. The years between 2000 and 2020 (maybe) saw a steady rise in content production, driven by the internet Boom
+and Social Media Growth, platforms like Facebook, Twitter, and Instagram introduced new opportunities for user-generated content. and TikTok of course.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>10 Important Prompt for Software Engineers</title>
+      <link>https://teraskula.com/posts/10-important-prompt-for-software-engineers/</link>
+      <pubDate>Mon, 16 Dec 2024 13:25:09 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/10-important-prompt-for-software-engineers/</guid>
+      <description>&lt;h3 id=&#34;1-code-refactoring&#34;&gt;1. &lt;strong&gt;Code Refactoring&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Refactor this code to make it cleaner and more Pythonic: &lt;code&gt;{code}&lt;/code&gt;&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Refactor this code: &lt;code&gt;for i in range(len(arr)): print(arr[i])&lt;/code&gt;&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To improve code readability, performance, or adhere to best practices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; item &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; arr:  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(item)  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2-bug-fixing&#34;&gt;2. &lt;strong&gt;Bug Fixing&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Fix the bug in this code: &lt;code&gt;{code}&lt;/code&gt; and explain what went wrong.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Fix the bug in this code: &lt;code&gt;x = int(&#39;123a&#39;)&lt;/code&gt;&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To debug and resolve issues in the code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt;:  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    x &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; int(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;123a&amp;#39;&lt;/span&gt;)  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;except&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ValueError&lt;/span&gt;:  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Invalid input, cannot convert to integer.&amp;#34;&lt;/span&gt;)  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3-code-generation&#34;&gt;3. &lt;strong&gt;Code Generation&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write a function to &lt;code&gt;{task}&lt;/code&gt; in &lt;code&gt;{language}&lt;/code&gt;.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write a function to reverse a string in Python.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To quickly generate functions or reusable code snippets.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;reverse_string&lt;/span&gt;(s):  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s[::&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(reverse_string(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;))  &lt;span style=&#34;color:#75715e&#34;&gt;# Output: &amp;#34;olleh&amp;#34;  &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4-write-unit-tests&#34;&gt;4. &lt;strong&gt;Write Unit Tests&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write unit tests for the following function: &lt;code&gt;{code}&lt;/code&gt;.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write unit tests for this function: &lt;code&gt;def add(x, y): return x + y&lt;/code&gt;&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To ensure code behaves as expected through automated tests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; unittest  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;(x, y):  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; y  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;TestAddFunction&lt;/span&gt;(unittest&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;TestCase):  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test_add&lt;/span&gt;(self):  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;assertEqual(add(&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;), &lt;span style=&#34;color:#ae81ff&#34;&gt;5&lt;/span&gt;)  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;assertEqual(add(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;), &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;)  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;unittest&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;main()  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;5-sql-query-generation&#34;&gt;5. &lt;strong&gt;SQL Query Generation&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write an SQL query to &lt;code&gt;{task}&lt;/code&gt;.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write an SQL query to find all users older than 30.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To create or optimize SQL queries for databases.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; users  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; age &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt;;  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;6-explain-code&#34;&gt;6. &lt;strong&gt;Explain Code&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Explain what the following code does: &lt;code&gt;{code}&lt;/code&gt;.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Explain this code: &lt;code&gt;for i in range(3): print(i)&lt;/code&gt;&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To clarify or document code for better understanding.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;br&gt;
+&lt;em&gt;&amp;ldquo;The loop iterates over values &lt;code&gt;0&lt;/code&gt;, &lt;code&gt;1&lt;/code&gt;, and &lt;code&gt;2&lt;/code&gt;, printing each value.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;7-code-conversion&#34;&gt;7. &lt;strong&gt;Code Conversion&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Convert this &lt;code&gt;{source_language}&lt;/code&gt; code to &lt;code&gt;{target_language}&lt;/code&gt;: &lt;code&gt;{code}&lt;/code&gt;.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Convert this Python code to JavaScript: &lt;code&gt;print(&#39;Hello&#39;)&lt;/code&gt;&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To translate code between programming languages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Hello&amp;#39;&lt;/span&gt;);  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;8-regex-creation&#34;&gt;8. &lt;strong&gt;Regex Creation&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write a regex to &lt;code&gt;{task}&lt;/code&gt;.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write a regex to validate email addresses.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To validate or extract patterns from strings using regular expressions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-regex&#34; data-lang=&#34;regex&#34;&gt;^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$  
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;9-generate-api-request-code&#34;&gt;9. &lt;strong&gt;Generate API Request Code&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write code to send a &lt;code&gt;{request_type}&lt;/code&gt; request to &lt;code&gt;{url}&lt;/code&gt; using &lt;code&gt;{language}&lt;/code&gt;.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Write code to send a GET request to &lt;code&gt;https://api.example.com/data&lt;/code&gt; using Python.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To create API integration code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; requests  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;response &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; requests&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;get(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://api.example.com/data&amp;#34;&lt;/span&gt;)  
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(response&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;json())  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;10-system-design-suggestions&#34;&gt;10. &lt;strong&gt;System Design Suggestions&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prompt&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Design a system for &lt;code&gt;{use_case}&lt;/code&gt; and describe its architecture.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Prompt with Example&lt;/strong&gt;: &lt;em&gt;&amp;ldquo;Design a system for an image upload service.&amp;rdquo;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What for&lt;/strong&gt;: To outline a scalable system design or architecture.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;br&gt;
+&lt;em&gt;&amp;ldquo;Use the following components:&lt;/em&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Storage&lt;/strong&gt;: AWS S3 for image storage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;API&lt;/strong&gt;: Load-balanced servers to handle upload requests.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Processing&lt;/strong&gt;: Background worker to resize or process images.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delivery&lt;/strong&gt;: Use a CDN for fast delivery of images.&amp;rdquo;*&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To be honnest this is created by AI, with &lt;strong&gt;my &amp;lsquo;great&amp;rsquo; prompt&lt;/strong&gt; 😃 . prompting is the key of learning anything now. when it used to be a &lt;strong&gt;google search technique&lt;/strong&gt;.
+If content in Internet now somehow could easyly created by AI &lt;strong&gt;is the prompt is actually more important to kmow than the content it self?&lt;/strong&gt;
+just wondering.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>The Important of Technical Discussion</title>
       <link>https://teraskula.com/posts/the-important-of-technical-discussion-rag/</link>
