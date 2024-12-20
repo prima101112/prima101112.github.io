@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Initial on teraskula.com</title>
-    <link>https://teraskula.com/tags/initial/</link>
+    <link>http://localhost:1313/tags/initial/</link>
     <description>Recent content in Initial on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Nov 2022 16:38:00 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/initial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Nov 2022 16:38:00 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/initial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Layoff Phenomenon 2022</title>
-      <link>https://teraskula.com/posts/layoff-phenomenon-2022/</link>
+      <link>http://localhost:1313/posts/layoff-phenomenon-2022/</link>
       <pubDate>Fri, 25 Nov 2022 16:38:00 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/layoff-phenomenon-2022/</guid>
+      <guid>http://localhost:1313/posts/layoff-phenomenon-2022/</guid>
       <description>&lt;h2 id=&#34;layoff-2022&#34;&gt;Layoff 2022&lt;/h2&gt;
 &lt;p&gt;In the end of the 2022 there is phenomenon called &amp;ldquo;massive layoff&amp;rdquo;, a lot of my friends is impacted during this time. i just wonder what is happening.&lt;/p&gt;
 &lt;p&gt;First, i am not an expert in investing, bussiness. but i kind of know (correct me if i am wrong) how to count a profit. its as simple as&lt;/p&gt;
@@ -23,10 +23,10 @@ i have hypotesis by my stupid logic.&lt;/p&gt;</description>
     
     <item>
       <title>Hugo Is Calm Blog Engine</title>
-      <link>https://teraskula.com/posts/hugo-is-calm-blog-engine/</link>
+      <link>http://localhost:1313/posts/hugo-is-calm-blog-engine/</link>
       <pubDate>Thu, 24 Nov 2022 17:30:15 +0700</pubDate>
       
-      <guid>https://teraskula.com/posts/hugo-is-calm-blog-engine/</guid>
+      <guid>http://localhost:1313/posts/hugo-is-calm-blog-engine/</guid>
       <description>&lt;h2 id=&#34;hugo-x-github-pages&#34;&gt;Hugo x Github Pages&lt;/h2&gt;
 &lt;p&gt;This is my 4th time to redeploy my blog as a note for myself.
 deciding using hugo x ghpages because it will be just a note could be a tech note or just random thought.
