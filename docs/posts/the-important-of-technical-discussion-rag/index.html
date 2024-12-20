@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99V7B3NL74"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -25,18 +25,18 @@ def build_rag(vectorstore):
 In understanding this code I assume that when qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) retreiver is vectorstore right?.
 i assume again that llm is actually read the vector.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/the-important-of-technical-discussion-rag/">
+<link rel="canonical" href="https://teraskula.com/posts/the-important-of-technical-discussion-rag/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://teraskula.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://teraskula.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/the-important-of-technical-discussion-rag/">
+<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/the-important-of-technical-discussion-rag/">
 <noscript>
     <style>
         #theme-toggle,
@@ -45,7 +45,83 @@ i assume again that llm is actually read the vector.">
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:title" content="The Important of Technical Discussion" />
+<meta property="og:description" content="Recently i am creating a blog that code and create RAG pipeline.
+Since Langchain (the library that I use) wraps all the functions behind the curtain, some users, like myself, may misunderstand its workings. I want to discuss this part of the code:
+def build_rag(vectorstore):
+    retriever = vectorstore.as_retriever()
+    llm = OllamaLLM(model=&#34;mistral&#34;)  # Specify Mistral model
+    qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever)
+    return qa_chain
+In understanding this code I assume that when qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) retreiver is vectorstore right?.
+i assume again that llm is actually read the vector." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://teraskula.com/posts/the-important-of-technical-discussion-rag/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-06T09:44:36+07:00" />
+<meta property="article:modified_time" content="2024-12-06T09:44:36+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Important of Technical Discussion"/>
+<meta name="twitter:description" content="Recently i am creating a blog that code and create RAG pipeline.
+Since Langchain (the library that I use) wraps all the functions behind the curtain, some users, like myself, may misunderstand its workings. I want to discuss this part of the code:
+def build_rag(vectorstore):
+    retriever = vectorstore.as_retriever()
+    llm = OllamaLLM(model=&#34;mistral&#34;)  # Specify Mistral model
+    qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever)
+    return qa_chain
+In understanding this code I assume that when qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) retreiver is vectorstore right?.
+i assume again that llm is actually read the vector."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://teraskula.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "The Important of Technical Discussion",
+      "item": "https://teraskula.com/posts/the-important-of-technical-discussion-rag/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Important of Technical Discussion",
+  "name": "The Important of Technical Discussion",
+  "description": "Recently i am creating a blog that code and create RAG pipeline. Since Langchain (the library that I use) wraps all the functions behind the curtain, some users, like myself, may misunderstand its workings. I want to discuss this part of the code:\ndef build_rag(vectorstore): retriever = vectorstore.as_retriever() llm = OllamaLLM(model=\u0026#34;mistral\u0026#34;) # Specify Mistral model qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) return qa_chain In understanding this code I assume that when qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) retreiver is vectorstore right?. i assume again that llm is actually read the vector.\n",
+  "keywords": [
+    "technology", "social interaction", "learn"
+  ],
+  "articleBody": "Recently i am creating a blog that code and create RAG pipeline. Since Langchain (the library that I use) wraps all the functions behind the curtain, some users, like myself, may misunderstand its workings. I want to discuss this part of the code:\ndef build_rag(vectorstore): retriever = vectorstore.as_retriever() llm = OllamaLLM(model=\"mistral\") # Specify Mistral model qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) return qa_chain In understanding this code I assume that when qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) retreiver is vectorstore right?. i assume again that llm is actually read the vector.\n— my day continue —\nAnd recently i have a discussion with one of my friend about this RAG stuff and he is actually taking a Master Degree in Artificial Intelegence area. this blog post is focus on\nhow important a discussion is. i have certain understanding of how this is works and he is correcting me. this is will not happend with AI that particular code will just explain to you how its work but not know what actually happend inside it.\ngraph TD A[User Input: PDF Document] --\u003e|Preprocess PDF| B[Extracted Text] B --\u003e|Embed Text| C[Document Embeddings] C --\u003e|Store Embeddings| D[FAISS Vector Database] E[User Query] --\u003e|Input Query| F[Vector Database Search] D --\u003e|Retrieve Matching Vectors| F subgraph ide1 [rag] F --\u003e|Find Matching Vectors| G[Relevant Document Embeddings] G --\u003e|Convert Vectors to Text| H(((\"`**Retrieved Text Documents**`\"))) H --\u003e|Provide Context| I[Language Model LLM] end I --\u003e|Generate Response| J[Final Answer] And this time i got my lecture. fix my brain that llm is just accept human language thats why its called llm so vectorstore is basically search and when its match and get in to the llm, its form to text again then -\u003e llms.\neven in this code\nqa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever)\nseems like llm is directly get from retriver but actually after it found its translate to text first than input to the llm’s\nthanks to my colleague\n",
+  "wordCount" : "313",
+  "inLanguage": "en",
+  "datePublished": "2024-12-06T09:44:36+07:00",
+  "dateModified": "2024-12-06T09:44:36+07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teraskula.com/posts/the-important-of-technical-discussion-rag/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "teraskula.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teraskula.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -59,7 +135,7 @@ i assume again that llm is actually read the vector.">
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
+            <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -87,17 +163,17 @@ i assume again that llm is actually read the vector.">
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/about-teraskula/" title="About">
+                <a href="https://teraskula.com/posts/about-teraskula/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="categories">
+                <a href="https://teraskula.com/categories/" title="categories">
                     <span>categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="tags">
+                <a href="https://teraskula.com/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li>
@@ -161,9 +237,9 @@ graph TD
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/technology/">Technology</a></li>
-      <li><a href="http://localhost:1313/tags/social-interaction/">Social Interaction</a></li>
-      <li><a href="http://localhost:1313/tags/learn/">Learn</a></li>
+      <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
+      <li><a href="https://teraskula.com/tags/social-interaction/">Social Interaction</a></li>
+      <li><a href="https://teraskula.com/tags/learn/">Learn</a></li>
     </ul>
   </footer><div id="disqus_thread"></div>
 <script>
@@ -183,7 +259,7 @@ graph TD
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">teraskula.com</a></span>
+    <span>&copy; 2024 <a href="https://teraskula.com/">teraskula.com</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

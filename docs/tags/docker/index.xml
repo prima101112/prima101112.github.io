@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Docker on teraskula.com</title>
-    <link>http://localhost:1313/tags/docker/</link>
+    <link>https://teraskula.com/tags/docker/</link>
     <description>Recent content in Docker on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 13 Dec 2022 12:04:51 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 12:04:51 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Pull Rate Limit and Workaround</title>
-      <link>http://localhost:1313/posts/getting-pull-rate-limit/</link>
+      <link>https://teraskula.com/posts/getting-pull-rate-limit/</link>
       <pubDate>Tue, 13 Dec 2022 12:04:51 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/getting-pull-rate-limit/</guid>
+      <guid>https://teraskula.com/posts/getting-pull-rate-limit/</guid>
       <description>&lt;h1 id=&#34;when-docker-hub-want-you-to-authenticate&#34;&gt;When docker hub want you to authenticate&lt;/h1&gt;
 &lt;p&gt;there is a stable system using public images from docker hub. and suddently pull rate limit error is showing up.&lt;/p&gt;
-&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/img/getting-pull-rate-limit-3.png&#34; alt=&#34;Rate Limit Error&#34;  /&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://teraskula.com/img/getting-pull-rate-limit-3.png&#34; alt=&#34;Rate Limit Error&#34;  /&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;this-is-how-we-implement-the-workaround&#34;&gt;This is How we implement the Workaround&lt;/h2&gt;
 &lt;p&gt;Our system is running in AWS EKS and using all internal image registry (ECR) for application images. Most of application is using docker images and run&amp;rsquo;s on kubernetes.

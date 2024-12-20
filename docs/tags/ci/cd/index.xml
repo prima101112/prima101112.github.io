@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ci/Cd on teraskula.com</title>
-    <link>http://localhost:1313/tags/ci/cd/</link>
+    <link>https://teraskula.com/tags/ci/cd/</link>
     <description>Recent content in Ci/Cd on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Nov 2022 08:48:47 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Nov 2022 08:48:47 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Argocd Starting Up</title>
-      <link>http://localhost:1313/posts/argocd-starting-up/</link>
+      <link>https://teraskula.com/posts/argocd-starting-up/</link>
       <pubDate>Wed, 30 Nov 2022 08:48:47 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/argocd-starting-up/</guid>
+      <guid>https://teraskula.com/posts/argocd-starting-up/</guid>
       <description>&lt;h2 id=&#34;argo-cd-starting-up&#34;&gt;Argo CD Starting up&lt;/h2&gt;
 &lt;p&gt;Recently argocd is graduated from CNCF incubating project.
 we already using argocd in production almost 9 months. and its working awesome.&lt;/p&gt;

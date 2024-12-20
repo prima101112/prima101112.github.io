@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Chatbot on teraskula.com</title>
-    <link>http://localhost:1313/tags/chatbot/</link>
+    <link>https://teraskula.com/tags/chatbot/</link>
     <description>Recent content in Chatbot on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Dec 2022 15:56:14 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/chatbot/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Dec 2022 15:56:14 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/chatbot/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ChatGPT Open Ai, Is It Scary?</title>
-      <link>http://localhost:1313/posts/chatgpt-open-ai-is-it-scary/</link>
+      <link>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</link>
       <pubDate>Fri, 09 Dec 2022 15:56:14 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/chatgpt-open-ai-is-it-scary/</guid>
+      <guid>https://teraskula.com/posts/chatgpt-open-ai-is-it-scary/</guid>
       <description>&lt;h2 id=&#34;chatgpt-is-it-scary&#34;&gt;ChatGPT is it scary?&lt;/h2&gt;
 &lt;p&gt;it could be the end of yaml (kubernetes) engineers.&lt;/p&gt;
 &lt;p&gt;there is phenomenon. in this time i write this post, i just try the viral AI in a programming world. openAI just released a product, or reasearch, or a robot called &lt;a href=&#34;https://openai.com/blog/chatgpt/&#34;&gt;chatGPT&lt;/a&gt;&lt;/p&gt;
