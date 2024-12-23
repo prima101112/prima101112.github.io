@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-99V7B3NL74"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -14,23 +14,23 @@
   gtag('config', 'G-99V7B3NL74');
 </script>
 <title>Candidate Discovery Demo Qdrant Openai | teraskula.com</title>
-<meta name="keywords" content="">
+<meta name="keywords" content="technology, ai, nextjs, usecase">
 <meta name="description" content="Candidate discovery demo
 In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG)
-i will little bit re architec the app design. before we usi FAISS to store our fectore. i am afraid it cannot scale. so in search of vector databases. i encounter with bunc of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.">
+i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/candidate-discovery-demo-qdrant-openai/">
+<link rel="canonical" href="https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://teraskula.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://teraskula.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/candidate-discovery-demo-qdrant-openai/">
+<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/">
 <noscript>
     <style>
         #theme-toggle,
@@ -39,7 +39,71 @@ i will little bit re architec the app design. before we usi FAISS to store our f
         }
 
     </style>
-</noscript>
+</noscript><meta property="og:title" content="Candidate Discovery Demo Qdrant Openai" />
+<meta property="og:description" content="Candidate discovery demo
+In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG)
+i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-12-20T22:17:10+07:00" />
+<meta property="article:modified_time" content="2024-12-20T22:17:10+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Candidate Discovery Demo Qdrant Openai"/>
+<meta name="twitter:description" content="Candidate discovery demo
+In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG)
+i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://teraskula.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Candidate Discovery Demo Qdrant Openai",
+      "item": "https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Candidate Discovery Demo Qdrant Openai",
+  "name": "Candidate Discovery Demo Qdrant Openai",
+  "description": "Candidate discovery demo In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG) i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.\n",
+  "keywords": [
+    "technology", "ai", "nextjs", "usecase"
+  ],
+  "articleBody": "Candidate discovery demo In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG) i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.\nlets use this stack then : qdrant vectore database , why? is the most mature afaik and backed by a company using flask/fast api to serve (the auto swagger will be easy to build the frontend) so the goal here is could upload a resume of candidate -\u003e embed and save to qdrant could search -\u003e (using RAG) best candidate with chat. return with human language no need for overall docs here (like saving the original docs in rdbms (not chunked)), if doing it it could be expand to give more context to the models but now lets focus on the qdrant similarity first for now\ngraph and architecture graph TD A[User Input via Chat] --\u003e|Submit Query| B[Next.js Frontend] B --\u003e|API Call| C(FastAPI Backend) C --\u003e|Vectorize Query| D[OpenAI Embedding API] D --\u003e|Vector Embedding| E[Qdrant] E --\u003e|Find Similar Candidates| F[Candidate Matches] F --\u003e|Return Results| C(FastAPI Backend) C --\u003e|Send Response| B B --\u003e|Display Matches| A define step installing qdrant code the fast api add some logic POST pdf/text =\u003e embeding =\u003e qdrant =\u003e success/error POST {query_content:} =\u003e reult the match candidate (querystring for now is enough) POST for plain text candidate data (testing purpose) no validation :p since its just a demo\nqdrant docker install lets do this 1 we need to install qdrant (docker is enough)\ndocker run -it -p 6333:6333 -p 6334:6334 \\ -v $(pwd)/qdrant_storage:/qdrant/storage:z \\ -d qdrant/qdrant you could go to qdrant dashboard at localhost:6333/dashboard\nThe Code in this code obviously started with open AI to create a baseline all endpoints and edit from that this code is base on 3 endpoints\nadd new candidate (not really care about name for now and ignore filtering) add new candidate using pdf (upload) not working yet (same as above but from pdf) query candidate and answer it using openAI API we use open AI API for embeding (turn text to vector) and using for chat completion for answering with human language.\nfrom fastapi import FastAPI, File, UploadFile, HTTPException from pydantic import BaseModel import shutil import logging from openai import OpenAI from openai.types import Completion, CompletionChoice, CompletionUsage from qdrant_client import QdrantClient from qdrant_client import models from qdrant_client.http.models import Distance, VectorParams from langchain_core.documents import Document from langchain_community.document_loaders import PyPDFLoader from langchain_qdrant import QdrantVectorStore from langchain_openai import OpenAIEmbeddings from langchain.text_splitter import RecursiveCharacterTextSplitter from uuid import uuid4 #initiate fast api and logging (global config) app = FastAPI() logging.basicConfig(level=logging.INFO) clientq = QdrantClient(url=\"http://localhost:6333\") openai_api_key = \"use your open ai key\" # Initialize OpenAI Embeddings and Qdrant col name and openai client embedding_model = OpenAIEmbeddings(api_key=openai_api_key) clientopenai = OpenAI( api_key=openai_api_key, # This is the default and can be omitted ) collection_name = \"demo_candidates\" # Check if the collection exists just create it when its `not` already exist collections = clientq.get_collections() existing_collections = [col.name for col in collections.collections] # changes to \"in\" (for me to easy delete the collection or recreate) if collection_name not in existing_collections: clientq.delete_collection(collection_name) clientq.create_collection( collection_name=\"demo_candidates\", vectors_config=VectorParams(size=1536, distance=Distance.COSINE), ) # Initialize Qdrant vector store vectorstore = QdrantVectorStore( client=clientq, collection_name=\"demo_candidates\", embedding=embedding_model, ) # Candidate model for json input request class Candidate(BaseModel): id: str description: str def load_pdf(pdf_path): loader = PyPDFLoader(pdf_path) documents = loader.load() return documents @app.post(\"/candidate\") async def add_candidate(candidate: Candidate): try: # Load and split the text text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50) chunks = text_splitter.split_text(candidate.description) # Wrap each chunk in a Document object with proper structure documents = [] candidate_id = str(uuid4()) for chunk in chunks: documents.append(Document(page_content=chunk, metadata={\"source\": \"candidate\", \"candidate_id\": candidate_id})) # Add text chunks to Qdrant vectorstore.add_documents(documents=documents) logging.info(f\"Added candidate: {candidate.id}\") return {\"message\": \"Candidate added successfully\"} except Exception as e: logging.error(f\"Error adding candidate: {e}\") raise HTTPException(status_code=500, detail=\"Could not add candidate\") @app.post(\"/candidate/pdf\") async def add_candidate_pdf(file: UploadFile = File(...)): try: # save the uploaded PDF file to a temporary location with open(f\"temp/{file.filename}\", \"wb\") as buffer: shutil.copyfileobj(file.file, buffer) # load and split the text documents = load_pdf(f\"temp/{file.filename}\") # spliter better use RecursiveCharacterTextSplitter text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50) chunks = text_splitter.split_documents(documents) candidate_id = str(uuid4()) for chunk in chunks: # this take a long time turns out chunk already have property page_content but i am not sure all have that so just to make sure if isinstance(chunk, str): page_content = chunk elif isinstance(chunk, Document): page_content = chunk.page_content else: raise ValueError(\"Chunk is not a valid string or Document object.\") documents.append(Document(page_content=page_content, metadata={\"source\": \"candidate\", \"candidate_id\": candidate_id})) # Add text chunks to qdrant vectorstore.add_documents(documents=documents) logging.info(f\"Uploaded and added file: {file.filename}\") return {\"message\": \"Candidate PDF uploaded and embedded successfully\"} except Exception as e: logging.error(f\"Error processing file: {e}\") raise HTTPException(status_code=500, detail=\"Could not process the file\") @app.post(\"/candidate/query\") async def query_candidates(query: str): try: print(query) # Perform similarity search in Qdrant results = vectorstore.similarity_search( query=query, k=3, ) # Extract matches matches = [ {\"id\": result.metadata.get(\"candidate_id\", \"Unknown\"), \"text\": result.page_content} for result in results ] # Format results for OpenAI result_texts = \"\\n\".join( [f\"Candidate ID: {match['id']}, Description: {match['text']}\" for match in matches] ) prompt = ( f\"You are an expert HR assistant. A user asked: '{query}'. Based on the following \" f\"candidate descriptions, respond conversationally:\\n\\n{result_texts}\" ) # Generate a human-like response using OpenAI openai_response = clientopenai.chat.completions.create( model=\"gpt-4o\", messages=[{\"role\": \"user\", \"content\": prompt}] ) print(openai_response.choices) conversational_response = openai_response.choices[0].message.content logging.info(f\"Querying candidates with: {query}\") return {\"response\": conversational_response, \"matches\": matches} except Exception as e: logging.error(f\"Error querying candidates: {e}\") raise HTTPException(status_code=500, detail=\"Could not query candidates\") you could coppy that code and make open AI explain it but i already explain some of the important part on the comment.\nafter that just open localhost:8000 (default port for fast api) and this is already the swagger of our API\nThe FRONTEND ok its little bit tricky since we already know bolt.new lets just copy our swagger to bolt.new and ask for beautiful interface\nand this is the prompt that i use on bolt.new\ncreate me a nextjs 14 app with tailwind css this app is for upload candidate and search candidate that have 3 menu add candidate from text add candidate uploading pdf resume search/query candidate all of this will hit API on localhost:8000 with this documentation {\"openapi\":\"..from swagger...} From bolt.new and little bit tweak like cors, fix some dependencies. and this is the result. the frontend is ready, its just took ~6 min to make the frontend app work in npm run dev mode\nfor all the code you could get from this github need tweak maybe ask there and will try to answer.\nConclution In this example we already learn about the RAG on multiple documents, and talk about it. and apply it to simple usecase to searching candidates. so if you have a lot of candidates and need to search the bast candidate or Applicant base on your requirements. this is will help you a lot.\n",
+  "wordCount" : "1166",
+  "inLanguage": "en",
+  "datePublished": "2024-12-20T22:17:10+07:00",
+  "dateModified": "2024-12-20T22:17:10+07:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "teraskula.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teraskula.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 
 <body class="" id="top">
@@ -53,7 +117,7 @@ i will little bit re architec the app design. before we usi FAISS to store our f
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
+            <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -81,17 +145,17 @@ i will little bit re architec the app design. before we usi FAISS to store our f
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/about-teraskula/" title="About">
+                <a href="https://teraskula.com/posts/about-teraskula/" title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/categories/" title="categories">
+                <a href="https://teraskula.com/categories/" title="categories">
                     <span>categories</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="tags">
+                <a href="https://teraskula.com/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li>
@@ -119,19 +183,21 @@ i will little bit re architec the app design. before we usi FAISS to store our f
   </header> 
   <div class="post-content"><h2 id="candidate-discovery-demo">Candidate discovery demo<a hidden class="anchor" aria-hidden="true" href="#candidate-discovery-demo">#</a></h2>
 <p>In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG)
-i will little bit re architec the app design. before we usi FAISS to store our fectore. i am afraid it cannot scale. so in search of vector databases. i encounter with bunc of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.</p>
+i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.</p>
 <h3 id="lets-use-this-stack-then-">lets use this stack then :<a hidden class="anchor" aria-hidden="true" href="#lets-use-this-stack-then-">#</a></h3>
 <ul>
 <li>qdrant vectore database , why? is the most mature afaik and backed by a company</li>
-<li>using flask/fast api to serve</li>
-<li>maybe combine with postgress to store the actual data</li>
+<li>using flask/fast api to serve (the auto swagger will be easy to build the frontend)</li>
 </ul>
 <h3 id="so-the-goal-here-is">so the goal here is<a hidden class="anchor" aria-hidden="true" href="#so-the-goal-here-is">#</a></h3>
 <ul>
-<li>could upload a resume of candidate -&gt; embed</li>
+<li>could upload a resume of candidate -&gt; embed and save to qdrant</li>
 <li>could search -&gt; (using RAG) best candidate with chat.</li>
 <li>return with human language</li>
 </ul>
+<blockquote>
+<p>no need for overall docs here (like saving the original docs in rdbms (not chunked)), if doing it it could be expand to give more context to the models but now lets focus on <strong>the qdrant similarity first</strong> for now</p>
+</blockquote>
 <h3 id="graph-and-architecture">graph and architecture<a hidden class="anchor" aria-hidden="true" href="#graph-and-architecture">#</a></h3>
 <div class="mermaid">
 graph TD
@@ -150,18 +216,228 @@ graph TD
 <li>code the fast api add some logic
 <ul>
 <li>POST pdf/text =&gt; embeding =&gt; qdrant =&gt; success/error</li>
-<li>POST {query_content:} =&gt; reult the match candidate</li>
+<li>POST {query_content:} =&gt; reult the match candidate (querystring for now is enough)</li>
 <li>POST for plain text candidate data (testing purpose)</li>
 </ul>
 </li>
 </ul>
-<p>this is part 1 will continou tomorrow</p>
+<blockquote>
+<p>no validation :p since its just a demo</p>
+</blockquote>
+<h2 id="qdrant-docker-install">qdrant docker install<a hidden class="anchor" aria-hidden="true" href="#qdrant-docker-install">#</a></h2>
+<p>lets do this 1 we need to install qdrant (docker is enough)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -it -p 6333:6333 -p 6334:6334 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -v <span style="color:#66d9ef">$(</span>pwd<span style="color:#66d9ef">)</span>/qdrant_storage:/qdrant/storage:z <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -d qdrant/qdrant
+</span></span></code></pre></div><p>you could go to qdrant dashboard at <a href="http://localhost:6333/dashboard#/collections">localhost:6333/dashboard</a></p>
+<p><img loading="lazy" src="/img/qdrant-openai-1.png" alt="qdrant-openai-RAG"  />
+</p>
+<h2 id="the-code">The Code<a hidden class="anchor" aria-hidden="true" href="#the-code">#</a></h2>
+<p>in this code obviously started with open AI to create a baseline all endpoints and edit from that
+this code is base on 3 endpoints</p>
+<ul>
+<li>add new candidate (not really care about name for now and ignore filtering)</li>
+<li>add new candidate using pdf (upload) not working yet (same as above but from pdf)</li>
+<li>query candidate and answer it using openAI API</li>
+</ul>
+<blockquote>
+<p>we use open AI API for embeding (turn text to vector) and using for chat completion for answering with human language.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fastapi <span style="color:#f92672">import</span> FastAPI, File, UploadFile, HTTPException
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pydantic <span style="color:#f92672">import</span> BaseModel
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> shutil
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> logging
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> openai <span style="color:#f92672">import</span> OpenAI
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> openai.types <span style="color:#f92672">import</span> Completion, CompletionChoice, CompletionUsage 
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> qdrant_client <span style="color:#f92672">import</span> QdrantClient
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> qdrant_client <span style="color:#f92672">import</span> models
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> qdrant_client.http.models <span style="color:#f92672">import</span> Distance, VectorParams
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_core.documents <span style="color:#f92672">import</span> Document
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_community.document_loaders <span style="color:#f92672">import</span> PyPDFLoader
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_qdrant <span style="color:#f92672">import</span> QdrantVectorStore
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_openai <span style="color:#f92672">import</span> OpenAIEmbeddings
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain.text_splitter <span style="color:#f92672">import</span> RecursiveCharacterTextSplitter
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> uuid <span style="color:#f92672">import</span> uuid4
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#initiate fast api and logging (global config)</span>
+</span></span><span style="display:flex;"><span>app <span style="color:#f92672">=</span> FastAPI()
+</span></span><span style="display:flex;"><span>logging<span style="color:#f92672">.</span>basicConfig(level<span style="color:#f92672">=</span>logging<span style="color:#f92672">.</span>INFO)
+</span></span><span style="display:flex;"><span>clientq <span style="color:#f92672">=</span> QdrantClient(url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;http://localhost:6333&#34;</span>)
+</span></span><span style="display:flex;"><span>openai_api_key <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;use your open ai key&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize OpenAI Embeddings and Qdrant col name and openai client</span>
+</span></span><span style="display:flex;"><span>embedding_model <span style="color:#f92672">=</span> OpenAIEmbeddings(api_key<span style="color:#f92672">=</span>openai_api_key)
+</span></span><span style="display:flex;"><span>clientopenai <span style="color:#f92672">=</span> OpenAI(
+</span></span><span style="display:flex;"><span>    api_key<span style="color:#f92672">=</span>openai_api_key,  <span style="color:#75715e"># This is the default and can be omitted</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>collection_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;demo_candidates&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if the collection exists just create it when its `not` already exist </span>
+</span></span><span style="display:flex;"><span>collections <span style="color:#f92672">=</span> clientq<span style="color:#f92672">.</span>get_collections()
+</span></span><span style="display:flex;"><span>existing_collections <span style="color:#f92672">=</span> [col<span style="color:#f92672">.</span>name <span style="color:#66d9ef">for</span> col <span style="color:#f92672">in</span> collections<span style="color:#f92672">.</span>collections]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># changes to &#34;in&#34; (for me to easy delete the collection or recreate)</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> collection_name <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> existing_collections:
+</span></span><span style="display:flex;"><span>    clientq<span style="color:#f92672">.</span>delete_collection(collection_name)
+</span></span><span style="display:flex;"><span>    clientq<span style="color:#f92672">.</span>create_collection(
+</span></span><span style="display:flex;"><span>        collection_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;demo_candidates&#34;</span>,
+</span></span><span style="display:flex;"><span>        vectors_config<span style="color:#f92672">=</span>VectorParams(size<span style="color:#f92672">=</span><span style="color:#ae81ff">1536</span>, distance<span style="color:#f92672">=</span>Distance<span style="color:#f92672">.</span>COSINE),
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize Qdrant vector store</span>
+</span></span><span style="display:flex;"><span>vectorstore <span style="color:#f92672">=</span> QdrantVectorStore(
+</span></span><span style="display:flex;"><span>    client<span style="color:#f92672">=</span>clientq,
+</span></span><span style="display:flex;"><span>    collection_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;demo_candidates&#34;</span>,
+</span></span><span style="display:flex;"><span>    embedding<span style="color:#f92672">=</span>embedding_model,
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Candidate model for json input request</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Candidate</span>(BaseModel):
+</span></span><span style="display:flex;"><span>    id: str
+</span></span><span style="display:flex;"><span>    description: str
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_pdf</span>(pdf_path):
+</span></span><span style="display:flex;"><span>    loader <span style="color:#f92672">=</span> PyPDFLoader(pdf_path)
+</span></span><span style="display:flex;"><span>    documents <span style="color:#f92672">=</span> loader<span style="color:#f92672">.</span>load()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> documents
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.post</span>(<span style="color:#e6db74">&#34;/candidate&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_candidate</span>(candidate: Candidate):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Load and split the text</span>
+</span></span><span style="display:flex;"><span>        text_splitter <span style="color:#f92672">=</span> RecursiveCharacterTextSplitter(chunk_size<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, chunk_overlap<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>        chunks <span style="color:#f92672">=</span> text_splitter<span style="color:#f92672">.</span>split_text(candidate<span style="color:#f92672">.</span>description)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Wrap each chunk in a Document object with proper structure</span>
+</span></span><span style="display:flex;"><span>        documents <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        candidate_id <span style="color:#f92672">=</span> str(uuid4())
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> chunk <span style="color:#f92672">in</span> chunks:
+</span></span><span style="display:flex;"><span>            documents<span style="color:#f92672">.</span>append(Document(page_content<span style="color:#f92672">=</span>chunk, metadata<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;candidate&#34;</span>, <span style="color:#e6db74">&#34;candidate_id&#34;</span>: candidate_id}))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add text chunks to Qdrant</span>
+</span></span><span style="display:flex;"><span>        vectorstore<span style="color:#f92672">.</span>add_documents(documents<span style="color:#f92672">=</span>documents)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Added candidate: </span><span style="color:#e6db74">{</span>candidate<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Candidate added successfully&#34;</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error adding candidate: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> HTTPException(status_code<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, detail<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Could not add candidate&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.post</span>(<span style="color:#e6db74">&#34;/candidate/pdf&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_candidate_pdf</span>(file: UploadFile <span style="color:#f92672">=</span> File(<span style="color:#f92672">...</span>)):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># save the uploaded PDF file to a temporary location</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;temp/</span><span style="color:#e6db74">{</span>file<span style="color:#f92672">.</span>filename<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>, <span style="color:#e6db74">&#34;wb&#34;</span>) <span style="color:#66d9ef">as</span> buffer:
+</span></span><span style="display:flex;"><span>            shutil<span style="color:#f92672">.</span>copyfileobj(file<span style="color:#f92672">.</span>file, buffer)
+</span></span><span style="display:flex;"><span>            
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># load and split the text</span>
+</span></span><span style="display:flex;"><span>        documents <span style="color:#f92672">=</span> load_pdf(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;temp/</span><span style="color:#e6db74">{</span>file<span style="color:#f92672">.</span>filename<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># spliter better use RecursiveCharacterTextSplitter</span>
+</span></span><span style="display:flex;"><span>        text_splitter <span style="color:#f92672">=</span> RecursiveCharacterTextSplitter(chunk_size<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, chunk_overlap<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>)
+</span></span><span style="display:flex;"><span>        chunks <span style="color:#f92672">=</span> text_splitter<span style="color:#f92672">.</span>split_documents(documents)
+</span></span><span style="display:flex;"><span>        candidate_id <span style="color:#f92672">=</span> str(uuid4())
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> chunk <span style="color:#f92672">in</span> chunks:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># this take a long time turns out chunk already have property page_content but i am not sure all have that so just to make sure</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> isinstance(chunk, str):
+</span></span><span style="display:flex;"><span>                page_content <span style="color:#f92672">=</span> chunk
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> isinstance(chunk, Document):
+</span></span><span style="display:flex;"><span>                page_content <span style="color:#f92672">=</span> chunk<span style="color:#f92672">.</span>page_content
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;Chunk is not a valid string or Document object.&#34;</span>)
+</span></span><span style="display:flex;"><span>            documents<span style="color:#f92672">.</span>append(Document(page_content<span style="color:#f92672">=</span>page_content, metadata<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#34;source&#34;</span>: <span style="color:#e6db74">&#34;candidate&#34;</span>, <span style="color:#e6db74">&#34;candidate_id&#34;</span>: candidate_id}))
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add text chunks to qdrant</span>
+</span></span><span style="display:flex;"><span>        vectorstore<span style="color:#f92672">.</span>add_documents(documents<span style="color:#f92672">=</span>documents)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Uploaded and added file: </span><span style="color:#e6db74">{</span>file<span style="color:#f92672">.</span>filename<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;message&#34;</span>: <span style="color:#e6db74">&#34;Candidate PDF uploaded and embedded successfully&#34;</span>}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error processing file: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> HTTPException(status_code<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, detail<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Could not process the file&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">@app.post</span>(<span style="color:#e6db74">&#34;/candidate/query&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">query_candidates</span>(query: str):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        print(query)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Perform similarity search in Qdrant</span>
+</span></span><span style="display:flex;"><span>        results <span style="color:#f92672">=</span> vectorstore<span style="color:#f92672">.</span>similarity_search(
+</span></span><span style="display:flex;"><span>            query<span style="color:#f92672">=</span>query,
+</span></span><span style="display:flex;"><span>            k<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>,                   
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extract matches</span>
+</span></span><span style="display:flex;"><span>        matches <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>            {<span style="color:#e6db74">&#34;id&#34;</span>: result<span style="color:#f92672">.</span>metadata<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#34;candidate_id&#34;</span>, <span style="color:#e6db74">&#34;Unknown&#34;</span>), <span style="color:#e6db74">&#34;text&#34;</span>: result<span style="color:#f92672">.</span>page_content}
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> result <span style="color:#f92672">in</span> results
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Format results for OpenAI</span>
+</span></span><span style="display:flex;"><span>        result_texts <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>join(
+</span></span><span style="display:flex;"><span>            [<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Candidate ID: </span><span style="color:#e6db74">{</span>match[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">, Description: </span><span style="color:#e6db74">{</span>match[<span style="color:#e6db74">&#39;text&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> <span style="color:#66d9ef">for</span> <span style="color:#66d9ef">match</span> <span style="color:#f92672">in</span> matches]
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        prompt <span style="color:#f92672">=</span> (
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;You are an expert HR assistant. A user asked: &#39;</span><span style="color:#e6db74">{</span>query<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;. Based on the following &#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;candidate descriptions, respond conversationally:</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">{</span>result_texts<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Generate a human-like response using OpenAI</span>
+</span></span><span style="display:flex;"><span>        openai_response <span style="color:#f92672">=</span> clientopenai<span style="color:#f92672">.</span>chat<span style="color:#f92672">.</span>completions<span style="color:#f92672">.</span>create(
+</span></span><span style="display:flex;"><span>            model<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;gpt-4o&#34;</span>,
+</span></span><span style="display:flex;"><span>            messages<span style="color:#f92672">=</span>[{<span style="color:#e6db74">&#34;role&#34;</span>: <span style="color:#e6db74">&#34;user&#34;</span>, <span style="color:#e6db74">&#34;content&#34;</span>: prompt}]
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        print(openai_response<span style="color:#f92672">.</span>choices)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        conversational_response <span style="color:#f92672">=</span> openai_response<span style="color:#f92672">.</span>choices[<span style="color:#ae81ff">0</span>]<span style="color:#f92672">.</span>message<span style="color:#f92672">.</span>content
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Querying candidates with: </span><span style="color:#e6db74">{</span>query<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;response&#34;</span>: conversational_response, <span style="color:#e6db74">&#34;matches&#34;</span>: matches}
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        logging<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error querying candidates: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> HTTPException(status_code<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>, detail<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Could not query candidates&#34;</span>)
+</span></span></code></pre></div><p>you could coppy that code and make open AI explain it but i already explain some of the important part on the comment.</p>
+<p>after that just open <a href="http://127.0.0.1:8000/docs#">localhost:8000 (default port for fast api)</a> and this is already the swagger of our API</p>
+<h2 id="the-frontend">The FRONTEND<a hidden class="anchor" aria-hidden="true" href="#the-frontend">#</a></h2>
+<p>ok its little bit tricky since we already know <a href="https://bolt.new/">bolt.new</a> lets just copy our swagger to bolt.new and ask for beautiful interface</p>
+<p>and this is the prompt that i use on <a href="https://bolt.new/">bolt.new</a></p>
+<pre tabindex="0"><code>create me a nextjs 14 app with tailwind css 
+this app is for upload candidate and search candidate
+that have 3 menu
+add candidate from text 
+add candidate uploading pdf resume
+search/query candidate
+
+all of this will hit API on localhost:8000
+with this documentation
+
+{&#34;openapi&#34;:&#34;..from swagger...}
+</code></pre><p>From bolt.new and little bit tweak like cors, fix some dependencies. and this is the result.
+<strong>the frontend is ready</strong>, its just took ~6 min to make the frontend app work in <code>npm run dev</code> mode</p>
+<p><img loading="lazy" src="/img/qdrant-openai-2.png" alt="qdrant-openai-RAG"  />
+
+<img loading="lazy" src="/img/qdrant-openai-3.png" alt="qdrant-openai-RAG"  />
+</p>
+<p>for all the code you could get from this github
+need tweak maybe ask there and will try to answer.</p>
+<h2 id="conclution">Conclution<a hidden class="anchor" aria-hidden="true" href="#conclution">#</a></h2>
+<p>In this example we already learn about the RAG on multiple documents, and talk about it. and apply it to simple usecase to searching candidates.
+so if you have a lot of candidates and need to search the bast candidate or Applicant base on your requirements. this is will help you a lot.</p>
 
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
+      <li><a href="https://teraskula.com/tags/ai/">Ai</a></li>
+      <li><a href="https://teraskula.com/tags/nextjs/">Nextjs</a></li>
+      <li><a href="https://teraskula.com/tags/usecase/">Usecase</a></li>
     </ul>
   </footer><div id="disqus_thread"></div>
 <script>
@@ -181,7 +457,7 @@ graph TD
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">teraskula.com</a></span>
+    <span>&copy; 2024 <a href="https://teraskula.com/">teraskula.com</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
