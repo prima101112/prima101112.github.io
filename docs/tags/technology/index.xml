@@ -8,14 +8,15 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 20 Dec 2024 22:17:10 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Candidate Discovery Demo Qdrant Openai</title>
+      <title>Candidate Discovery Demo Qdrant Openai RAG</title>
       <link>https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/</link>
       <pubDate>Fri, 20 Dec 2024 22:17:10 +0700</pubDate>
       
       <guid>https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/</guid>
       <description>&lt;h2 id=&#34;candidate-discovery-demo&#34;&gt;Candidate discovery demo&lt;/h2&gt;
-&lt;p&gt;In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG)
-i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.&lt;/p&gt;</description>
+&lt;p&gt;In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG).&lt;/p&gt;
+&lt;p&gt;combining this &lt;a href=&#34;https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/&#34;&gt;nextjs from bolt.new chat with ollama&lt;/a&gt; and &lt;a href=&#34;https://teraskula.com/posts/langchain-pdf-ollama-rag/&#34;&gt;langchain for talking with pdf files&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;we will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.&lt;/p&gt;</description>
     </item>
     
     <item>

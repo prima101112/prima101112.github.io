@@ -1,5 +1,5 @@
 ---
-title: "Candidate Discovery Demo Qdrant Openai"
+title: "Candidate Discovery Demo Qdrant Openai RAG"
 date: 2024-12-20T22:17:10+07:00
 draft: false
 categories: ['technology', 'blog','ai']
@@ -7,8 +7,11 @@ tags: ['technology','ai', nextjs, 'usecase']
 ---
 ## Candidate discovery demo
 
-In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG)
-i will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.
+In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG).
+
+combining this [nextjs from bolt.new chat with ollama](https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/) and [langchain for talking with pdf files](https://teraskula.com/posts/langchain-pdf-ollama-rag/)
+
+we will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.
 
 ### lets use this stack then :
 
@@ -57,7 +60,7 @@ docker run -it -p 6333:6333 -p 6334:6334 \
     -d qdrant/qdrant
 ```
 
-you could go to qdrant dashboard at [localhost:6333/dashboard](http://localhost:6333/dashboard#/collections)
+we could go to qdrant dashboard at [localhost:6333/dashboard](http://localhost:6333/dashboard#/collections)
 
 ![qdrant-openai-RAG](/img/qdrant-openai-1.png)
 
@@ -212,6 +215,8 @@ async def query_candidates(query: str):
         result_texts = "\n".join(
             [f"Candidate ID: {match['id']}, Description: {match['text']}" for match in matches]
         )
+
+        #conversationally is the best word
         prompt = (
             f"You are an expert HR assistant. A user asked: '{query}'. Based on the following "
             f"candidate descriptions, respond conversationally:\n\n{result_texts}"
@@ -235,7 +240,7 @@ async def query_candidates(query: str):
 
 ```
 
-you could coppy that code and make open AI explain it but i already explain some of the important part on the comment.
+we could coppy that code and make open AI explain it but i already explain some of the important part on the comment.
 
 after that just open [localhost:8000 (default port for fast api)](http://127.0.0.1:8000/docs#) and this is already the swagger of our API
 
@@ -265,12 +270,12 @@ From bolt.new and little bit tweak like cors, fix some dependencies. and this is
 ![qdrant-openai-RAG](/img/qdrant-openai-2.png)
 ![qdrant-openai-RAG](/img/qdrant-openai-3.png)
 
-for all the code you could get from this github
+for all the code we could get from this [github/prima101112/hirivia](https://github.com/prima101112/hirivia)
 need tweak maybe ask there and will try to answer.
 
 ## Conclution
 
 In this example we already learn about the RAG on multiple documents, and talk about it. and apply it to simple usecase to searching candidates.
-so if you have a lot of candidates and need to search the bast candidate or Applicant base on your requirements. this is will help you a lot.
+so if we have a lot of candidates and need to search the bast candidate or Applicant base on our requirements. this is will help us a lot.
 
 
