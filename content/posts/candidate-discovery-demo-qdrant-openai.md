@@ -11,7 +11,7 @@ In this post will be litle bit technical. continuing what i already created that
 
 combining this [nextjs from bolt.new chat with ollama](https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/) and [langchain for talking with pdf files](https://teraskula.com/posts/langchain-pdf-ollama-rag/)
 
-we will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.
+we will slightly re-architec the app user flow design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.
 
 ### lets use this stack then :
 
@@ -273,7 +273,7 @@ From bolt.new and little bit tweak like cors, fix some dependencies. and this is
 for all the code we could get from this [github/prima101112/hirivia](https://github.com/prima101112/hirivia)
 need tweak maybe ask there and will try to answer.
 
-## Conclution
+## Conclusion
 
 In this example we already learn about the RAG on multiple documents, and talk about it. and apply it to simple usecase to searching candidates.
 so if we have a lot of candidates and need to search the bast candidate or Applicant base on our requirements. this is will help us a lot.

@@ -16,7 +16,7 @@
       <description>&lt;h2 id=&#34;candidate-discovery-demo&#34;&gt;Candidate discovery demo&lt;/h2&gt;
 &lt;p&gt;In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG).&lt;/p&gt;
 &lt;p&gt;combining this &lt;a href=&#34;https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/&#34;&gt;nextjs from bolt.new chat with ollama&lt;/a&gt; and &lt;a href=&#34;https://teraskula.com/posts/langchain-pdf-ollama-rag/&#34;&gt;langchain for talking with pdf files&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;we will little bit re architec the app design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.&lt;/p&gt;</description>
+&lt;p&gt;we will slightly re-architec the app user flow design. before, we use FAISS to store our vector. i am afraid it cannot scale (do not know how to scale). so in search of vector databases. i encounter with bunch of option there is pgai (that really take my interest) still in beta, but also qdrant that already have their enterpise option.&lt;/p&gt;</description>
     </item>
     
   </channel>
