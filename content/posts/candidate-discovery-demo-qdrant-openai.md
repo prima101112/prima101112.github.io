@@ -15,7 +15,7 @@ we will slightly re-architec the app user flow design. before, we use FAISS to s
 
 ### lets use this stack then :
 
-- qdrant vectore database , why? is the most mature afaik and backed by a company
+- qdrant vector database , why? is the most mature afaik and backed by a company
 - using flask/fast api to serve (the auto swagger will be easy to build the frontend)
 
 ### so the goal here is
