@@ -2,6 +2,8 @@
 title: "Ollama Chat From Browser Using Nextjs"
 date: 2024-11-21T00:31:49+07:00
 draft: false
+author: "prima adi"
+author: "prima adi"
 categories: ['technology', 'blog','ai']
 tags: ['technology','ai', nextjs]
 languageCode: 'en-us'

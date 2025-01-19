@@ -2,6 +2,7 @@
 title: "ChatGPT Open Ai, Is It Scary?"
 date: 2022-12-09T15:56:14+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog', 'ai']
 tags: ['technology', 'chatbot', 'ai', 'chatgpt']
 languageCode: 'en-us'

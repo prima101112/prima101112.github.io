@@ -2,6 +2,7 @@
 title: "Candidate Discovery Demo Qdrant Openai RAG"
 date: 2024-12-20T22:17:10+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog','ai']
 tags: ['technology','ai', nextjs, 'usecase']
 ---

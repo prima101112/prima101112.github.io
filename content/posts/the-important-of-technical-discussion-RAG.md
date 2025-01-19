@@ -2,6 +2,7 @@
 title: "The Important of Technical Discussion"
 date: 2024-12-06T09:44:36+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog','learning']
 tags: ['technology', 'social interaction', 'learn']
 languageCode: 'en-us'

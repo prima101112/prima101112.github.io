@@ -2,6 +2,7 @@
 title: "Ai Generated Content Emmerge"
 date: 2024-12-19T16:25:05+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog','ai']
 tags: ['technology','ai', 'concern']
 languageCode: 'en-us'

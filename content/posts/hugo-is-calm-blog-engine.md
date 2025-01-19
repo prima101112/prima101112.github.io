@@ -2,6 +2,7 @@
 title: "Hugo Is Calm Blog Engine"
 date: 2022-11-24T17:30:15+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog']
 tags: ['technology', 'hugo', 'initial']
 languageCode: 'en-us'

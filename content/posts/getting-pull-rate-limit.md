@@ -2,6 +2,7 @@
 title: "Getting Pull Rate Limit and Workaround"
 date: 2022-12-13T12:04:51+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'docker', 'kubernetes']
 tags: ['technology', 'docker', 'kubernetes', 'workaround']
 languageCode: 'en-us'

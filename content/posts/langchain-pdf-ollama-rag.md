@@ -2,6 +2,7 @@
 title: "Langchain PDF Ollama RAG (Retrieval Augmented Generation)"
 date: 2024-12-02T23:12:46+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog','ai']
 tags: ['technology','ai', nextjs]
 languageCode: 'en-us'

@@ -2,6 +2,7 @@
 title: "Layoff Phenomenon 2022"
 date: 2022-11-25T16:38:00+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog']
 tags: ['technology', 'initial']
 languageCode: 'en-us'

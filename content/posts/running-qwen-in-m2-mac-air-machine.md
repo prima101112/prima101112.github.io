@@ -2,6 +2,7 @@
 title: "Running Qwen in M2 Mac Air Machine using Ollama"
 date: 2024-11-20T00:57:25+07:00
 draft: false
+author: "prima adi"
 categories: ['technology', 'blog','ai']
 tags: ['technology', 'commit2','ai']
 languageCode: 'en-us'
