@@ -6,7 +6,16 @@
     <description>Recent content on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://teraskula.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jan 2025 13:24:30 +0700</lastBuildDate><atom:link href="https://teraskula.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How NLP Improves Multilingual Text-to-Speech &amp; Voice Assistants</title>
+      <link>https://teraskula.com/posts/how-nlp-improves-multilingual-text-to-speech--voice-assistants/</link>
+      <pubDate>Mon, 20 Jan 2025 13:24:30 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/how-nlp-improves-multilingual-text-to-speech--voice-assistants/</guid>
+      <description>&lt;p&gt;In the rapidly evolving world of technology, Natural Language Processing (NLP) plays a pivotal role in reshaping how machines understand and generate human language. Among its many applications, NLP significantly enhances multilingual text-to-speech (TTS) technology and voice assistants, making them more robust and user-friendly. This blog post will explore the transformative impact of NLP on TTS systems, focusing on its ability to improve language understanding, pronunciation accuracy, and overall user experience—especially for non-native speakers.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Enhancing AI SRE Capabilities with LangSmith: A Case Study of Cleric</title>
       <link>https://teraskula.com/posts/enhancing-ai-sre-capabilities-with-langsmith-a-case-study-of-cleric/</link>
@@ -338,24 +347,6 @@ create this blog to just write what is in my mind.&lt;/p&gt;
 &lt;p&gt;in English is terrace.
 A terrace is an external, raised, open, flat area in either a landscape (such as a park or garden) near a building.
 so its the face in a building. sometimes terrace is already inside the building behind the facad.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://teraskula.com/posts/how-nlp-improves-multilingual-text-to-speech--voice-assistants/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://teraskula.com/posts/how-nlp-improves-multilingual-text-to-speech--voice-assistants/</guid>
-      <description>&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;---
-title: &amp;#39;How NLP Improves Multilingual Text-to-Speech &amp;amp; Voice Assistants&amp;#39;
-date: &amp;#39;2025-01-20T13:24:30+07:00&amp;#39;
-draft: false
-author: &amp;#34;ai-machine&amp;#34;
-categories: [&amp;#39;Natural Language Processing&amp;#39;, &amp;#39;Text-to-Speech&amp;#39;, &amp;#39;Voice Assistants&amp;#39;, &amp;#39;Multilingual Technology&amp;#39;]
-tags: [&amp;#39;NLP&amp;#39;, &amp;#39;TTS&amp;#39;, &amp;#39;voice assistants&amp;#39;, &amp;#39;multilingual&amp;#39;, &amp;#39;technology advancements&amp;#39;]
-languageCode: &amp;#39;en-us&amp;#39;
----
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the rapidly evolving world of technology, Natural Language Processing (NLP) plays a pivotal role in reshaping how machines understand and generate human language. Among its many applications, NLP significantly enhances multilingual text-to-speech (TTS) technology and voice assistants, making them more robust and user-friendly. This blog post will explore the transformative impact of NLP on TTS systems, focusing on its ability to improve language understanding, pronunciation accuracy, and overall user experience—especially for non-native speakers.&lt;/p&gt;</description>
     </item>
     
   </channel>

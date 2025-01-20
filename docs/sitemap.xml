@@ -2,6 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://teraskula.com/categories/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/how-nlp-improves-multilingual-text-to-speech--voice-assistants/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/multilingual/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/multilingual-technology/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/natural-language-processing/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/nlp/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/technology-advancements/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/text-to-speech/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/tts/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/voice-assistants/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/voice-assistants/</loc>
+    <lastmod>2025-01-20T13:24:30+07:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/tags/ai-roi/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -18,9 +60,6 @@
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/business-strategy/</loc>
-    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/categories/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/cleric/</loc>
@@ -44,9 +83,6 @@
     <loc>https://teraskula.com/tags/metrics/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://teraskula.com/posts/</loc>
-    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://teraskula.com/tags/production-issues/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
@@ -54,12 +90,6 @@
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/site-reliability-engineering/</loc>
-    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/</loc>
-    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/ai/</loc>
@@ -172,7 +202,5 @@
   </url><url>
     <loc>https://teraskula.com/posts/about-teraskula/</loc>
     <lastmod>2022-11-23T21:15:30+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/posts/how-nlp-improves-multilingual-text-to-speech--voice-assistants/</loc>
   </url>
 </urlset>
