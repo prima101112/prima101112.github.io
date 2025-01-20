@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Usecase on teraskula.com</title>
-    <link>http://localhost:1313/tags/usecase/</link>
+    <link>https://teraskula.com/tags/usecase/</link>
     <description>Recent content in Usecase on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Dec 2024 22:17:10 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/usecase/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Dec 2024 22:17:10 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/usecase/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Candidate Discovery Demo Qdrant Openai RAG</title>
-      <link>http://localhost:1313/posts/candidate-discovery-demo-qdrant-openai/</link>
+      <link>https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/</link>
       <pubDate>Fri, 20 Dec 2024 22:17:10 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/candidate-discovery-demo-qdrant-openai/</guid>
+      <guid>https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/</guid>
       <description>&lt;h2 id=&#34;candidate-discovery-demo&#34;&gt;Candidate discovery demo&lt;/h2&gt;
 &lt;p&gt;In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG).&lt;/p&gt;
 &lt;p&gt;combining this &lt;a href=&#34;https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/&#34;&gt;nextjs from bolt.new chat with ollama&lt;/a&gt; and &lt;a href=&#34;https://teraskula.com/posts/langchain-pdf-ollama-rag/&#34;&gt;langchain for talking with pdf files&lt;/a&gt;&lt;/p&gt;

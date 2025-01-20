@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Nextjs on teraskula.com</title>
-    <link>http://localhost:1313/tags/nextjs/</link>
+    <link>https://teraskula.com/tags/nextjs/</link>
     <description>Recent content in Nextjs on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Dec 2024 22:17:10 +0700</lastBuildDate><atom:link href="http://localhost:1313/tags/nextjs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Dec 2024 22:17:10 +0700</lastBuildDate><atom:link href="https://teraskula.com/tags/nextjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Candidate Discovery Demo Qdrant Openai RAG</title>
-      <link>http://localhost:1313/posts/candidate-discovery-demo-qdrant-openai/</link>
+      <link>https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/</link>
       <pubDate>Fri, 20 Dec 2024 22:17:10 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/candidate-discovery-demo-qdrant-openai/</guid>
+      <guid>https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/</guid>
       <description>&lt;h2 id=&#34;candidate-discovery-demo&#34;&gt;Candidate discovery demo&lt;/h2&gt;
 &lt;p&gt;In this post will be litle bit technical. continuing what i already created that talk with pdf (RAG).&lt;/p&gt;
 &lt;p&gt;combining this &lt;a href=&#34;https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/&#34;&gt;nextjs from bolt.new chat with ollama&lt;/a&gt; and &lt;a href=&#34;https://teraskula.com/posts/langchain-pdf-ollama-rag/&#34;&gt;langchain for talking with pdf files&lt;/a&gt;&lt;/p&gt;
@@ -21,10 +21,10 @@
     
     <item>
       <title>Langchain PDF Ollama RAG (Retrieval Augmented Generation)</title>
-      <link>http://localhost:1313/posts/langchain-pdf-ollama-rag/</link>
+      <link>https://teraskula.com/posts/langchain-pdf-ollama-rag/</link>
       <pubDate>Mon, 02 Dec 2024 23:12:46 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/langchain-pdf-ollama-rag/</guid>
+      <guid>https://teraskula.com/posts/langchain-pdf-ollama-rag/</guid>
       <description>&lt;h2 id=&#34;give-pdf-and-talk-about-it&#34;&gt;Give PDF and talk about it&lt;/h2&gt;
 &lt;h4 id=&#34;using-lanchain-to-perform-rag-using-ollama-embedings-and-faiss-vectorstore&#34;&gt;using lanchain to perform RAG using Ollama embedings and FAISS vectorstore&lt;/h4&gt;
 &lt;p&gt;yeah maybe many tools already provide this kind of feature, But this is different, this is about knowing behind the scene. what actually they do to the pdf files? what actually we do to the text in it? and how the LLM is know what context they need?.&lt;/p&gt;
@@ -33,10 +33,10 @@
     
     <item>
       <title>Ollama Chat From Browser Using Nextjs</title>
-      <link>http://localhost:1313/posts/ollama-chat-from-browser-using-nextjs/</link>
+      <link>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</link>
       <pubDate>Thu, 21 Nov 2024 00:31:49 +0700</pubDate>
       
-      <guid>http://localhost:1313/posts/ollama-chat-from-browser-using-nextjs/</guid>
+      <guid>https://teraskula.com/posts/ollama-chat-from-browser-using-nextjs/</guid>
       <description>&lt;h3 id=&#34;ollama-chat-from-browser-using-nextjs&#34;&gt;Ollama Chat From Browser Using Nextjs&lt;/h3&gt;
 &lt;p&gt;This writing will be so small.
 it should be a step by step on creating nextjs app that will communicate with local ollama.
