@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Business Strategy on teraskula.com</title>
-    <link>https://teraskula.com/categories/business-strategy/</link>
-    <description>Recent content in Business Strategy on teraskula.com</description>
+    <title>Data Analytics on teraskula.com</title>
+    <link>https://teraskula.com/categories/data-analytics/</link>
+    <description>Recent content in Data Analytics on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jan 2025 13:36:19 +0700</lastBuildDate><atom:link href="https://teraskula.com/categories/business-strategy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jan 2025 13:36:19 +0700</lastBuildDate><atom:link href="https://teraskula.com/categories/data-analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Big Data Benefits for Businesses: How to Make Your Company More Competitive</title>
       <link>https://teraskula.com/posts/the-big-data-benefits-for-businesses-how-to-make-your-company-more-competitive/</link>
@@ -15,16 +15,6 @@
       <guid>https://teraskula.com/posts/the-big-data-benefits-for-businesses-how-to-make-your-company-more-competitive/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;In today&amp;rsquo;s rapidly evolving digital age, data has become an invaluable asset for businesses of all sizes. The term &amp;ldquo;Big Data&amp;rdquo; refers to the large volumes of data that organizations generate and collect daily. Leveraging this data effectively can transform companies, offering strategic benefits that translate into a competitive edge in the marketplace. In this blog post, we will explore how businesses can utilize Big Data, the competitive advantages it provides, and steps to implement it effectively.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Measuring the ROI of AI: Key Metrics and Strategies</title>
-      <link>https://teraskula.com/posts/measuring-the-roi-of-ai-key-metrics-and-strategies/</link>
-      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>https://teraskula.com/posts/measuring-the-roi-of-ai-key-metrics-and-strategies/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;As organizations increasingly invest in artificial intelligence (AI), understanding the return on investment (ROI) of these initiatives becomes crucial. Measuring the ROI of AI is not a straightforward endeavor; it requires a nuanced approach that integrates both quantitative metrics and qualitative assessments. This blog post will explore effective strategies and key metrics for measuring the ROI of AI, ensuring organizations can harness the full potential of their AI investments.&lt;/p&gt;</description>
     </item>
     
   </channel>
