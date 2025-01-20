@@ -6,7 +6,34 @@
     <description>Recent content in Categories on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Dec 2024 22:17:10 +0700</lastBuildDate><atom:link href="https://teraskula.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://teraskula.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>https://teraskula.com/categories/artificial-intelligence/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/categories/artificial-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevOps</title>
+      <link>https://teraskula.com/categories/devops/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/categories/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Site Reliability Engineering</title>
+      <link>https://teraskula.com/categories/site-reliability-engineering/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/categories/site-reliability-engineering/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Ai</title>
       <link>https://teraskula.com/categories/ai/</link>
