@@ -8,8 +8,6 @@ tags: ['Cleric', 'LangSmith', 'AI SRE', 'Continuous Learning', 'Production Issue
 languageCode: 'en-us'
 ---
 
-# Enhancing AI SRE Capabilities with LangSmith: A Case Study of Cleric
-
 ## Introduction
 
 In an era where the digital landscape is constantly evolving, the role of Site Reliability Engineers (SREs) has become even more critical. Enter **Cleric**, an AI-powered SRE that leverages cutting-edge technology to enhance its capabilities in identifying and resolving production issues. This blog post delves into how Cleric has transformed its operational efficiency by utilizing LangSmith's continuous learning framework, ultimately showcasing the necessity of evolving AI tools to meet the demands of modern operations.
