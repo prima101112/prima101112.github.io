@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://teraskula.com/tags/ai-roi/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/tags/ai-sre/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://teraskula.com/tags/ai-strategies/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/categories/artificial-intelligence/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/business-analytics/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/business-strategy/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/</loc>
@@ -26,10 +38,19 @@
     <loc>https://teraskula.com/tags/langsmith/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://teraskula.com/posts/measuring-the-roi-of-ai-key-metrics-and-strategies/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/metrics/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/posts/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/production-issues/</loc>
+    <lastmod>2025-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/roi-measurement/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/site-reliability-engineering/</loc>

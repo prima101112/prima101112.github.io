@@ -8,11 +8,38 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 20 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://teraskula.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AI ROI</title>
+      <link>https://teraskula.com/tags/ai-roi/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/tags/ai-roi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>AI SRE</title>
       <link>https://teraskula.com/tags/ai-sre/</link>
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://teraskula.com/tags/ai-sre/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AI Strategies</title>
+      <link>https://teraskula.com/tags/ai-strategies/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/tags/ai-strategies/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business Analytics</title>
+      <link>https://teraskula.com/tags/business-analytics/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/tags/business-analytics/</guid>
       <description></description>
     </item>
     
@@ -40,6 +67,15 @@
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://teraskula.com/tags/langsmith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://teraskula.com/tags/metrics/</link>
+      <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://teraskula.com/tags/metrics/</guid>
       <description></description>
     </item>
     
