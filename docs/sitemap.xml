@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://teraskula.com/tags/ai/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/ai/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/follow/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/following-ai-news-and-papers/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/model/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/news/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/technology/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/</loc>
+    <lastmod>2025-01-27T23:08:28+07:00</lastmod>
+  </url><url>
     <loc>https://teraskula.com/tags/analytics/</loc>
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
@@ -14,28 +47,16 @@
     <loc>https://teraskula.com/categories/business-strategy/</loc>
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
-    <loc>https://teraskula.com/categories/</loc>
-    <lastmod>2025-01-20T13:36:19+07:00</lastmod>
-  </url><url>
     <loc>https://teraskula.com/categories/data-analytics/</loc>
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/data-strategy/</loc>
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
-    <loc>https://teraskula.com/posts/</loc>
-    <lastmod>2025-01-20T13:36:19+07:00</lastmod>
-  </url><url>
     <loc>https://teraskula.com/tags/predictive-analytics/</loc>
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
-    <loc>https://teraskula.com/tags/</loc>
-    <lastmod>2025-01-20T13:36:19+07:00</lastmod>
-  </url><url>
     <loc>https://teraskula.com/categories/technology/</loc>
-    <lastmod>2025-01-20T13:36:19+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/</loc>
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/the-big-data-benefits-for-businesses-how-to-make-your-company-more-competitive/</loc>
@@ -116,12 +137,6 @@
     <loc>https://teraskula.com/categories/site-reliability-engineering/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://teraskula.com/tags/ai/</loc>
-    <lastmod>2024-12-20T22:17:10+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/categories/ai/</loc>
-    <lastmod>2024-12-20T22:17:10+07:00</lastmod>
-  </url><url>
     <loc>https://teraskula.com/categories/blog/</loc>
     <lastmod>2024-12-20T22:17:10+07:00</lastmod>
   </url><url>
@@ -129,9 +144,6 @@
     <lastmod>2024-12-20T22:17:10+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/nextjs/</loc>
-    <lastmod>2024-12-20T22:17:10+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/technology/</loc>
     <lastmod>2024-12-20T22:17:10+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/usecase/</loc>
