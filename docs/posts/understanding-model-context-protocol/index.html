@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99V7B3NL74"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-99V7B3NL74');
+</script>
+<title>Understanding Model Context Protocol | teraskula.com</title>
+<meta name="keywords" content="technology, MCP, ai">
+<meta name="description" content="Journey understanding it
+What is Model Context Protocol
+in this recent days like 2 weeks back i was stumbling upon an agentic AI, what is agentic we all does not really know it.
+agentic is the AI act like agent they understand what you need and doing certain action also choose tools to do what you need, thats whats my understanding of agentic AI. but for more prcise Agentic AI refers to artificial intelligence that acts like an agent capable of understanding user needs, selecting appropriate tools, and performing actions autonomously.">
+<meta name="author" content="prima adi">
+<link rel="canonical" href="https://teraskula.com/posts/understanding-model-context-protocol/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://teraskula.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://teraskula.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/understanding-model-context-protocol/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Understanding Model Context Protocol" />
+<meta property="og:description" content="Journey understanding it
+What is Model Context Protocol
+in this recent days like 2 weeks back i was stumbling upon an agentic AI, what is agentic we all does not really know it.
+agentic is the AI act like agent they understand what you need and doing certain action also choose tools to do what you need, thats whats my understanding of agentic AI. but for more prcise Agentic AI refers to artificial intelligence that acts like an agent capable of understanding user needs, selecting appropriate tools, and performing actions autonomously." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://teraskula.com/posts/understanding-model-context-protocol/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-03-26T21:42:38+07:00" />
+<meta property="article:modified_time" content="2025-03-26T21:42:38+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Understanding Model Context Protocol"/>
+<meta name="twitter:description" content="Journey understanding it
+What is Model Context Protocol
+in this recent days like 2 weeks back i was stumbling upon an agentic AI, what is agentic we all does not really know it.
+agentic is the AI act like agent they understand what you need and doing certain action also choose tools to do what you need, thats whats my understanding of agentic AI. but for more prcise Agentic AI refers to artificial intelligence that acts like an agent capable of understanding user needs, selecting appropriate tools, and performing actions autonomously."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://teraskula.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Understanding Model Context Protocol",
+      "item": "https://teraskula.com/posts/understanding-model-context-protocol/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Understanding Model Context Protocol",
+  "name": "Understanding Model Context Protocol",
+  "description": "Journey understanding it What is Model Context Protocol in this recent days like 2 weeks back i was stumbling upon an agentic AI, what is agentic we all does not really know it. agentic is the AI act like agent they understand what you need and doing certain action also choose tools to do what you need, thats whats my understanding of agentic AI. but for more prcise Agentic AI refers to artificial intelligence that acts like an agent capable of understanding user needs, selecting appropriate tools, and performing actions autonomously.\n",
+  "keywords": [
+    "technology", "MCP", "ai"
+  ],
+  "articleBody": "Journey understanding it What is Model Context Protocol in this recent days like 2 weeks back i was stumbling upon an agentic AI, what is agentic we all does not really know it. agentic is the AI act like agent they understand what you need and doing certain action also choose tools to do what you need, thats whats my understanding of agentic AI. but for more prcise Agentic AI refers to artificial intelligence that acts like an agent capable of understanding user needs, selecting appropriate tools, and performing actions autonomously.\nfor supporting this Anthropic are creating a standard called Model Context Protocol this is from their site\nMCP is an open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools.\ni am already try this model context protocol using to communicate with k8s or getting insight from sqlite database small helloworld to MCP. but how its actually work.\nWhy Most MCP are run on local when we use claude desktop or other mcp client mostly the mcp config look like this\n{ \"mcpServers\": { \"filesystem\": { \"command\": \"npx\", \"args\": [ \"-y\", \"@modelcontextprotocol/server-filesystem\", \"/Users/username/Desktop\", \"/Users/username/Downloads\" ] } } } if we see this, there is command that run npx and run the server localy. This launches a local MCP server to access files on your Desktop and Downloads folders. Why local? The protocol’s standards for remote authentication and security are still in development. For example, if you hosted an MCP server for a cloud-based PostgreSQL database, the server might connect to the database fine, but the client-to-server link would need manual security (e.g., behind an authentication layer) to be safe.\nlets say we have postgresql in a cloud and we deploy MCP server postgress and connect to it. mcp to postgress are have a limited access but MCP client to MCP server are still no security or auth, we should manualy put a server behind auth to make this actually work.\nto actually understanding this MCP client and MCP server relation in local and if we want to do it in remote server as follows\nMCP server in local you may understand it better if you could see this sequence diagram. all of this state are happend in local. even whe call it mcp server its actually running on local and note.txt also in local\nsequenceDiagram participant U as User participant C as MCP Client participant S as MCP Server participant A as AI Model U-\u003e\u003eC: \"Summarize notes.txt\" C-\u003e\u003eA: Sends user request C-\u003e\u003eS: MCP Request (stdio) S--\u003e\u003eS: Accesses local file (e.g., notes.txt) S-\u003e\u003eC: Returns content (stdio) C-\u003e\u003eA: Forwards content to AI A--\u003e\u003eA: Processes into summary A-\u003e\u003eC: Sends summary C-\u003e\u003eU: Displays summary MCP remote server for MCP remote server, auth is essentials to actually make it secure to connect to resource we want and in this case note.txt is actually on remote server alongside with MCP server.\nsequenceDiagram participant U as User participant C as MCP Client participant S as MCP Server (Remote) participant A as AI Model participant Auth as Auth Service U-\u003e\u003eC: \"Summarize notes.txt (remote)\" C-\u003e\u003eAuth: Sends credentials (e.g., SSH key/API token) Auth--\u003e\u003eC: Auth success/failure alt Auth success C-\u003e\u003eS: MCP Request (over SSH/HTTP with auth) S--\u003e\u003eS: Accesses remote file (notes.txt) S-\u003e\u003eC: Returns content (over secure channel) C-\u003e\u003eA: Forwards content to AI A--\u003e\u003eA: Processes into summary A-\u003e\u003eC: Sends summary C-\u003e\u003eU: Displays summary else Auth failure C-\u003e\u003eU: \"Authentication failed\" end next we should try to learn how to build one. Thanks\n",
+  "wordCount" : "611",
+  "inLanguage": "en",
+  "datePublished": "2025-03-26T21:42:38+07:00",
+  "dateModified": "2025-03-26T21:42:38+07:00",
+  "author":{
+    "@type": "Person",
+    "name": "prima adi"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teraskula.com/posts/understanding-model-context-protocol/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "teraskula.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teraskula.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://teraskula.com/posts/about-teraskula/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/categories/" title="categories">
+                    <span>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
+
+
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Understanding Model Context Protocol
+    </h1>
+    <div class="post-meta">26 March 2025 | prima adi
+
+</div>
+  </header> 
+  <div class="post-content"><h2 id="journey-understanding-it">Journey understanding it<a hidden class="anchor" aria-hidden="true" href="#journey-understanding-it">#</a></h2>
+<h3 id="what-is-model-context-protocol">What is Model Context Protocol<a hidden class="anchor" aria-hidden="true" href="#what-is-model-context-protocol">#</a></h3>
+<p>in this recent days like 2 weeks back i was stumbling upon an agentic AI, what is agentic we all does not really know it.
+agentic is the AI act like agent they understand what you need and doing certain action also choose tools to do what you need, thats whats my understanding of agentic AI. but for more prcise Agentic AI refers to artificial intelligence that acts like an agent capable of understanding user needs, <strong>selecting appropriate tools</strong>, and <strong>performing actions autonomously</strong>.</p>
+<p>for supporting this Anthropic are creating a standard called Model Context Protocol
+this is from their site</p>
+<blockquote>
+<p>MCP is an open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools.</p>
+</blockquote>
+<p>i am already try this model context protocol using to communicate with k8s or getting insight from sqlite database small helloworld to MCP. but how its actually work.</p>
+<h3 id="why-most-mcp-are-run-on-local">Why Most MCP are run on local<a hidden class="anchor" aria-hidden="true" href="#why-most-mcp-are-run-on-local">#</a></h3>
+<p>when we use claude desktop or other mcp client mostly the mcp config look like this</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;mcpServers&#34;</span>: {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;filesystem&#34;</span>: {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;command&#34;</span>: <span style="color:#e6db74">&#34;npx&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;args&#34;</span>: [
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;-y&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;@modelcontextprotocol/server-filesystem&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;/Users/username/Desktop&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;/Users/username/Downloads&#34;</span>
+</span></span><span style="display:flex;"><span>      ]
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>if we see this, there is command that run npx and run the server localy.
+This launches a local MCP server to access files on your Desktop and Downloads folders. Why local? The protocol’s standards for remote authentication and security are still in development. For example, if you hosted an MCP server for a cloud-based PostgreSQL database, the server might connect to the database fine, but the client-to-server link would need manual security (e.g., behind an authentication layer) to be safe.</p>
+<p>lets say we have postgresql in a cloud and we deploy MCP server postgress and connect to it.
+mcp to postgress are have a limited access but MCP client to MCP server are still no security or auth, we should manualy put a server behind auth to make this actually work.</p>
+<p>to actually understanding this MCP client and MCP server relation in local and if we want to do it in remote server as follows</p>
+<h3 id="mcp-server-in-local">MCP server in local<a hidden class="anchor" aria-hidden="true" href="#mcp-server-in-local">#</a></h3>
+<p>you may understand it better if you could see this sequence diagram. all of this state are happend in local. even whe call it mcp server its actually running on local and note.txt also in local</p>
+<style>
+.mermaid {
+    background-color: white;
+}
+</style>
+<div class="mermaid">
+sequenceDiagram
+    participant U as User
+    participant C as MCP Client
+    participant S as MCP Server
+    participant A as AI Model
+    U-&gt;&gt;C: &#34;Summarize notes.txt&#34;
+    C-&gt;&gt;A: Sends user request
+    C-&gt;&gt;S: MCP Request (stdio)
+    S--&gt;&gt;S: Accesses local file (e.g., notes.txt)
+    S-&gt;&gt;C: Returns content (stdio)
+    C-&gt;&gt;A: Forwards content to AI
+    A--&gt;&gt;A: Processes into summary
+    A-&gt;&gt;C: Sends summary
+    C-&gt;&gt;U: Displays summary
+</div>
+<h3 id="mcp-remote-server">MCP remote server<a hidden class="anchor" aria-hidden="true" href="#mcp-remote-server">#</a></h3>
+<p>for MCP remote server, auth is essentials to actually make it secure to connect to resource we want and in this case note.txt is actually on remote server alongside with MCP server.</p>
+<style>
+.mermaid {
+    background-color: white;
+}
+</style>
+<div class="mermaid">
+sequenceDiagram
+    participant U as User
+    participant C as MCP Client
+    participant S as MCP Server (Remote)
+    participant A as AI Model
+    participant Auth as Auth Service
+    U-&gt;&gt;C: &#34;Summarize notes.txt (remote)&#34;
+    C-&gt;&gt;Auth: Sends credentials (e.g., SSH key/API token)
+    Auth--&gt;&gt;C: Auth success/failure
+    alt Auth success
+        C-&gt;&gt;S: MCP Request (over SSH/HTTP with auth)
+        S--&gt;&gt;S: Accesses remote file (notes.txt)
+        S-&gt;&gt;C: Returns content (over secure channel)
+        C-&gt;&gt;A: Forwards content to AI
+        A--&gt;&gt;A: Processes into summary
+        A-&gt;&gt;C: Sends summary
+        C-&gt;&gt;U: Displays summary
+    else Auth failure
+        C-&gt;&gt;U: &#34;Authentication failed&#34;
+    end
+</div>
+<p>next we should try to learn how to build one.
+Thanks</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
+      <li><a href="https://teraskula.com/tags/mcp/">MCP</a></li>
+      <li><a href="https://teraskula.com/tags/ai/">Ai</a></li>
+    </ul>
+  </footer><div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://prima101112.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://teraskula.com/">teraskula.com</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

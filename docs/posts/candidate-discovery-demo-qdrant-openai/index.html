@@ -207,6 +207,11 @@ we will slightly re-architec the app user flow design. before, we use FAISS to s
 <p>no need for overall docs here (like saving the original docs in rdbms (not chunked)), if doing it it could be expand to give more context to the models but now lets focus on <strong>the qdrant similarity first</strong> for now</p>
 </blockquote>
 <h3 id="graph-and-architecture">graph and architecture<a hidden class="anchor" aria-hidden="true" href="#graph-and-architecture">#</a></h3>
+<style>
+.mermaid {
+    background-color: white;
+}
+</style>
 <div class="mermaid">
 graph TD
     A[User Input via Chat] --&gt;|Submit Query| B[Next.js Frontend]

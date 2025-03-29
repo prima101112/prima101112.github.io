@@ -123,6 +123,20 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
+    <h2>The Important of Technical Discussion
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Recently i am creating a blog that code and create RAG pipeline. Since Langchain (the library that I use) wraps all the functions behind the curtain, some users, like myself, may misunderstand its workings. I want to discuss this part of the code:
+def build_rag(vectorstore): retriever = vectorstore.as_retriever() llm = OllamaLLM(model=&#34;mistral&#34;) # Specify Mistral model qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) return qa_chain In understanding this code I assume that when qa_chain = RetrievalQA.from_chain_type(llm, retriever=retriever) retreiver is vectorstore right?. i assume again that llm is actually read the vector.
+...</p>
+  </div>
+  <footer class="entry-footer">6 December 2024 | prima adi</footer>
+  <a class="entry-link" aria-label="post link to The Important of Technical Discussion" href="https://teraskula.com/posts/the-important-of-technical-discussion-rag/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
     <h2>Langchain PDF Ollama RAG (Retrieval Augmented Generation)
     </h2>
   </header>

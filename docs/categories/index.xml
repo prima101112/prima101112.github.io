@@ -6,13 +6,31 @@
     <description>Recent content in Categories on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Feb 2025 17:32:17 +0700</lastBuildDate><atom:link href="https://teraskula.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Mar 2025 21:42:38 +0700</lastBuildDate><atom:link href="https://teraskula.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai</title>
       <link>https://teraskula.com/categories/ai/</link>
-      <pubDate>Sat, 01 Feb 2025 17:32:17 +0700</pubDate>
+      <pubDate>Wed, 26 Mar 2025 21:42:38 +0700</pubDate>
       
       <guid>https://teraskula.com/categories/ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://teraskula.com/categories/blog/</link>
+      <pubDate>Wed, 26 Mar 2025 21:42:38 +0700</pubDate>
+      
+      <guid>https://teraskula.com/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://teraskula.com/categories/technology/</link>
+      <pubDate>Wed, 26 Mar 2025 21:42:38 +0700</pubDate>
+      
+      <guid>https://teraskula.com/categories/technology/</guid>
       <description></description>
     </item>
     
@@ -49,15 +67,6 @@
       <pubDate>Mon, 20 Jan 2025 13:36:19 +0700</pubDate>
       
       <guid>https://teraskula.com/categories/data-analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Technology</title>
-      <link>https://teraskula.com/categories/technology/</link>
-      <pubDate>Mon, 20 Jan 2025 13:36:19 +0700</pubDate>
-      
-      <guid>https://teraskula.com/categories/technology/</guid>
       <description></description>
     </item>
     
@@ -130,15 +139,6 @@
       <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>https://teraskula.com/categories/site-reliability-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://teraskula.com/categories/blog/</link>
-      <pubDate>Fri, 20 Dec 2024 22:17:10 +0700</pubDate>
-      
-      <guid>https://teraskula.com/categories/blog/</guid>
       <description></description>
     </item>
     

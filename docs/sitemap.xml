@@ -3,13 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://teraskula.com/tags/ai/</loc>
-    <lastmod>2025-02-01T17:32:17+07:00</lastmod>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/ai/</loc>
-    <lastmod>2025-02-01T17:32:17+07:00</lastmod>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/blog/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/</loc>
-    <lastmod>2025-02-01T17:32:17+07:00</lastmod>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/mcp/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/tags/technology/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/categories/technology/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
+  </url><url>
+    <loc>https://teraskula.com/posts/understanding-model-context-protocol/</loc>
+    <lastmod>2025-03-26T21:42:38+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/gadageni-ai-powered-streamlit-app-multi-usage/</loc>
     <lastmod>2025-02-01T17:32:17+07:00</lastmod>
@@ -18,18 +42,6 @@
     <lastmod>2025-02-01T17:32:17+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/playground/</loc>
-    <lastmod>2025-02-01T17:32:17+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/posts/</loc>
-    <lastmod>2025-02-01T17:32:17+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/</loc>
-    <lastmod>2025-02-01T17:32:17+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/tags/technology/</loc>
-    <lastmod>2025-02-01T17:32:17+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/</loc>
     <lastmod>2025-02-01T17:32:17+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/categories/follow/</loc>
@@ -60,9 +72,6 @@
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/tags/predictive-analytics/</loc>
-    <lastmod>2025-01-20T13:36:19+07:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/categories/technology/</loc>
     <lastmod>2025-01-20T13:36:19+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/the-big-data-benefits-for-businesses-how-to-make-your-company-more-competitive/</loc>
@@ -142,9 +151,6 @@
   </url><url>
     <loc>https://teraskula.com/categories/site-reliability-engineering/</loc>
     <lastmod>2025-01-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://teraskula.com/categories/blog/</loc>
-    <lastmod>2024-12-20T22:17:10+07:00</lastmod>
   </url><url>
     <loc>https://teraskula.com/posts/candidate-discovery-demo-qdrant-openai/</loc>
     <lastmod>2024-12-20T22:17:10+07:00</lastmod>
