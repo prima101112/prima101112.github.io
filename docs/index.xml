@@ -6,7 +6,17 @@
     <description>Recent content on teraskula.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Mar 2025 21:42:38 +0700</lastBuildDate><atom:link href="https://teraskula.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Apr 2025 12:04:54 +0700</lastBuildDate><atom:link href="https://teraskula.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running Google Agent Development Kit Web With Mcp Server</title>
+      <link>https://teraskula.com/posts/running-google-agent-development-kit-web-with-mcp-server/</link>
+      <pubDate>Tue, 22 Apr 2025 12:04:54 +0700</pubDate>
+      
+      <guid>https://teraskula.com/posts/running-google-agent-development-kit-web-with-mcp-server/</guid>
+      <description>&lt;h3 id=&#34;this-is-a-3-days-story&#34;&gt;This is a 3 days story&lt;/h3&gt;
+&lt;p&gt;In this AI world right now, people are easily creating tools and what we now call &amp;ldquo;agents&amp;rdquo;. As a person who opened this page, you will already be familiar with MCP or Model Context Protocol. MCP is great, but suddenly Google is releasing ADK, which stands for Agent Development Kit. It&amp;rsquo;s a little bit confusing here, actually, while the Langchain platform is also expanding. Whatever.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Understanding Model Context Protocol</title>
       <link>https://teraskula.com/posts/understanding-model-context-protocol/</link>

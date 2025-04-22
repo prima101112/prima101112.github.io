@@ -14,12 +14,12 @@ languageCode: 'en-us'
 in this recent days like 2 weeks back i was stumbling upon an agentic AI, what is agentic we all does not really know it.
 agentic is the AI act like agent they understand what you need and doing certain action also choose tools to do what you need, thats whats my understanding of agentic AI. but for more prcise Agentic AI refers to artificial intelligence that acts like an agent capable of understanding user needs, **selecting appropriate tools**, and **performing actions autonomously**.
 
-for supporting this Anthropic are creating a standard called Model Context Protocol
-this is from their site
+for supporting this, Anthropic are creating a standard called **Model Context Protocol**
+this is from their [site](https://modelcontextprotocol.io/quickstart/user)
 
 > MCP is an open protocol that standardizes how applications provide context to LLMs. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools.
 
-i am already try this model context protocol using to communicate with k8s or getting insight from sqlite database small helloworld to MCP. but how its actually work.
+i am already try this model context protocol using to communicate with k8s or getting insight from sqlite database, small helloworld to MCP. but how its actually work.
 
 ### Why Most MCP are run on local
 

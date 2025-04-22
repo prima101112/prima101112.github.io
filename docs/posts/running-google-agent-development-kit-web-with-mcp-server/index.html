@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-99V7B3NL74"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-99V7B3NL74');
+</script>
+<title>Running Google Agent Development Kit Web With Mcp Server | teraskula.com</title>
+<meta name="keywords" content="technology, MCP, ai">
+<meta name="description" content="This is a 3 days story
+In this AI world right now, people are easily creating tools and what we now call &ldquo;agents&rdquo;. As a person who opened this page, you will already be familiar with MCP or Model Context Protocol. MCP is great, but suddenly Google is releasing ADK, which stands for Agent Development Kit. It&rsquo;s a little bit confusing here, actually, while the Langchain platform is also expanding. Whatever.">
+<meta name="author" content="prima adi">
+<link rel="canonical" href="https://teraskula.com/posts/running-google-agent-development-kit-web-with-mcp-server/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6a98292fb8fa8cf0f3ba4042d4b75515c04267550f3ad49ff6271b5af9562443.css" integrity="sha256-apgpL7j6jPDzukBC1LdVFcBCZ1UPOtSf9icbWvlWJEM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://teraskula.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://teraskula.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://teraskula.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://teraskula.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://teraskula.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://teraskula.com/posts/running-google-agent-development-kit-web-with-mcp-server/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Running Google Agent Development Kit Web With Mcp Server" />
+<meta property="og:description" content="This is a 3 days story
+In this AI world right now, people are easily creating tools and what we now call &ldquo;agents&rdquo;. As a person who opened this page, you will already be familiar with MCP or Model Context Protocol. MCP is great, but suddenly Google is releasing ADK, which stands for Agent Development Kit. It&rsquo;s a little bit confusing here, actually, while the Langchain platform is also expanding. Whatever." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://teraskula.com/posts/running-google-agent-development-kit-web-with-mcp-server/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-04-22T12:04:54+07:00" />
+<meta property="article:modified_time" content="2025-04-22T12:04:54+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Running Google Agent Development Kit Web With Mcp Server"/>
+<meta name="twitter:description" content="This is a 3 days story
+In this AI world right now, people are easily creating tools and what we now call &ldquo;agents&rdquo;. As a person who opened this page, you will already be familiar with MCP or Model Context Protocol. MCP is great, but suddenly Google is releasing ADK, which stands for Agent Development Kit. It&rsquo;s a little bit confusing here, actually, while the Langchain platform is also expanding. Whatever."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://teraskula.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Running Google Agent Development Kit Web With Mcp Server",
+      "item": "https://teraskula.com/posts/running-google-agent-development-kit-web-with-mcp-server/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Running Google Agent Development Kit Web With Mcp Server",
+  "name": "Running Google Agent Development Kit Web With Mcp Server",
+  "description": "This is a 3 days story In this AI world right now, people are easily creating tools and what we now call \u0026ldquo;agents\u0026rdquo;. As a person who opened this page, you will already be familiar with MCP or Model Context Protocol. MCP is great, but suddenly Google is releasing ADK, which stands for Agent Development Kit. It\u0026rsquo;s a little bit confusing here, actually, while the Langchain platform is also expanding. Whatever.\n",
+  "keywords": [
+    "technology", "MCP", "ai"
+  ],
+  "articleBody": "This is a 3 days story In this AI world right now, people are easily creating tools and what we now call “agents”. As a person who opened this page, you will already be familiar with MCP or Model Context Protocol. MCP is great, but suddenly Google is releasing ADK, which stands for Agent Development Kit. It’s a little bit confusing here, actually, while the Langchain platform is also expanding. Whatever.\nIn this ADK, there is a command that interests me: it’s adk web, which will launch an agent in a web-based interface. I usually use Claude desktop for interacting with MCP or a VSCode extension. But for the sake of learning, ADK said there’s a way of connecting MCPTools to ADK so all tools will be listed in ADK.\nFirst, I coded myself as a standard Python engineer to logically get tools from MCPToolset and return them to the agent. Following this documentation mcp with adk web, there were so many errors. First, adk web is running its own asyncio, so when we call an async function to generate an agent, it will fail.\nasync def create_agent(): \"\"\"Gets tools from MCP Server.\"\"\" tools, exit_stack = await get_tools_async() agent = LlmAgent( model='gemini-2.0-flash', # Adjust model name if needed based on availability name='filesystem_assistant', instruction='Help user interact with the local filesystem using available tools.', tools=tools, # Provide the MCP tools to the ADK agent ) return agent, exit_stack root_agent = create_agent() after runnig that we will get\npydantic_core._pydantic_core.ValidationError: 1 validation error for InvocationContext agent Input should be a valid dictionary or instance of BaseAgent [type=model_type, input_value=, input_type=function] For further information visit That seems legit from the example, but the problem is Pydantic not allowing that. root_agent SHOULD BE an Agent definition. So try to call it.\nSo, as a Python dev, OK, will call it using asyncio.run().\nAnd then…\nasyncio.run() cannot be called from a running event loop Yeah, it’s a little bit frustrating here. I don’t know, I am starting to blame why there is already an MCP client and MCP server. Why am I trying this? Why should ADK be working with MCP?\n2 days gone by\nIn this early morning, I am still curious about all of that. It should work because calling it manually through main and really waiting for the get_tools function will work. (This actually works) But using ADK web IS NOT.\nSo now I have the full power of all LLM, free and paid. And still, LLM is just going back and forth giving bad examples.\nUntil…..\nthe power of understanding your code so you could write a clear prompt in some point i write a prompt, i really carefull to explain what i understand.\nthis code is running on adk web. that this adk web already have his own asyncio running. i cannot wait it like using asyncio.run etc. how could i still wait asyncio inside already running asyncio But I don’t know if this is legit or not, since asyncio should prevent this kind of nested event loop. It could easily crash if not handled properly.\nAnd this is the final example of integrating MCP with ADK web. agent.py\nimport asyncio import atexit import os from contextlib import AsyncExitStack from dotenv import load_dotenv from google.adk.agents import Agent, LlmAgent from google.adk.tools.mcp_tool.mcp_toolset import MCPToolset, StdioServerParameters # MUST HERE. this is what make me stuck with docs for almost 3 days import nest_asyncio # Global exit stack for managing async resources _exit_stack = AsyncExitStack() # Initialize tools and agent synchronously during module import try: # Get or create an event loop try: print(\"Getting event loop...and use old\") loop = asyncio.get_event_loop() except RuntimeError: print(\"ther is no old so create new event loop\") # Create a new event loop if one doesn't exist loop = asyncio.new_event_loop() asyncio.set_event_loop(loop) # Define async initialization function async def _initialize(): print(\"Attempting to connect to MCP Filesystem server...\") # Get tools from the MCP Server mcp_toolset, tools_exit_stack = await MCPToolset.from_server( connection_params=StdioServerParameters( command='npx', args=[\"-y\", \"@modelcontextprotocol/server-filesystem\", \"/Users/prima/work/agent-dev-kit-try/test-agent/\"], #replace with your folder ) ) print(\"MCP Toolset created successfully.\") # Add the tools exit stack to our main exit stack await _exit_stack.enter_async_context(tools_exit_stack) # Extract the actual tools from the toolset # This is critical - we need to get the tool objects to register with the agent tools = mcp_toolset print(f\"Found {len(tools)} tools: {', '.join([tool.name for tool in tools])}\") # Create and return the agent with explicit tools agent = LlmAgent( model='gemini-2.0-flash', name='filesystem_assistant', instruction=''' You are a helpful assistant that can interact with the filesystem. Use the provided tools to help users manage their files and directories. Be sure to demonstrate the tools when appropriate. ''', tools=tools, # Pass the list of tools, not the toolset ) print(\"Agent initialized successfully.\") return agent nest_asyncio.apply() root_agent = loop.run_until_complete(_initialize()) # Register cleanup handler def _cleanup(): try: if not loop.is_closed(): loop.run_until_complete(_exit_stack.aclose()) except Exception as e: print(f\"Error during cleanup: {e}\") atexit.register(_cleanup) except Exception as e: print(f\"Error initializing agent: {e}\") # Provide a fallback agent if initialization fails root_agent = LlmAgent( model='gemini-2.0-flash', name='filesystem_assistant', instruction='Help user interact with the local filesystem. Note: Tools initialization failed.', ) Put that file in this folder structure:\nAnd run:\nadk web\nin the root folder of test-agent.\nConclusion The Google Agent Development Kit (ADK) Web is a valuable addition to the agent development ecosystem, complementing existing tools like the Model Context Protocol (MCP) server. This article demonstrated how ADK Web can be integrated with an MCP server, showcasing the potential for combining these tools.\nIt’s important to note that ADK is not a replacement for MCP, but rather another tool in the developer’s arsenal. While we focused on a specific use case here, ADK offers a much broader range of features and capabilities that developers should explore.\nFor developers, this integration serves as a learning opportunity to understand how different agent development frameworks can work together. As we continue this journey in this field, remember to stay curious, experiment with various tools and combinations, and remain open to new approaches.\nHappy coding.\n",
+  "wordCount" : "996",
+  "inLanguage": "en",
+  "datePublished": "2025-04-22T12:04:54+07:00",
+  "dateModified": "2025-04-22T12:04:54+07:00",
+  "author":{
+    "@type": "Person",
+    "name": "prima adi"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://teraskula.com/posts/running-google-agent-development-kit-web-with-mcp-server/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "teraskula.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://teraskula.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://teraskula.com/" accesskey="h" title="teraskula.com (Alt + H)">teraskula.com</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://teraskula.com/posts/about-teraskula/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/categories/" title="categories">
+                    <span>categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://teraskula.com/tags/" title="tags">
+                    <span>tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Running Google Agent Development Kit Web With Mcp Server
+    </h1>
+    <div class="post-meta">22 April 2025 | prima adi
+
+</div>
+  </header> 
+  <div class="post-content"><h3 id="this-is-a-3-days-story">This is a 3 days story<a hidden class="anchor" aria-hidden="true" href="#this-is-a-3-days-story">#</a></h3>
+<p>In this AI world right now, people are easily creating tools and what we now call &ldquo;agents&rdquo;. As a person who opened this page, you will already be familiar with MCP or Model Context Protocol. MCP is great, but suddenly Google is releasing ADK, which stands for Agent Development Kit. It&rsquo;s a little bit confusing here, actually, while the Langchain platform is also expanding. Whatever.</p>
+<p>In this ADK, there is a command that interests me: it&rsquo;s <code>adk web</code>, which will launch an agent in a web-based interface. I usually use Claude desktop for interacting with MCP or a VSCode extension. But for the sake of learning, ADK said there&rsquo;s a way of connecting MCPTools to ADK so all tools will be listed in ADK.</p>
+<p>First, I coded myself as a standard Python engineer to logically get tools from MCPToolset and return them to the agent. Following this documentation <a href="https://google.github.io/adk-docs/tools/mcp-tools/#mcp-with-adk-web">mcp with adk web</a>, there were so many errors. First, adk web is running its own <code>asyncio</code>, so when we call an async function to generate an agent, it will fail.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_agent</span>():
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;&#34;&#34;Gets tools from MCP Server.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>  tools, exit_stack <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> get_tools_async()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  agent <span style="color:#f92672">=</span> LlmAgent(
+</span></span><span style="display:flex;"><span>      model<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gemini-2.0-flash&#39;</span>, <span style="color:#75715e"># Adjust model name if needed based on availability</span>
+</span></span><span style="display:flex;"><span>      name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;filesystem_assistant&#39;</span>,
+</span></span><span style="display:flex;"><span>      instruction<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Help user interact with the local filesystem using available tools.&#39;</span>,
+</span></span><span style="display:flex;"><span>      tools<span style="color:#f92672">=</span>tools, <span style="color:#75715e"># Provide the MCP tools to the ADK agent</span>
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> agent, exit_stack
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>root_agent <span style="color:#f92672">=</span> create_agent()
+</span></span></code></pre></div><p>after runnig that we will get</p>
+<pre tabindex="0"><code>pydantic_core._pydantic_core.ValidationError: 1 validation error for InvocationContext
+
+agent
+
+Input should be a valid dictionary or instance of BaseAgent [type=model_type, input_value=&lt;function create_agent at 0x11df0cae0&gt;, input_type=function]
+
+For further information visit
+</code></pre><p>That seems legit <em>from the example</em>, but the problem is Pydantic not allowing that. root_agent SHOULD BE an Agent definition. So try to call it.</p>
+<p>So, as a Python dev, OK, will call it using <code>asyncio.run()</code>.</p>
+<p>And then&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>asyncio.run<span style="color:#f92672">()</span> cannot be called from a running event loop
+</span></span></code></pre></div><p>Yeah, it&rsquo;s a little bit frustrating here. I don&rsquo;t know, I am starting to blame why there is already an MCP client and MCP server. Why am I trying this? Why should ADK be working with MCP?</p>
+<blockquote>
+<p>2 days gone by</p>
+</blockquote>
+<p>In this early morning, I am still curious about all of that. It should work because calling it manually through main and really waiting for the get_tools function will work. <a href="https://google.github.io/adk-docs/tools/mcp-tools/#1-using-mcp-servers-with-adk-agents-adk-as-an-mcp-client">(This actually works)</a> But using ADK web <strong>IS NOT</strong>.</p>
+<p>So now I have the full power of all LLM, free and paid. And still, LLM is just going back and forth giving bad examples.</p>
+<p>Until&hellip;..</p>
+<hr>
+<h3 id="the-power-of-understanding-your-code-so-you-could-write-a-clear-prompt">the power of understanding your code so you could write a clear prompt<a hidden class="anchor" aria-hidden="true" href="#the-power-of-understanding-your-code-so-you-could-write-a-clear-prompt">#</a></h3>
+<p>in some point i write a prompt, i really carefull to explain what i understand.</p>
+<pre tabindex="0"><code>this code is running on adk web. that this adk web already have his own asyncio running. i cannot wait it like using asyncio.run etc.
+how could i still wait asyncio inside already running asyncio
+</code></pre><p>But I don&rsquo;t know if this is legit or not, since asyncio should prevent this kind of nested event loop. It could easily crash if not handled properly.</p>
+<p>And this is the final example of integrating MCP with ADK web. <code>agent.py</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> asyncio
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> atexit
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> contextlib <span style="color:#f92672">import</span> AsyncExitStack
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> dotenv <span style="color:#f92672">import</span> load_dotenv
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> google.adk.agents <span style="color:#f92672">import</span> Agent, LlmAgent
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> google.adk.tools.mcp_tool.mcp_toolset <span style="color:#f92672">import</span> MCPToolset, StdioServerParameters
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># MUST HERE. this is what make me stuck with docs for almost 3 days</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> nest_asyncio
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Global exit stack for managing async resources</span>
+</span></span><span style="display:flex;"><span>_exit_stack <span style="color:#f92672">=</span> AsyncExitStack()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialize tools and agent synchronously during module import</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Get or create an event loop</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Getting event loop...and use old&#34;</span>)
+</span></span><span style="display:flex;"><span>        loop <span style="color:#f92672">=</span> asyncio<span style="color:#f92672">.</span>get_event_loop()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">RuntimeError</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;ther is no old so create new event loop&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Create a new event loop if one doesn&#39;t exist</span>
+</span></span><span style="display:flex;"><span>        loop <span style="color:#f92672">=</span> asyncio<span style="color:#f92672">.</span>new_event_loop()
+</span></span><span style="display:flex;"><span>        asyncio<span style="color:#f92672">.</span>set_event_loop(loop)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Define async initialization function</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_initialize</span>():
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Attempting to connect to MCP Filesystem server...&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Get tools from the MCP Server</span>
+</span></span><span style="display:flex;"><span>        mcp_toolset, tools_exit_stack <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> MCPToolset<span style="color:#f92672">.</span>from_server(
+</span></span><span style="display:flex;"><span>            connection_params<span style="color:#f92672">=</span>StdioServerParameters(
+</span></span><span style="display:flex;"><span>                command<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;npx&#39;</span>,
+</span></span><span style="display:flex;"><span>                args<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;-y&#34;</span>, 
+</span></span><span style="display:flex;"><span>                      <span style="color:#e6db74">&#34;@modelcontextprotocol/server-filesystem&#34;</span>,
+</span></span><span style="display:flex;"><span>                      <span style="color:#e6db74">&#34;/Users/prima/work/agent-dev-kit-try/test-agent/&#34;</span>], <span style="color:#75715e">#replace with your folder</span>
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;MCP Toolset created successfully.&#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Add the tools exit stack to our main exit stack</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">await</span> _exit_stack<span style="color:#f92672">.</span>enter_async_context(tools_exit_stack)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Extract the actual tools from the toolset</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># This is critical - we need to get the tool objects to register with the agent</span>
+</span></span><span style="display:flex;"><span>        tools <span style="color:#f92672">=</span> mcp_toolset
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Found </span><span style="color:#e6db74">{</span>len(tools)<span style="color:#e6db74">}</span><span style="color:#e6db74"> tools: </span><span style="color:#e6db74">{</span><span style="color:#e6db74">&#39;, &#39;</span><span style="color:#f92672">.</span>join([tool<span style="color:#f92672">.</span>name <span style="color:#66d9ef">for</span> tool <span style="color:#f92672">in</span> tools])<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Create and return the agent with explicit tools</span>
+</span></span><span style="display:flex;"><span>        agent <span style="color:#f92672">=</span> LlmAgent(
+</span></span><span style="display:flex;"><span>            model<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gemini-2.0-flash&#39;</span>,
+</span></span><span style="display:flex;"><span>            name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;filesystem_assistant&#39;</span>,
+</span></span><span style="display:flex;"><span>            instruction<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            You are a helpful assistant that can interact with the filesystem.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Use the provided tools to help users manage their files and directories.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            Be sure to demonstrate the tools when appropriate.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#39;&#39;&#39;</span>,
+</span></span><span style="display:flex;"><span>            tools<span style="color:#f92672">=</span>tools,  <span style="color:#75715e"># Pass the list of tools, not the toolset</span>
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Agent initialized successfully.&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> agent
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    nest_asyncio<span style="color:#f92672">.</span>apply()
+</span></span><span style="display:flex;"><span>    root_agent <span style="color:#f92672">=</span> loop<span style="color:#f92672">.</span>run_until_complete(_initialize())
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Register cleanup handler</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">_cleanup</span>():
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> loop<span style="color:#f92672">.</span>is_closed():
+</span></span><span style="display:flex;"><span>                loop<span style="color:#f92672">.</span>run_until_complete(_exit_stack<span style="color:#f92672">.</span>aclose())
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error during cleanup: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    atexit<span style="color:#f92672">.</span>register(_cleanup)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error initializing agent: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Provide a fallback agent if initialization fails</span>
+</span></span><span style="display:flex;"><span>    root_agent <span style="color:#f92672">=</span> LlmAgent(
+</span></span><span style="display:flex;"><span>        model<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;gemini-2.0-flash&#39;</span>,
+</span></span><span style="display:flex;"><span>        name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;filesystem_assistant&#39;</span>,
+</span></span><span style="display:flex;"><span>        instruction<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Help user interact with the local filesystem. Note: Tools initialization failed.&#39;</span>,
+</span></span><span style="display:flex;"><span>    )
+</span></span></code></pre></div><p>Put that file in this folder structure:</p>
+<p><img loading="lazy" src="/img/adkxmcp.png" alt="adk x mcp"  />
+</p>
+<p>And run:</p>
+<p><code>adk web</code></p>
+<p>in the root folder of test-agent.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>The Google Agent Development Kit (ADK) Web is a valuable addition to the agent development ecosystem, complementing existing tools like the Model Context Protocol (MCP) server. This article demonstrated how ADK Web can be integrated with an MCP server, showcasing the potential for combining these tools.</p>
+<p>It&rsquo;s important to note that ADK is not a replacement for MCP, but rather another tool in the developer&rsquo;s arsenal. While we focused on a specific use case here, ADK offers a much broader range of features and capabilities that developers should explore.</p>
+<p>For developers, this integration serves as a learning opportunity to understand how different agent development frameworks can work together. As we continue this journey in this field, remember to stay curious, experiment with various tools and combinations, and remain open to new approaches.</p>
+<p>Happy coding.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://teraskula.com/tags/technology/">Technology</a></li>
+      <li><a href="https://teraskula.com/tags/mcp/">MCP</a></li>
+      <li><a href="https://teraskula.com/tags/ai/">Ai</a></li>
+    </ul>
+  </footer><div id="disqus_thread"></div>
+<script>
+    
+
+    
+
+    (function() { 
+    var d = document, s = d.createElement('script');
+    s.src = 'https://prima101112.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2025 <a href="https://teraskula.com/">teraskula.com</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
